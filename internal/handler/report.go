@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/miguel-neiva/ast-benchmark/model"
+	"github.com/cx-miguel-neiva/ast-benchmark/model"
 )
 
 func readFile(filePath string) ([]byte, error) {
