@@ -1,0 +1,150 @@
+{
+    "total": 3,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 3
+    },
+    "effortTotal": 12,
+    "issues": [
+        {
+            "key": "812388cd-6068-4605-bc3b-9ed1093b9e47",
+            "rule": "docker:S6596",
+            "severity": "MAJOR",
+            "component": "mad-Keycloak-service:keycloak/Dockerfile",
+            "project": "mad-Keycloak-service",
+            "line": 1,
+            "hash": "70e75a64b1011553f73a0fb8ef08690f",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 5,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use a specific version tag for the image.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "luisventuzelos@gmail.com",
+            "tags": [],
+            "creationDate": "2023-07-08T17:59:25+0000",
+            "updateDate": "2025-05-15T11:52:28+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "LOGICAL",
+            "cleanCodeAttributeCategory": "INTENTIONAL",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "d913fcd9-5f2f-4902-b55d-88b0c2a7b9d8",
+            "rule": "docker:S6476",
+            "severity": "MAJOR",
+            "component": "mad-Keycloak-service:keycloak/Dockerfile",
+            "project": "mad-Keycloak-service",
+            "line": 1,
+            "hash": "70e75a64b1011553f73a0fb8ef08690f",
+            "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 38,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace \"as\" with upper case format \"AS\".",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "luisventuzelos@gmail.com",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-07-08T17:59:25+0000",
+            "updateDate": "2025-05-15T11:52:28+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "FORMATTED",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "MEDIUM"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        },
+        {
+            "key": "8a78e114-6b96-4b15-aef7-73da2bb333ed",
+            "rule": "docker:S7020",
+            "severity": "MINOR",
+            "component": "mad-Keycloak-service:keycloak/Dockerfile",
+            "project": "mad-Keycloak-service",
+            "line": 12,
+            "hash": "3beb7c1b2f27489e8bf3c7b681853544",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 0,
+                "endOffset": 191
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Split this RUN instruction line into multiple lines.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "luisventuzelos@gmail.com",
+            "tags": [],
+            "creationDate": "2023-07-08T17:59:25+0000",
+            "updateDate": "2025-05-15T11:52:28+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": [],
+            "codeVariants": [],
+            "cleanCodeAttribute": "CONVENTIONAL",
+            "cleanCodeAttributeCategory": "CONSISTENT",
+            "impacts": [
+                {
+                    "softwareQuality": "MAINTAINABILITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "prioritizedRule": false
+        }
+    ],
+    "components": [
+        {
+            "key": "mad-Keycloak-service:keycloak/Dockerfile",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Dockerfile",
+            "longName": "keycloak/Dockerfile",
+            "path": "keycloak/Dockerfile"
+        },
+        {
+            "key": "mad-Keycloak-service",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "mad-Keycloak-service",
+            "longName": "mad-Keycloak-service"
+        }
+    ],
+    "facets": []
+}
