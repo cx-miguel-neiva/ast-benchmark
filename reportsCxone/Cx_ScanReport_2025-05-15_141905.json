@@ -1,0 +1,1438 @@
+{
+ "reportCreationDate": "2025-05-15T14:19:05.87668017Z",
+ "reportType": "Vulnerability Type",
+ "reportHeader": {
+  "projectName": "MAD-Goat-Project/mad-profile-service",
+  "projectCreationDate": "2025-05-08T11:29:09.668183Z",
+  "tenantId": "9466949b-ac30-4616-bf0c-14711bb5bf90",
+  "scanDate": "2025-05-08T13:07:39.052368Z",
+  "severityDistribution": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 17
+   },
+   {
+    "level": "Medium",
+    "value": 9
+   }
+  ],
+  "scannedBranchName": "main",
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "mainBranch": "N/A"
+ },
+ "reportFilters": {
+  "filters": [
+   {
+    "filterName": "Severity",
+    "included": [
+     "Critical",
+     "High",
+     "Medium"
+    ],
+    "excluded": [
+     "Low",
+     "Information"
+    ]
+   },
+   {
+    "filterName": "Result State",
+    "included": [
+     "To Verify",
+     "Confirmed",
+     "Urgent"
+    ],
+    "excluded": [
+     "Not Exploitable",
+     "Proposed Not Exploitable"
+    ]
+   },
+   {
+    "filterName": "Status",
+    "included": [
+     "New",
+     "Recurrent"
+    ],
+    "excluded": []
+   },
+   {
+    "filterName": "Scanners",
+    "included": [
+     "SAST",
+     "IaC",
+     "Containers",
+     "SCA",
+     "SCS"
+    ],
+    "excluded": []
+   }
+  ],
+  "resultsLimit": "10000"
+ },
+ "scanInformation": {
+  "scanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+  "scanInitiator": "org_admin",
+  "scanDuration": 1821981370000,
+  "preset": "ASA Premium",
+  "totalScannedLoc": 345,
+  "scannedLoc": 313,
+  "iacScannedLoc": 32,
+  "totalScannedFiles": 20,
+  "scannedFiles": 17,
+  "iacScannedFiles": 3,
+  "viewerLink": "https://ast-master-components.dev.cxast.net/sast-results/cd2af2c5-6188-49cb-9145-9d3aae8c96c5/41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+  "sourceOrigin": "github",
+  "scanType": "Full Scan",
+  "branch": "main",
+  "totalDensity": 8.7,
+  "density": 3.19,
+  "iacDensity": 62.5,
+  "groups": null,
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "scannerStatus": [
+   {
+    "name": "IaC",
+    "status": "Completed"
+   },
+   {
+    "name": "SCS",
+    "status": "Completed"
+   },
+   {
+    "name": "SAST",
+    "status": "Completed"
+   },
+   {
+    "name": "SCA",
+    "status": "Completed"
+   },
+   {
+    "name": "Containers",
+    "status": "Failed"
+   }
+  ]
+ },
+ "projectAndScanTags": {
+  "scanTags": null,
+  "projectTags": {
+   "mad": "",
+   "madGoat": ""
+  }
+ },
+ "densityGrade": {
+  "totalResults": 3,
+  "loc": 345,
+  "density": 8.7
+ },
+ "scannerOverview": {
+  "totalResults": 26,
+  "sastResults": {
+   "engine": "SAST",
+   "value": 1,
+   "percentage": 3.85
+  },
+  "iacResults": {
+   "engine": "IaC",
+   "value": 2,
+   "percentage": 7.69
+  },
+  "scaResults": {
+   "engine": "SCA",
+   "value": 11,
+   "percentage": 42.31
+  },
+  "containersResults": {
+   "engine": "Containers",
+   "value": 0,
+   "percentage": 0
+  },
+  "scsResults": {
+   "engine": "SCS",
+   "value": 12,
+   "percentage": 46.15
+  }
+ },
+ "statusOverview": {
+  "totalResults": 26,
+  "newResultsOverview": {
+   "numberOfResults": 12,
+   "percentage": 46.15
+  },
+  "recurrentResultsOverview": {
+   "numberOfResults": 14,
+   "percentage": 53.85
+  }
+ },
+ "stateOverview": {
+  "totalResults": 26,
+  "stateDistribution": [
+   {
+    "state": "To Verify",
+    "numberOfResults": 26,
+    "percentage": 100,
+    "density": {
+     "value": 8.7
+    }
+   },
+   {
+    "state": "Confirmed",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "state": "Urgent",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   }
+  ]
+ },
+ "languageOverview": [
+  {
+   "languageName": "go",
+   "totalResults": 1,
+   "density": {
+    "value": 3.19
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "technologyOverview": [
+  {
+   "technologyName": "Dockerfile",
+   "totalResults": 2,
+   "density": {
+    "value": 62.5
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "packageOverview": [
+  {
+   "packageName": "Go-golang.org/x/net-v0.10.0",
+   "totalResults": 5,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 3
+    },
+    {
+     "level": "Medium",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "packageName": "Go-golang.org/x/crypto-v0.9.0",
+   "totalResults": 2,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "packageName": "Go-github.com/gin-contrib/cors-v1.4.0",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Go-github.com/golang-jwt/jwt/v4-v4.5.0",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Go-github.com/golang-jwt/jwt/v5-v5.0.0",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Go-google.golang.org/protobuf-v1.30.0",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  }
+ ],
+ "severityOverview": {
+  "totalResults": 26,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "level": "High",
+    "value": 17,
+    "percentage": 65.38,
+    "density": {
+     "value": 26.09
+    }
+   },
+   {
+    "level": "Medium",
+    "value": 9,
+    "percentage": 34.62,
+    "density": {
+     "value": 17.39
+    }
+   }
+  ]
+ },
+ "containersOverview": null,
+ "vulnerabilitiesTable": {
+  "totals": {
+   "detectedFiles": 1,
+   "resultsDistribution": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  "vulnerabilityTypes": [
+   {
+    "vulnerabilityType": "Missing_HSTS_Header",
+    "severity": "Medium",
+    "detectedFiles": 1,
+    "resultsDistribution": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 0
+     },
+     {
+      "level": "Medium",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "topTenVulnerabilities": {
+  "vulnerableFiles": 1,
+  "totalVulnerabilities": 1,
+  "vulnerabilitiesList": [
+   {
+    "vulnerabilityType": "Missing_HSTS_Header",
+    "total": 1,
+    "vulnerabilitySeverities": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 0
+     },
+     {
+      "level": "Medium",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "topTenVulnerableFiles": {
+  "vulnerableFiles": 1,
+  "totalFiles": 17,
+  "vulnerableFilesList": [
+   {
+    "fileName": "/controllers/profile.controller.go",
+    "total": 1,
+    "fileSeverities": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 0
+     },
+     {
+      "level": "Medium",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "topFiveOldestBySeverity": [
+  {
+   "level": "Critical",
+   "vulnerabilitiesDistribution": []
+  },
+  {
+   "level": "High",
+   "vulnerabilitiesDistribution": []
+  },
+  {
+   "level": "Medium",
+   "vulnerabilitiesDistribution": [
+    {
+     "vulnerabilityType": "Missing_HSTS_Header",
+     "age": 7
+    }
+   ]
+  }
+ ],
+ "scanResults": {
+  "totalResults": 1,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 0
+   },
+   {
+    "level": "Medium",
+    "value": 1
+   }
+  ],
+  "resultsList": [
+   {
+    "queryName": "Missing_HSTS_Header",
+    "queryDescriptionLink": "https://ast-master-components.dev.cxast.net/results/41b34223-6936-4fb0-a4c7-7b9f37b730cd/cd2af2c5-6188-49cb-9145-9d3aae8c96c5/sast/description/346/4442232147658429772",
+    "queryId": 4442232147658429772,
+    "description": "The web-application does not define an HSTS header, leaving it vulnerable to attack.\n\n",
+    "vulnerabilitiesTotal": 1,
+    "queryPath": "Go/Go_Medium_Threat/Missing_HSTS_Header",
+    "cweId": 346,
+    "categories": [
+     {
+      "name": "ASA Premium",
+      "subCategories": [
+       "ASA Premium"
+      ]
+     },
+     {
+      "name": "Base Preset",
+      "subCategories": [
+       "Base Preset"
+      ]
+     },
+     {
+      "name": "OWASP ASVS",
+      "subCategories": [
+       "V14 Configuration"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2021",
+      "subCategories": [
+       "A7-Identification and Authentication Failures"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 API 2023",
+      "subCategories": [
+       "API8-Security Misconfiguration"
+      ]
+     },
+     {
+      "name": "PCI DSS v4.0",
+      "subCategories": [
+       "PCI DSS (4.0) - 6.2.4 Vulnerabilities in software development"
+      ]
+     }
+    ],
+    "vulnerabilities": [
+     {
+      "similarityId": -145202961,
+      "status": "Recurrent",
+      "state": "To Verify",
+      "severity": "Medium",
+      "foundDate": "2025-05-08T13:08:56Z",
+      "firstFoundDate": "2025-05-08T11:30:46Z",
+      "sourceFileName": "/controllers/profile.controller.go",
+      "destinationFileName": "/controllers/profile.controller.go",
+      "sourceNode": "JSON",
+      "destinationNode": "JSON",
+      "sourceLine": 17,
+      "sourceCode": "c.JSON(http.StatusUnauthorized, \"Unauthorized\")",
+      "destinationLine": 17,
+      "destinationCode": "c.JSON(http.StatusUnauthorized, \"Unauthorized\")",
+      "nodes": [],
+      "resultViewerLink": "https://ast-master-components.dev.cxast.net/sast-results/cd2af2c5-6188-49cb-9145-9d3aae8c96c5/41b34223-6936-4fb0-a4c7-7b9f37b730cd?resultId=EcSuI91DiP1CI6SJjeZyT0Izbng%3D",
+      "firstScanID": "f7d20472-1800-4170-8a7e-06dc2470c022",
+      "notes": []
+     }
+    ]
+   }
+  ]
+ },
+ "iacScanResults": {
+  "totalResults": 2,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 1
+   },
+   {
+    "level": "Medium",
+    "value": 1
+   }
+  ],
+  "technology": [
+   {
+    "name": "Dockerfile",
+    "totalResults": 2,
+    "queries": [
+     {
+      "queryName": "Missing User Instruction",
+      "totalResults": 1,
+      "description": "A user should be specified in the dockerfile, otherwise the image will run as root",
+      "category": "Build Process",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/41b34223-6936-4fb0-a4c7-7b9f37b730cd/cd2af2c5-6188-49cb-9145-9d3aae8c96c5/kics?result-id=InIezin9L6qTQw7PADGZzgKLokA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "f7d20472-1800-4170-8a7e-06dc2470c022",
+        "firstDetectionDate": "2025-05-08T11:29:37Z",
+        "lastDetectionDate": "2025-05-08T13:08:04Z",
+        "fileName": "/Dockerfile",
+        "issueType": "MissingAttribute",
+        "actualValue": "The 'Dockerfile' does not contain any 'USER' instruction",
+        "expectedValue": "The 'Dockerfile' should contain the 'USER' instruction"
+       }
+      ]
+     },
+     {
+      "queryName": "Image Version Using 'latest'",
+      "totalResults": 1,
+      "description": "When building images, always tag them with useful tags which codify version information, intended destination (prod or test, for instance), stability, or other information that is useful when deploying the application in different environments. Do not rely on the automatically-created latest tag",
+      "category": "Best Practices",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/41b34223-6936-4fb0-a4c7-7b9f37b730cd/cd2af2c5-6188-49cb-9145-9d3aae8c96c5/kics?result-id=4BW6iwONBocPImSbMjhbZnT1Kbk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "f7d20472-1800-4170-8a7e-06dc2470c022",
+        "firstDetectionDate": "2025-05-08T11:29:37Z",
+        "lastDetectionDate": "2025-05-08T13:08:04Z",
+        "fileName": "/Dockerfile",
+        "issueType": "IncorrectValue",
+        "actualValue": "FROM alpine:latest'",
+        "expectedValue": "FROM alpine:latest:'version' where version should not be 'latest'"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "scaScanResults": {
+  "totalResults": 11,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 8
+   },
+   {
+    "level": "Medium",
+    "value": 3
+   }
+  ],
+  "packages": [
+   {
+    "packageName": "google.golang.org/protobuf",
+    "packageId": "Go-google.golang.org/protobuf-v1.30.0",
+    "packageVersion": "v1.30.0",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-835",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "8JUTSZyJq0KcNu4EZU8+BDjtS4mH4qG2n9EWyiJrh10=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2024-24786",
+        "description": "In the package google.golang.org/protobuf versions prior to 1.33.0, the \"protojson.Unmarshal\" function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a \"google.protobuf.Any\" value, or when the \"UnmarshalOptions.DiscardUnknown\" option is set.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-8r3f-844c-mc37",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2024-2611",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0",
+          "type": "Release Note"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "golang.org/x/net",
+    "packageId": "Go-golang.org/x/net-v0.10.0",
+    "packageVersion": "v0.10.0",
+    "totalResults": 5,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-770",
+      "totalResults": 2,
+      "categoryResults": [
+       {
+        "resultId": "XvKCzxGFwPP8VbOVKp/RmtEtDk0kM7IHbs9psdMRoww=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2023-39325",
+        "description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the \"http2.Server.MaxConcurrentStreams\" setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (\"MaxConcurrentStreams\"). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the \"Server.MaxConcurrentStreams\" setting and the \"ConfigureServer\" function. This issue affects the versions through 0.16.0.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-4374-p667-p6c8",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2023-2102",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+          "type": "Mail Thread"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/63417",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/golang/net/commit/b225e7ca6dde1ef5a5ae5ce922861bda011cfabd",
+          "type": "Commit"
+         }
+        ]
+       },
+       {
+        "resultId": "X/Rj9MP/rAYtb/e3o1HvQXAUj4zt3eTtFIi1OC/e2+I=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2024-45338",
+        "description": "An attacker can craft an input to the \"Parse\" function, that will be processed non-linearly with respect to its length, resulting in extremely slow parsing. This could cause a Denial of Service. This issue affects github.com/golang/net package versions prior to 0.33.0.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-w32m-9786-jp63",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/net/commit/8e66b04771e35c4e4125e8c60334b34e2423effb",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/70906",
+          "type": "Issue"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2024-3333",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-400",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "EfBSeSQ8cK0oM4pvOtjexneIc0kxHNTr3CH3obhyA6s=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2023-45288",
+        "description": "As part of a class of vulnerabilities known as \"HTTP/2 CONTINUATION Flood,\" an attacker can exploit the HTTP/2 protocol's CONTINUATION frame handling in certain implementations to cause a Denial-of-Service (DoS) attack by forcing an HTTP/2 endpoint to process and decode arbitrary amounts of header data. Maintaining 'HPACK' state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed 'MaxHeaderBytes', no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request that is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection. This affects \"golang.org/x/net/http2\" versions prior to 0.23.0, and \"net/http\" versions prior to 1.21.9, and 1.22.0-x prior to 1.22.2.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-4v7x-pqxf-cx7m",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2024-2687",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/65051",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/golang/net/commit/ba872109ef2dc8f1da778651bd1fd3792d0e4587",
+          "type": "Commit"
+         },
+         {
+          "url": "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M",
+          "type": "Mail Thread"
+         },
+         {
+          "url": "https://go.dev/doc/devel/release#go1.22.2",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://nowotarski.info/http2-continuation-flood-technical-details/",
+          "type": "Blog Post",
+          "comment": "Official"
+         },
+         {
+          "url": "https://checkmarx.com/blog/what-you-should-know-http-2-continuation-flood-vulnerability/",
+          "type": "Blog Post",
+          "comment": "Checkmarx"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-79",
+      "totalResults": 2,
+      "categoryResults": [
+       {
+        "resultId": "yyPlLrhHCReQCLC0JMGRLNvo7uN/zWddtoViIIO+19Y=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2023-3978",
+        "description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack. This issue affects the package github.com/golang/net versions prior to v0.13.0. ",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-2wrh-6pvc-2jm9",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2023-1988",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/net/commit/8ffa475fbdb33da97e8bf79cc5791ee8751fca5e",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/61615",
+          "type": "Issue"
+         }
+        ]
+       },
+       {
+        "resultId": "PmtoJY8s8Z6Bd0p2+TEReGPrFMLhmn2ovJFYLGU+FCs=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2025-22872",
+        "description": "The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (`/`) as self-closing. When directly using `Tokenizer`, this can result in such tags incorrectly being marked as self-closing, and when using the `Parse` functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. `\u003cmath\u003e`, `\u003csvg\u003e`, etc contexts). This issue affects golang.org/x/net versions prior to 0.38.0.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-vvgc-356p-c3xw",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/73070",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/golang/net/releases/tag/v0.38.0",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/golang/net/commit/e1fcd82abba34df74614020343be8eb1fe85f0d9",
+          "type": "Commit"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3595",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "github.com/gin-contrib/cors",
+    "packageId": "Go-github.com/gin-contrib/cors-v1.4.0",
+    "packageVersion": "v1.4.0",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-829",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "QKBdBjyka/P1L1zla7uUNAme+07wqarsbtvkVVfOQH4=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2019-25211",
+        "description": "The \"parseWildcardRules\" in Gin-Gonic CORS middleware versions prior to 1.6.0 mishandles a wildcard at the end of an origin string. For example, \"https://example.community/\" is allowed when the intention is that only \"https://example.com/\" should be allowed, and \"http://localhost.example.com/\" is allowed when the intention is that only \"http://localhost/\" should be allowed.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-869c-j7wc-8jqv",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/gin-contrib/cors/commit/27b723a473efd80d5a498fa9f5933c80204c850d",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/gin-contrib/cors/pull/57",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/gin-contrib/cors/pull/106",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/gin-contrib/cors/releases/tag/v1.6.0",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2024-2955",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "github.com/golang-jwt/jwt/v4",
+    "packageId": "Go-github.com/golang-jwt/jwt/v4-v4.5.0",
+    "packageVersion": "v4.5.0",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-405",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "GZKW/RilQdYMNdjHfThk9ARKTWjXqy5equua+4nspoQ=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2025-30204",
+        "description": "The package golang-jwt is a Go implementation of JSON Web Tokens. The function `parse.ParseUnverified` splits (via a call to `strings.Split`) its argument (which is untrusted data) on periods. As a result, in the face of a malicious request whose Authorization header consists of `Bearer`  followed by many period characters, a call to that function incurs allocations to the tune of O(n) bytes (where n stands for the length of the function's argument), with a constant factor of about 16. This issue affects versions prior to 4.5.2, 5.x prior to 5.2.2.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-mh63-6h87-95cp",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang-jwt/jwt/releases/tag/v5.2.2",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/golang-jwt/jwt/commit/0951d184286dece21f73c85673fd308786ffe9c3",
+          "type": "Commit"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3553",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "github.com/golang-jwt/jwt/v5",
+    "packageId": "Go-github.com/golang-jwt/jwt/v5-v5.0.0",
+    "packageVersion": "v5.0.0",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-405",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "M4pE6jyS79nUzFfy4om+OJwdJsHOeQY8IC5WITnPqEw=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2025-30204",
+        "description": "The package golang-jwt is a Go implementation of JSON Web Tokens. The function `parse.ParseUnverified` splits (via a call to `strings.Split`) its argument (which is untrusted data) on periods. As a result, in the face of a malicious request whose Authorization header consists of `Bearer`  followed by many period characters, a call to that function incurs allocations to the tune of O(n) bytes (where n stands for the length of the function's argument), with a constant factor of about 16. This issue affects versions prior to 4.5.2, 5.x prior to 5.2.2.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-mh63-6h87-95cp",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang-jwt/jwt/releases/tag/v5.2.2",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/golang-jwt/jwt/commit/0951d184286dece21f73c85673fd308786ffe9c3",
+          "type": "Commit"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3553",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "golang.org/x/crypto",
+    "packageId": "Go-golang.org/x/crypto-v0.9.0",
+    "packageVersion": "v0.9.0",
+    "totalResults": 2,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-770",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "jJSGnZzQ8zmM46M731nNVn9mX5KymKCPXEXB8apLYEk=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2025-22869",
+        "description": "SSH servers which implement file transfer protocols are vulnerable to a Denial of Service (DoS) attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted. This issue affects golang.org/x/crypto versions prior to 0.35.0.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-hcg3-q754-cr77",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3487",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/71931",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/golang/crypto/releases/tag/v0.35.0",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/golang/crypto/commit/7292932d45d55c7199324ab0027cc86e8198aa22",
+          "type": "Commit"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-345",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "sxvLJnD6lyd2EmDChHFDXEFmeDZ8CkkeW5XYWL8728U=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:41Z",
+        "lastDetectionDate": "2025-05-08T13:07:41Z",
+        "firstScanId": "41b34223-6936-4fb0-a4c7-7b9f37b730cd",
+        "outdated": true,
+        "cve": "CVE-2023-48795",
+        "description": "The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles the use of sequence numbers. For example, there is an effective attack against SSH's use of \"ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC)\". The bypass occurs in \"chacha20-poly1305@openssh.com\" and (if CBC is used) the \"-etm@openssh.com\" MAC algorithms. This vulnerability affects Go-github.com/golang/crypto package versions prior to 0.17.0, Python-paramiko package versions prior to 3.4.0 and Python-asyncssh package versions prior to 2.14.2, CPP-libssh2 package all verisons, CPP-libssh package versions prior to 0.9.8, and 0.10.x verison prior to 0.10.6, NPM-ssh2 package verisons 1.15.0, Maven-com.github.mwiede:jsch package verisons prior to 0.2.15, Php-phpseclib/phpseclib package version prior to 1.0.22 , 2.0.x prior to 2.0.46 , 3.0.x prior to 3.0.35.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-45x7-px36-x8w8",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/go/issues/64784",
+          "type": "Issue"
+         },
+         {
+          "url": "https://pkg.go.dev/vuln/GO-2023-2402",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/golang/crypto/commit/9d2ee975ef9fe627bf0a6f01c1f69e8ef1d4f05d",
+          "type": "Commit",
+          "comment": "Go - github.com/golang/crypto"
+         },
+         {
+          "url": "https://github.com/golang/crypto/releases/tag/v0.17.0",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/paramiko/paramiko/issues/2337",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/paramiko/paramiko/commit/96db1e2be856eac66631761bae41167a1ebd2b4e",
+          "type": "Commit",
+          "comment": "Pypi - paramiko"
+         },
+         {
+          "url": "https://www.paramiko.org/changelog.html#3.4.0",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/libssh2/libssh2/issues/1290",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/libssh2/libssh2/pull/1291",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/libssh2/libssh2/commit/d34d9258b8420b19ec3f97b4cc5bf7aa7d98e35a",
+          "type": "Commit",
+          "comment": "Cpp - libssh2"
+         },
+         {
+          "url": "https://github.com/mkj/dropbear/commit/6e43be5c7b99dbee49dc72b6f989f29fdd7e9356",
+          "type": "Commit",
+          "comment": "CPP - dropbear"
+         },
+         {
+          "url": "https://github.com/mscdex/ssh2/commit/97b223f8891b96d6fc054df5ab1d5a1a545da2a3",
+          "type": "Commit",
+          "comment": "NPM - ssh2"
+         },
+         {
+          "url": "https://www.libssh.org/security/advisories/CVE-2023-48795.txt ",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/mwiede/jsch/issues/457",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/mwiede/jsch/pull/461",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/mwiede/jsch/commit/02f89c83fe30249896511b3af4803035de7ee471",
+          "type": "Commit",
+          "comment": "Maven - com.github.mwiede:jsch"
+         },
+         {
+          "url": "https://github.com/mwiede/jsch/releases/tag/jsch-0.2.15",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/phpseclib/phpseclib/issues/1972",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/phpseclib/phpseclib/commit/c8e3ab9317abae80d7f58fd9acd9214b57572b32",
+          "type": "Commit",
+          "comment": "Php - phpseclib/phpseclib"
+         },
+         {
+          "url": "https://github.com/phpseclib/phpseclib/releases/tag/1.0.22",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://gitlab.com/libssh/libssh-mirror/-/commit/4cef5e965a46e9271aed62631b152e4bd23c1e3c",
+          "type": "Commit",
+          "comment": "Cpp-libssh - Client side mitigation"
+         },
+         {
+          "url": "https://gitlab.com/libssh/libssh-mirror/-/commit/0870c8db28be9eb457ee3d4f9a168959d9507efd",
+          "type": "Commit",
+          "comment": "Cpp-libssh - Server side mitigations"
+         },
+         {
+          "url": "https://gitlab.com/libssh/libssh-mirror/-/commit/5846e57538c750c5ce67df887d09fa99861c79c6",
+          "type": "Commit",
+          "comment": "Cpp-libssh - Strip extensions from both kex lists for matching"
+         },
+         {
+          "url": "https://github.com/ronf/asyncssh/commit/0bc73254f41acb140187e0c89606311f88de5b7b",
+          "type": "Commit",
+          "comment": "pypi - asyncssh"
+         },
+         {
+          "url": "https://gitlab.com/libssh/libssh-mirror/-/tags/libssh-0.10.6",
+          "type": "Release Note"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "containerScanResults": null,
+ "categories": [
+  {
+   "name": "ASA Premium",
+   "subCategories": [
+    {
+     "name": "ASA_Premium_2",
+     "vulnerabilitiesBox": {
+      "name": "ASA Premium",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "Base Preset",
+   "subCategories": [
+    {
+     "name": "Base_Preset_291",
+     "vulnerabilitiesBox": {
+      "name": "Base Preset",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP ASVS",
+   "subCategories": [
+    {
+     "name": "V14_Configuration_345",
+     "vulnerabilitiesBox": {
+      "name": "V14 Configuration",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP Top 10 2021",
+   "subCategories": [
+    {
+     "name": "A7_Identification_and_Authentication_Failures_395",
+     "vulnerabilitiesBox": {
+      "name": "A7-Identification and Authentication Failures",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP Top 10 API 2023",
+   "subCategories": [
+    {
+     "name": "API8_Security_Misconfiguration_406",
+     "vulnerabilitiesBox": {
+      "name": "API8-Security Misconfiguration",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PCI DSS v4.0",
+   "subCategories": [
+    {
+     "name": "PCI_DSS__4_0____6_2_4_Vulnerabilities_in_software_development_425",
+     "vulnerabilitiesBox": {
+      "name": "PCI DSS (4.0) - 6.2.4 Vulnerabilities in software development",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "resolvedVulnerabilities": {
+  "resolvedTotal": 0,
+  "resolvedVulnerabilities": []
+ },
+ "vulnerabilityDetails": [
+  {
+   "vulnerabilityName": "Missing_HSTS_Header",
+   "risk": "Failure to set an HSTS header and provide it with a reasonable \"max-age\" value of at least one year may leave users vulnerable to Man-in-the-Middle attacks.\n\n",
+   "cause": "Many users browse to websites by simply typing the domain name into the address bar, without the protocol prefix. The browser will automatically assume that the user's intended protocol is HTTP, instead of the encrypted HTTPS protocol.\r\n\r\nWhen this initial request is made, an attacker can perform a Man-in-the-Middle attack and manipulate it to redirect users to a malicious web-site of the attacker's choosing. To protect the user from such an occurence, the HTTP Strict Transport Security (HSTS) header instructs the user's browser to disallow use of an unsecure HTTP connection to the the domain associated with the HSTS header.\r\n\r\nOnce a browser that supports the HSTS feature has visited a web-site and the header was set, it will no longer allow communicating with the domain over an HTTP connection.\r\n\r\nOnce an HSTS header was issued for a specific website, the browser is also instructed to prevent users from manually overriding and accepting an untrusted SSL certificate for as long as the \"max-age\" value still applies. The recommended \"max-age\" value is for at least one year in seconds, or 31536000.\n\n",
+   "generalRecommendations": "*   Before setting the HSTS header - consider the implications it may have:\n    *   Forcing HTTPS will prevent any future use of HTTP, which could hinder some testing\n    *   Disabling HSTS is not trivial, as once it is disabled on the site, it must also be disabled on the browser\n*   Set the HSTS header either explicitly within application code, or using web-server configurations.\n*   Ensure the \"max-age\" value for HSTS headers is set to 31536000 to ensure HSTS is strictly enforced for at least one year.\n*   Include the \"includeSubDomains\" to maximize HSTS coverage, and ensure HSTS is enforced on all sub-domains under the current domain\n    *   Note that this may prevent secure browser access to any sub-domains that utilize HTTP; however, use of HTTP is very severe and highly discouraged, even for websites that do not contain any sensitive information, as their contents can still be tampered via Man-in-the-Middle attacks to phish users under the HTTP domain.\n*   Once HSTS has been enforced, submit the web-application's address to an HSTS preload list - this will ensure that, even if a client is accessing the web-application for the first time (implying HSTS has not yet been set by the web-application), a browser that respects the HSTS preload list would still treat the web-application as if it had already issued an HSTS header. Note that this requires the server to have a trusted SSL certificate, and issue an HSTS header with a maxAge of 1 year (31536000)\n*   Note that this query is designed to return one result per application. This means that if more than one vulnerable response without an HSTS header is identified, only the first identified instance of this issue will be highlighted as a result. If a misconfigured instance of HSTS is identified (has a short lifespan, or is missing the \"includeSubDomains\" flag), that result will be flagged. Since HSTS is required to be enforced across the entire application to be considered a secure deployment of HSTS functionality, fixing this issue only where the query highlights this result is likely to produce subsequent results in other sections of the application; therefore, when adding this header via code, ensure it is uniformly deployed across the entire application. If this header is added via configuration, ensure that this configuration applies to the entire application.\n*   Note that misconfigured HSTS headers that do not contain the recommended max-age value of at least one year or the \"includeSubDomains\" flag will still return a result for a missing HSTS header.\n\n",
+   "cweId": 346
+  }
+ ],
+ "scsSummaryResults": [
+  {
+   "totalResults": 2,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 2
+    }
+   ],
+   "engineName": "2ms"
+  },
+  {
+   "totalResults": 10,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 6
+    },
+    {
+     "level": "Medium",
+     "value": 4
+    }
+   ],
+   "engineName": "Scorecard"
+  }
+ ]
+}

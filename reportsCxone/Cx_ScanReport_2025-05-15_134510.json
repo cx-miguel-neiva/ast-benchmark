@@ -1,0 +1,1629 @@
+{
+ "reportCreationDate": "2025-05-15T13:45:10.034600952Z",
+ "reportType": "Vulnerability Type",
+ "reportHeader": {
+  "projectName": "MAD-Goat-Project/mad-web-app",
+  "projectCreationDate": "2025-05-08T11:29:09.731228Z",
+  "tenantId": "9466949b-ac30-4616-bf0c-14711bb5bf90",
+  "scanDate": "2025-05-08T13:10:10.552893Z",
+  "severityDistribution": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 15
+   },
+   {
+    "level": "Medium",
+    "value": 31
+   }
+  ],
+  "scannedBranchName": "main",
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "mainBranch": "N/A"
+ },
+ "reportFilters": {
+  "filters": [
+   {
+    "filterName": "Severity",
+    "included": [
+     "Critical",
+     "High",
+     "Medium"
+    ],
+    "excluded": [
+     "Low",
+     "Information"
+    ]
+   },
+   {
+    "filterName": "Result State",
+    "included": [
+     "To Verify",
+     "Confirmed",
+     "Urgent"
+    ],
+    "excluded": [
+     "Not Exploitable",
+     "Proposed Not Exploitable"
+    ]
+   },
+   {
+    "filterName": "Status",
+    "included": [
+     "New",
+     "Recurrent"
+    ],
+    "excluded": []
+   },
+   {
+    "filterName": "Scanners",
+    "included": [
+     "SAST",
+     "IaC",
+     "Containers",
+     "SCA",
+     "SCS"
+    ],
+    "excluded": []
+   }
+  ],
+  "resultsLimit": "10000"
+ },
+ "scanInformation": {
+  "scanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+  "scanInitiator": "org_admin",
+  "scanDuration": 1810867383000,
+  "preset": "ASA Premium",
+  "totalScannedLoc": 6718,
+  "scannedLoc": 6501,
+  "iacScannedLoc": 217,
+  "totalScannedFiles": 100,
+  "scannedFiles": 88,
+  "iacScannedFiles": 12,
+  "viewerLink": "https://ast-master-components.dev.cxast.net/sast-results/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+  "sourceOrigin": "github",
+  "scanType": "Full Scan",
+  "branch": "main",
+  "totalDensity": 1.04,
+  "density": 0,
+  "iacDensity": 32.26,
+  "groups": null,
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "scannerStatus": [
+   {
+    "name": "SCS",
+    "status": "Completed"
+   },
+   {
+    "name": "SAST",
+    "status": "Completed"
+   },
+   {
+    "name": "SCA",
+    "status": "Completed"
+   },
+   {
+    "name": "Containers",
+    "status": "Failed"
+   },
+   {
+    "name": "IaC",
+    "status": "Completed"
+   }
+  ]
+ },
+ "projectAndScanTags": {
+  "scanTags": null,
+  "projectTags": {
+   "mad": "",
+   "madGoat": ""
+  }
+ },
+ "densityGrade": {
+  "totalResults": 7,
+  "loc": 6718,
+  "density": 1.04
+ },
+ "scannerOverview": {
+  "totalResults": 46,
+  "sastResults": {
+   "engine": "SAST",
+   "value": 0,
+   "percentage": 0
+  },
+  "iacResults": {
+   "engine": "IaC",
+   "value": 7,
+   "percentage": 15.22
+  },
+  "scaResults": {
+   "engine": "SCA",
+   "value": 22,
+   "percentage": 47.83
+  },
+  "containersResults": {
+   "engine": "Containers",
+   "value": 0,
+   "percentage": 0
+  },
+  "scsResults": {
+   "engine": "SCS",
+   "value": 17,
+   "percentage": 36.96
+  }
+ },
+ "statusOverview": {
+  "totalResults": 46,
+  "newResultsOverview": {
+   "numberOfResults": 17,
+   "percentage": 36.96
+  },
+  "recurrentResultsOverview": {
+   "numberOfResults": 29,
+   "percentage": 63.04
+  }
+ },
+ "stateOverview": {
+  "totalResults": 46,
+  "stateDistribution": [
+   {
+    "state": "To Verify",
+    "numberOfResults": 46,
+    "percentage": 100,
+    "density": {
+     "value": 1.04
+    }
+   },
+   {
+    "state": "Confirmed",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "state": "Urgent",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   }
+  ]
+ },
+ "languageOverview": [],
+ "technologyOverview": [
+  {
+   "technologyName": "DockerCompose",
+   "totalResults": 6,
+   "density": {
+    "value": 27.65
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 6
+    }
+   ]
+  },
+  {
+   "technologyName": "Dockerfile",
+   "totalResults": 1,
+   "density": {
+    "value": 4.61
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  }
+ ],
+ "packageOverview": [
+  {
+   "packageName": "Npm-vite-4.5.2",
+   "totalResults": 9,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 9
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-dompurify-3.0.11",
+   "totalResults": 3,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 2
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-axios-1.6.8",
+   "totalResults": 2,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 2
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-braces-3.0.2",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-cross-spawn-7.0.3",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-inflight-1.0.6",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-@babel/helpers-7.24.1",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-esbuild-0.18.20",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-micromatch-4.0.5",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-nanoid-3.3.7",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "packageName": "Npm-rollup-3.29.4",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "severityOverview": {
+  "totalResults": 46,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "level": "High",
+    "value": 15,
+    "percentage": 32.61,
+    "density": {
+     "value": 1.19
+    }
+   },
+   {
+    "level": "Medium",
+    "value": 31,
+    "percentage": 67.39,
+    "density": {
+     "value": 2.38
+    }
+   }
+  ]
+ },
+ "containersOverview": null,
+ "vulnerabilitiesTable": {
+  "totals": {
+   "detectedFiles": 0,
+   "resultsDistribution": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  "vulnerabilityTypes": []
+ },
+ "topTenVulnerabilities": {
+  "vulnerableFiles": 0,
+  "totalVulnerabilities": 0,
+  "vulnerabilitiesList": []
+ },
+ "topTenVulnerableFiles": {
+  "vulnerableFiles": 0,
+  "totalFiles": 88,
+  "vulnerableFilesList": []
+ },
+ "topFiveOldestBySeverity": [],
+ "scanResults": {
+  "totalResults": 0,
+  "severitiesBreakdown": [],
+  "resultsList": []
+ },
+ "iacScanResults": {
+  "totalResults": 7,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 1
+   },
+   {
+    "level": "Medium",
+    "value": 6
+   }
+  ],
+  "technology": [
+   {
+    "name": "Dockerfile",
+    "totalResults": 1,
+    "queries": [
+     {
+      "queryName": "Missing User Instruction",
+      "totalResults": 1,
+      "description": "A user should be specified in the dockerfile, otherwise the image will run as root",
+      "category": "Build Process",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=A%2B83FIfz35%2FAI5Cjv8L%2BNlTOaGY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/Dockerfile",
+        "issueType": "MissingAttribute",
+        "actualValue": "The 'Dockerfile' does not contain any 'USER' instruction",
+        "expectedValue": "The 'Dockerfile' should contain the 'USER' instruction"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "DockerCompose",
+    "totalResults": 6,
+    "queries": [
+     {
+      "queryName": "Security Opt Not Set",
+      "totalResults": 1,
+      "description": "Attribute 'security_opt' should be defined.",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=MCrG6ZI%2F8g8l8bDS5VRG6fGS3Mo%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/docker-compose.yml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       }
+      ]
+     },
+     {
+      "queryName": "Privileged Ports Mapped In Container",
+      "totalResults": 1,
+      "description": "Privileged ports (1 to 1023) should not be mapped. Also you should drop net_bind_service linux capability from the container unless you absolutely need to use priviledged ports.",
+      "category": "Networking and Firewall",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=YKQnsqTo4twOBQ%2FIOpV9Qr9LEfE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/docker-compose.yml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file has 'ports' attribute set to privileged ports (\u003c1024).",
+        "expectedValue": "Docker compose file to have 'ports' attribute not set to privileged ports (\u003c1024)."
+       }
+      ]
+     },
+     {
+      "queryName": "Memory Not Limited",
+      "totalResults": 1,
+      "description": "Memory limits should be defined for each container. This prevents potential resource exhaustion by ensuring that containers consume not more than the designated amount of memory",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=mGcZDeCNavannD1WuJ1mv4qNkoE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/docker-compose.yml",
+        "issueType": "MissingAttribute",
+        "actualValue": "'deploy' is not defined",
+        "expectedValue": "'deploy.resources.limits.memory' should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "Healthcheck Not Set",
+      "totalResults": 1,
+      "description": "Check containers periodically to see if they are running properly.",
+      "category": "Availability",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=RkxATa9v7hACBgyka5eSvvGiG08%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/docker-compose.yml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       }
+      ]
+     },
+     {
+      "queryName": "Container Traffic Not Bound To Host Interface",
+      "totalResults": 1,
+      "description": "Incoming container traffic should be bound to a specific host interface",
+      "category": "Networking and Firewall",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=4OsVqN9XpDNJvBPNpDXhA8%2B23d4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/docker-compose.yml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       }
+      ]
+     },
+     {
+      "queryName": "Container Capabilities Unrestricted",
+      "totalResults": 1,
+      "description": "Some capabilities are not needed in certain (or any) containers. Make sure that you only add capabilities that your container needs. Drop unnecessary capabilities as well.",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/8a38cbf9-35cf-44c8-b27a-4fb8260dd436/b9dd9ea2-42fc-4f83-a40a-74f1f21cec21/kics?result-id=NGSkwrNJEwraW3QQ412ZSmCGA8g%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "474dcc17-f6fc-4acf-9226-b03fe3bcf689",
+        "firstDetectionDate": "2025-05-08T11:30:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:40Z",
+        "fileName": "/docker-compose.yml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "scaScanResults": {
+  "totalResults": 22,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 7
+   },
+   {
+    "level": "Medium",
+    "value": 15
+   }
+  ],
+  "packages": [
+   {
+    "packageName": "dompurify",
+    "packageId": "Npm-dompurify-3.0.11",
+    "packageVersion": "3.0.11",
+    "totalResults": 3,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-1333",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "9nscZRBJHqwi99Gxy+VUVMy+hjaHKJI2xSUv/t9kMu8=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-45801",
+        "description": "DOMPurify is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. It has been discovered that malicious HTML using special nesting techniques can bypass the depth checking added to DOMPurify in recent releases. It was also possible to use Prototype Pollution to weaken the depth check. This renders dompurify unable to avoid Cross-Site Scripting (XSS) attacks. All users are advised to upgrade. There are no known workarounds for this vulnerability. This issue affects dompurify versions through 2.5.2, and 3.0.0 through 3.1.2. This issue also affects mermaid versions prior to 10.9.3.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-mmhx-hmjr-r674",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/releases/tag/3.1.3",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/pull/960",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/commit/1e520262bf4c66b5efda49e2316d6d1246ca7b21",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/advisories/GHSA-m4gq-x24j-jpmf",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-79",
+      "totalResults": 2,
+      "categoryResults": [
+       {
+        "resultId": "5ukNllIRSiu5OTO3E5JsITfGwpyHycgHcySuNJGVs7o=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-47875",
+        "description": "DOMPurify is a DOM-only, super-fast, uber-tolerant Cross-Site Scripting (XSS) sanitizer for HTML, MathML, and SVG. DOMpurify was vulnerable to nesting-based Mutation XSS (mXSS). This issue affects Dompurify versions through 2.5.0 and 3.0.0 through 3.1.0.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-gx9m-whjm-85jf",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/releases/tag/3.1.1",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/pull/943",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/commit/6ea80cd8b47640c20f2f230c7920b1f4ce4fdf7a",
+          "type": "Commit"
+         }
+        ]
+       },
+       {
+        "resultId": "DqS/9ydKtQiSlXomWe/L6sQq77p40ggDUSWRhuOWlVE=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-26791",
+        "description": "DOMPurify versions prior to 3.2.4 has an incorrect template literal regular expression, sometimes leading to Mutation Cross-Site Scripting (mXSS).",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-vhxf-7vqr-mrjg",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://ensy.zip/posts/dompurify-323-bypass/",
+          "type": "Blog Post"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/pull/1062",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/commit/d18ffcb554e0001748865da03ac75dd7829f0f02",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/cure53/DOMPurify/releases/tag/3.2.4",
+          "type": "Release Note"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "axios",
+    "packageId": "Npm-axios-1.6.8",
+    "packageVersion": "1.6.8",
+    "totalResults": 2,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-918",
+      "totalResults": 2,
+      "categoryResults": [
+       {
+        "resultId": "snQVqW4IhTbgEI5S+k16/LZGUZ8eKyakjLMz05tCgWs=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-39338",
+        "description": "The package axios allows SSRF via unexpected behaviour where requests for path-relative URLs get processed as protocol-relative URLs. This issue affects versions 1.3.2 through 1.7.3.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-8hc4-vh64-cxmj",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://jeffhacks.com/advisories/2024/06/24/CVE-2024-39338.html",
+          "type": "Disclosure"
+         },
+         {
+          "url": "https://github.com/axios/axios/issues/6463",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/axios/axios/pull/6543",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/axios/axios/commit/6b6b605eaf73852fb2dae033f1e786155959de3a",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/axios/axios/releases/tag/v1.7.4",
+          "type": "Release Note"
+         }
+        ]
+       },
+       {
+        "resultId": "GsqfKPYzVtKNwt1gB5+6s/4gA7v0XRiREfSYJiFZUAA=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-27152",
+        "description": "Axios is a promise-based HTTP client for the browser and node.js. The issue occurs when passing absolute URLs rather than protocol-relative URLs to Axios. Even if \"baseURL\" is set, Axios sends the request to the specified absolute URL, potentially causing SSRF and credential leakage. This issue impacts both server-side and client-side usage of Axios. This issue affects axios versions prior to 1.8.2.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-jr5f-v2jv-69x6",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/axios/axios/commit/fb8eec214ce7744b5ca787f2c3b8339b2f54b00f",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/axios/axios/releases/tag/v1.8.2",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/axios/axios/pull/6810",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/axios/axios/issues/6806",
+          "type": "Issue"
+         },
+         {
+          "url": "https://gist.github.com/david-arien/25e1cab8fd4f02eff98e244d8be693f4",
+          "type": "Disclosure"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "braces",
+    "packageId": "Npm-braces-3.0.2",
+    "packageVersion": "3.0.2",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-1050",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "yWGhX+ZqAzbZkMOGGR7KdKmrkAY9pan23cpuos9zuwM=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-4068",
+        "description": "The NPM package \"braces\", versions prior to 3.0.3, fails to limit the number of characters it can handle, which could lead to Memory Exhaustion. In \"lib/parse.js,\" if a malicious user sends \"imbalanced braces\" as input, the parsing will enter a loop, which will cause the program to start allocating heap memory without freeing it at any moment of the loop. Eventually, the JavaScript heap limit is reached, and the program will crash.",
+        "references": [
+         {
+          "url": "https://advisory.checkmarx.net/advisory/CVE-2024-4068/",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/micromatch/braces/issues/35",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/advisories/GHSA-grv7-fg5c-xmjg",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/micromatch/braces/pull/37",
+          "type": "Pull request",
+          "comment": "Reverted fix"
+         },
+         {
+          "url": "https://github.com/micromatch/braces/pull/40",
+          "type": "Pull request",
+          "comment": "Fix PR"
+         },
+         {
+          "url": "https://github.com/micromatch/braces/commit/415d660c3002d1ab7e63dbf490c9851da80596ff",
+          "type": "Commit",
+          "comment": "Lower defaultLength to 10000"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "cross-spawn",
+    "packageId": "Npm-cross-spawn-7.0.3",
+    "packageVersion": "7.0.3",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-1333",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "+E1khxTxaXTZc3J1vSuUqstOuz928/hYDud9FRokjXM=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-21538",
+        "description": "Versions of the package cross-spawn prior to 6.0.6 and 7.x prior to 7.0.5 are vulnerable to Regular Expression Denial of Service (ReDoS), due to improper input sanitization. An attacker can increase the CPU usage and crash the program by crafting a very large and well crafted string.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-3xgq-45jj-v275",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/issues/165",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/pull/160",
+          "type": "Pull request",
+          "comment": "Initial PR"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/commit/5ff3a07d9add449021d806e45c4168203aa833ff",
+          "type": "Commit",
+          "comment": "Initial fix"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/issues/163",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/pull/162",
+          "type": "Pull request",
+          "comment": "Additional PR"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/commit/640d391fde65388548601d95abedccc12943374f",
+          "type": "Commit",
+          "comment": "Additional fix"
+         },
+         {
+          "url": "https://github.com/moxystudio/node-cross-spawn/blob/v7.0.5/CHANGELOG.md",
+          "type": "Release Note"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "inflight",
+    "packageId": "Npm-inflight-1.0.6",
+    "packageVersion": "1.0.6",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-772",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "QZw9rkKlthjkImlXWCW+i1yIzVLbEzhlzFvCNL1g2j4=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": false,
+        "cve": "Cxdca8e59f-8bfe",
+        "description": "In NPM `inflight` there is a Memory Leak because some resources are not freed correctly after being used. It appears to affect all versions, as the issue was not addressed and no fix is found. NOTE: In the meantime, `logdna-agent`, a package that depends on `inflight`, has merged a commit to address this solely in their package (so it should be fixed in `logdna-agent` in versions 1.6.5 and later). `Node-glob`, a package that also depends on `inflight`, was also planning to address this by not using `inflight` after version 8 is released, but it is still being used.",
+        "references": [
+         {
+          "url": "https://github.com/npm/inflight/issues/5",
+          "type": "Issue"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "vite",
+    "packageId": "Npm-vite-4.5.2",
+    "packageVersion": "4.5.2",
+    "totalResults": 9,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-22",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "6G0hc5tnPgTQb/mYNg5l7U5sTqIIyVe8gXoajYKL2zs=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-46565",
+        "description": "Vite is a frontend tooling framework for javascript. In vite package versions through 4.5.13, 5.0.0-beta.0 through 5.4.18, 6.0.0-alpha.0 through 6.1.5, 6.2.0-beta.0 through 6.2.6, and 6.3.0-beta.0 through 6.3.3 the contents of files in the project root that are denied by a file matching pattern can be returned to the browser. Only apps explicitly exposing the Vite dev server to the network (using the `--host` or `server.host` config option) are affected. Only files that are under project root and are denied by a file matching pattern can be bypassed. `server.fs.deny` can contain patterns matching against files (by default it includes `.env`, `.env.*`, `*.{crt, pem}` as such patterns). These patterns were able to bypass files under `root` by using a combination of slash and dot (`/.`).",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-859w-5945-r5v3",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v6.3.4/packages/vite/CHANGELOG.md",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/c22c43de612eebb6c182dd67850c24e4fab8cacb",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/19965",
+          "type": "Pull request"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-200",
+      "totalResults": 5,
+      "categoryResults": [
+       {
+        "resultId": "2QO8zDNSft1q9qrgOa5azKFZkt9niJ08JUCuS7dabN4=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-32395",
+        "description": "Vite is a frontend tooling framework for JavaScript. The contents of arbitrary files can be returned to the browser if the dev server is running on Node or Bun. HTTP 1.1 spec (RFC 9112) does not allow \"#\" in \"request-target\". However, an attacker can send such a request. For those requests with an invalid \"request-line\" (it includes \"request-target\"), the spec recommends rejecting them with 400 or 301. The same can be said for HTTP 2. On Node and Bun, those requests are not rejected internally and are passed to the user land. For those requests, the value of \"http.IncomingMessage.url\" contains \"#\". Vite assumed \"req.url\" won't contain \"#\" when checking \"server.fs.deny\", allowing those kinds of requests to bypass the check. Only apps explicitly exposing the Vite dev server to the network (using \"--host\" or \"server.host\" config option) and running the Vite dev server on runtimes that are not Deno (e.g. Node, Bun) are affected. This issue affects vite versions through 4.5.12, 5.0.0-beta.0 through 5.4.17, 6.0.0-alpha.0 through 6.0.14, 6.1.0-beta.0 through 6.1.4, 6.2.0-beta.0 through 6.2.5, 6.3.0-beta.0 and 6.3.0-beta.1.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-356w-63v5-8wf4",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/175a83909f02d3b554452a7bd02b9f340cdfef70",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/19830",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v6.2.6/packages/vite/CHANGELOG.md#626-2025-04-10",
+          "type": "Release Note"
+         }
+        ]
+       },
+       {
+        "resultId": "43N5gxY5panHH59/yohcw2dA7KsH9RwQOkCGZpxCjCE=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-31207",
+        "description": "Vite (French word for \"quick\", pronounced \"/vit/\", like \"veet\") is a frontend build tooling to improve the frontend development experience. \"server.fs.deny\" does not deny requests for patterns with directories. This issue affects vite versions 2.7.0-beta.0 through 2.9.17, 3.0.0-alpha.0 through 3.2.8, 4.0.0-alpha.0 through 4.5.2, 5.0.0-beta.0 through 5.0.12, 5.1.0-beta.0 through 5.1.6, 5.2.0-beta.0 through 5.2.5. ",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-8jhw-289h-jh2g",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v5.2.6/packages/vite/CHANGELOG.md#526-2024-03-24",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/ba5269cca81de3f5fbb0f49d58a1c55688043258",
+          "type": "Commit"
+         }
+        ]
+       },
+       {
+        "resultId": "PYJxW/w9MTV9VT7BkILsCCn3mhoM6u2K0iczdzpwQF0=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-45811",
+        "description": "Vite a frontend build tooling framework for JavaScript. In versions through 3.2.10, 4.0.0-alpha.0 through 4.5.3, 5.0.0-beta.0 through 5.1.7, 5.2.0-beta.0 through 5.2.13, 5.3.0-beta.0 through 5.3.5 and 5.4.0-beta.0 through 5.4.5, and 6.0.0-alpha.0 through 6.0.0-beta.0 the contents of arbitrary files can be returned to the browser. `@fs` denies access to files outside of Vite serving allow list. Adding `?import\u0026raw` to the URL bypasses this limitation and returns the file content if it exists. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-9cwx-2883-4wfx",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/9d2413c8b64bfb1dfd953340b4e1b5972d5440aa",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/18112",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v5.4.6/packages/vite/CHANGELOG.md#546-2024-09-16",
+          "type": "Release Note"
+         }
+        ]
+       },
+       {
+        "resultId": "VbC74h/ZiUOaimF/sJlkb/8y8w1SKPucCIGtgtwjyjo=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-31125",
+        "description": "Vite is a frontend tooling framework for javascript. Vite exposes the content of non-allowed files using `?inline\u0026import` or `?raw?import`. Only apps explicitly exposing the Vite dev server to the network (using `--host` or `server.host` config option) are affected. This issue affects versions prior to 4.5.11, 5.x prior to 5.4.16, 6.0.x prior to 6.0.13, 6.1.x prior to 6.1.3, and 6.2.x prior to 6.2.4.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-4r4m-qw57-chr8",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v6.3.0-beta.1/packages/vite/CHANGELOG.md",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/59673137c45ac2bcfad1170d954347c1a17ab949",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/19761",
+          "type": "Pull request"
+         }
+        ]
+       },
+       {
+        "resultId": "hqhDc1OiwLdlPVxAwOTsWAmgRQYfTugYD+ELQJz6yXM=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-31486",
+        "description": "A vulnerability in Vite allows the contents of arbitrary files to be returned to the browser. By appending \"?.svg\" along with \"?.wasm?init\" or setting the \"sec-fetch-dest: script\" header, an attacker can bypass the \"server.fs.deny\" restriction. This is only possible if the file is smaller than the default \"build.assetsInlineLimit\" (4kB) and when the Vite development server is explicitly exposed to the network via the \"--host\" flag or \"server.host\" configuration. The vulnerability affects vite package versions through 4.5.11, 5.0.0-beta.0 through 5.4.16, 6.0.0-alpha.0 through 6.0.13, 6.1.0-beta.0 through 6.1.3, and 6.2.0-beta.0 through 6.2.4.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-xcj6-pq6g-qj4x",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/62d7e81ee189d65899bb65f3263ddbd85247b647",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/19782",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v6.2.5/packages/vite/CHANGELOG.md",
+          "type": "Release Note"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-79",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "mqRja/5eI56frRvyl1Irbojomc3ZvY5XtvsIMYA8whc=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-45812",
+        "description": "Vite a frontend build tooling framework for javascript. In vite versions through 3.2.10, 4.0.0-alpha.0 through 4.5.3, 5.0.0-beta.0 through 5.1.7, 5.2.0-beta.0 through 5.2.13, 5.3.0-beta.0 through 5.3.5, 5.4.0-beta.0 through 5.4.5, and 6.0.0-alpha.0 through 6.0.0-beta.0 were discovered to contain a DOM Clobbering vulnerability when building scripts to `cjs`/`iife`/`umd` output format. The DOM Clobbering gadget in the module can lead to cross-site scripting (XSS) in web pages where scriptless attacker-controlled HTML elements (e.g., an img tag with an unsanitized name attribute) are present. DOM Clobbering is a type of code-reuse attack where the attacker first embeds a piece of non-script, seemingly benign HTML markups in the webpage (e.g. through a post or comment) and leverages the gadgets (pieces of js code) living in the existing javascript code to transform it into executable code. We have identified a DOM Clobbering vulnerability in Vite bundled scripts, particularly when the scripts dynamically import other scripts from the assets folder and the developer sets the build output format to `cjs`, `iife`, or `umd`. In such cases, Vite replaces relative paths starting with `__VITE_ASSET__` using the URL retrieved from `document.currentScript`. However, this implementation is vulnerable to a DOM Clobbering attack. The `document.currentScript` lookup can be shadowed by an attacker via the browser's named DOM tree element access mechanism. This manipulation allows an attacker to replace the intended script element with a malicious HTML element. When this happens, the src attribute of the attacker-controlled element is used as the URL for importing scripts, potentially leading to the dynamic loading of scripts from an attacker-controlled server. This vulnerability can result in cross-site scripting (XSS) attacks on websites that include Vite-bundled files (configured with an output format of `cjs`, `iife`, or `umd`) and allow users to inject certain scriptless HTML tags without properly sanitizing the `name` or `id` attributes. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-64vr-g452-qvp3",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2312935",
+          "type": "Issue"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v5.4.6/packages/vite/CHANGELOG.md#546-2024-09-16",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/ade1d89660e17eedfd35652165b0c26905259fad",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/18115",
+          "type": "Pull request"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-1385",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "Hl9jH3dGni2AF1BiOMWE++pbgL1BNgLC35WPMiHdndg=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-24010",
+        "description": "Vite is a frontend tooling framework for JavaScript. Vite allowed any websites to send any requests to the development server and read the response due to default CORS settings and lack of validation on the Origin header for WebSocket connections. This vulnerability is fixed in versions 6.0.9, 5.4.12, and 4.5.6.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-vg6x-rcgg-rjx6",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/19234",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/bd896fb5f312fc0ff1730166d1d142fc0d34ba6d",
+          "type": "Commit"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-284",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "Yd5NCUnjUM3IB/32XF29/jxzIqqLxlj516RRFhxu2o8=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-30208",
+        "description": "Vite, a provider of frontend development tooling, has a vulnerability in versions through 4.5.9, 5.0.0 through 5.4.14, 6.0.0 through 6.0.11, 6.1.0 through 6.1.1, and 6.2.0 through 6.2.2 . `@fs` denies access to files outside of Vite serving allow list. Adding `?raw??` or `?import\u0026raw??` to the URL bypasses this limitation and returns the file content if it exists. This bypass exists because trailing separators such as `?` are removed in several places, but are not accounted for in query string regexes. The contents of arbitrary files can be returned to the browser. Only apps explicitly exposing the Vite dev server to the network (using `--host` or `server.host` config option) are affected. Versions 4.5.10, 5.4.15, 6.0.12, 6.1.2, and 6.2.3 fix the issue.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-x574-m823-4x7w",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/blob/v6.2.3/packages/vite/CHANGELOG.md#623-2025-03-24",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/pull/19702",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/vitejs/vite/commit/262b5ec7ae4981208339b7b87fefbd3dd8465851",
+          "type": "Commit"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "@babel/helpers",
+    "packageId": "Npm-@babel/helpers-7.24.1",
+    "packageVersion": "7.24.1",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-1333",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "HkrprAmjGrGKGVTMhH8pc1Oz5MrS6ZLI1+chpyx4C/U=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2025-27789",
+        "description": "Babel is a compiler for writing next-generation JavaScript. In affected versions of Babel, to compile regular expressions named capturing groups, Babel will generate a polyfill for the `.replace` method that has quadratic complexity on some specific replacement pattern strings (i.e. the second argument passed to `.replace`). Generated code is vulnerable if all the following conditions are true: Using Babel to compile regular expressions named capturing groups, using the `.replace` method on a regular expression that contains named capturing groups, and the code using untrusted strings as the second argument of `.replace`. This issue affects @babel/helpers and @babel/runtime-corejs3 packages versions through 7.26.9, and 8.0.0-alpha.0 through 8.0.0-alpha.16 . Note that just updating Babel dependencies is not enough; one will also need to re-compile the code. No known workarounds are available.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-968p-4wvh-cqc8",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/babel/babel/commit/d5952e80c0faa5ec20e35085531b6e572d31dad4",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/babel/babel/pull/17173",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/babel/babel/releases/tag/v8.0.0-alpha.17",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/babel/babel/issues/17174",
+          "type": "Issue"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "esbuild",
+    "packageId": "Npm-esbuild-0.18.20",
+    "packageVersion": "0.18.20",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-346",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "NAakPb8BfhO1zGtHIjtLu4hvwebu7j6IoTYcTZWiMi4=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "Cxbb85e86c-2fac",
+        "description": "esbuild is an extremely fast bundler for the web, allowing any website to send any request to the development server and read the response due to default CORS settings. This issue affects versions prior to 0.25.0.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-67mh-4wv8-2f99",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/evanw/esbuild/releases/tag/v0.25.0",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/evanw/esbuild/commit/de85afd65edec9ebc44a11e245fd9e9a2e99760d",
+          "type": "Commit"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "micromatch",
+    "packageId": "Npm-micromatch-4.0.5",
+    "packageVersion": "4.0.5",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-1333",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "1syj2YLQpR6nsWS+Vrugm11XCo30UsUvzoNfIF3j2z4=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-4067",
+        "description": "The NPM package \"micromatch\" prior to 4.0.8 is vulnerable to Regular Expression Denial of Service (ReDoS). The vulnerability occurs in \"micromatch.braces()\" in \"index.js\" because the pattern \".*\" will greedily match anything. By passing a malicious payload, the pattern matching will keep backtracking to the input while it doesn't find the closing bracket. As the input size increases, the consumption time will also increase until it causes the application to hang or slow down. There was a merged fix but further testing shows the issue still persists. This issue should be mitigated by using a safe pattern that won't start backtracking the regular expression due to its greedy matching.",
+        "references": [
+         {
+          "url": "https://advisory.checkmarx.net/advisory/CVE-2024-4067/",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/micromatch/micromatch/pull/266",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/micromatch/micromatch/commit/03aa8052171e878897eee5d7bb2ae0ae83ec2ade",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/micromatch/micromatch/releases/tag/4.0.8",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/advisories/GHSA-952p-6rrq-rcjv",
+          "type": "Advisory",
+          "comment": "GHSA"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "nanoid",
+    "packageId": "Npm-nanoid-3.3.7",
+    "packageVersion": "3.3.7",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-835",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "PjXww5jzFEMDuwJ+WjoBVJAI+qlIFXTzdpgdN7uQlMY=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-55565",
+        "description": "The package nanoid versions through 3.3.7 and 4.0.0 through 5.0.8 mishandle non-integer values. ",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-mwcw-c2x4-8c55",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/ai/nanoid/pull/510",
+          "type": "Pull request"
+         },
+         {
+          "url": "https://github.com/ai/nanoid/commit/d643045f40d6dc8afa000a644d857da1436ed08c",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/ai/nanoid/releases/tag/5.0.9",
+          "type": "Release Note"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "packageName": "rollup",
+    "packageId": "Npm-rollup-3.29.4",
+    "packageVersion": "3.29.4",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-79",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "5gOilbSK9uRdsaOQ7JYUWzeGlBfBzV4Z/088CAaAgjg=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:13Z",
+        "lastDetectionDate": "2025-05-08T13:10:13Z",
+        "firstScanId": "8a38cbf9-35cf-44c8-b27a-4fb8260dd436",
+        "outdated": true,
+        "cve": "CVE-2024-47068",
+        "description": "Rollup is a module bundler for JavaScript. In rollup versions prior to 2.79.2, 3.x prior to 3.29.5, and 4.x prior to 4.22.4 are susceptible to a DOM Clobbering vulnerability when bundling scripts with properties from \"import.meta\" (e.g., \"import.meta.url\") in \"cjs\"/\"umd\"/\"iife\" format. The DOM Clobbering gadget can lead to cross-site scripting (XSS) in web pages where scriptless attacker-controlled HTML elements (e.g., an \"img\" tag with an unsanitized \"name\" attribute) are present.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-gcx4-mw62-g8wm",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/rollup/rollup/releases/tag/v4.22.4",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/rollup/rollup/commit/e2552c9e955e0a61f70f508200ee9f752f85a541",
+          "type": "Commit"
+         },
+         {
+          "url": "https://github.com/rollup/rollup/pull/5671",
+          "type": "Pull request"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "containerScanResults": null,
+ "categories": [],
+ "resolvedVulnerabilities": {
+  "resolvedTotal": 0,
+  "resolvedVulnerabilities": []
+ },
+ "vulnerabilityDetails": [],
+ "scsSummaryResults": [
+  {
+   "totalResults": 17,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 7
+    },
+    {
+     "level": "Medium",
+     "value": 10
+    }
+   ],
+   "engineName": "Scorecard"
+  }
+ ]
+}

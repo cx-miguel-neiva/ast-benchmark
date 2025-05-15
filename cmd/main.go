@@ -58,7 +58,6 @@ func cxoneCmd() *cobra.Command {
 				return fmt.Errorf("report file does not exist at path: %s", filePath)
 			}
 
-			log.Info().Str("path", filePath).Msg("Processing report with cxone plugin")
 			pluginName := cmd.Name()
 			results, err := GetResults(filePath, pluginName)
 			if err != nil {

@@ -1,0 +1,1468 @@
+{
+ "reportCreationDate": "2025-05-15T13:56:41.625745931Z",
+ "reportType": "Vulnerability Type",
+ "reportHeader": {
+  "projectName": "MAD-Goat-Project/mad-goat-images",
+  "projectCreationDate": "2025-05-08T11:29:09.483841Z",
+  "tenantId": "9466949b-ac30-4616-bf0c-14711bb5bf90",
+  "scanDate": "2025-05-08T13:07:19.180311Z",
+  "severityDistribution": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 11
+   },
+   {
+    "level": "Medium",
+    "value": 14
+   }
+  ],
+  "scannedBranchName": "main",
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "mainBranch": "N/A"
+ },
+ "reportFilters": {
+  "filters": [
+   {
+    "filterName": "Severity",
+    "included": [
+     "Critical",
+     "High",
+     "Medium"
+    ],
+    "excluded": [
+     "Low",
+     "Information"
+    ]
+   },
+   {
+    "filterName": "Result State",
+    "included": [
+     "To Verify",
+     "Confirmed",
+     "Urgent"
+    ],
+    "excluded": [
+     "Not Exploitable",
+     "Proposed Not Exploitable"
+    ]
+   },
+   {
+    "filterName": "Status",
+    "included": [
+     "New",
+     "Recurrent"
+    ],
+    "excluded": []
+   },
+   {
+    "filterName": "Scanners",
+    "included": [
+     "SAST",
+     "IaC",
+     "Containers",
+     "SCA",
+     "SCS"
+    ],
+    "excluded": []
+   }
+  ],
+  "resultsLimit": "10000"
+ },
+ "scanInformation": {
+  "scanId": "bc53443b-9a26-4feb-b536-c0c4596aaf9c",
+  "scanInitiator": "org_admin",
+  "scanDuration": 69308965000,
+  "preset": "ASA Premium",
+  "totalScannedLoc": 581,
+  "scannedLoc": 216,
+  "iacScannedLoc": 365,
+  "totalScannedFiles": 26,
+  "scannedFiles": 15,
+  "iacScannedFiles": 11,
+  "viewerLink": "https://ast-master-components.dev.cxast.net/sast-results/a245a032-c5a3-4bda-bed6-8385aab2c369/bc53443b-9a26-4feb-b536-c0c4596aaf9c",
+  "sourceOrigin": "github",
+  "scanType": "Full Scan",
+  "branch": "main",
+  "totalDensity": 6.88,
+  "density": 18.52,
+  "iacDensity": 0,
+  "groups": null,
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "scannerStatus": [
+   {
+    "name": "SAST",
+    "status": "Completed"
+   },
+   {
+    "name": "SCA",
+    "status": "Completed"
+   },
+   {
+    "name": "Containers",
+    "status": "Failed"
+   },
+   {
+    "name": "IaC",
+    "status": "Completed"
+   },
+   {
+    "name": "SCS",
+    "status": "Completed"
+   }
+  ]
+ },
+ "projectAndScanTags": {
+  "scanTags": null,
+  "projectTags": {
+   "mad": "",
+   "madGoat": ""
+  }
+ },
+ "densityGrade": {
+  "totalResults": 4,
+  "loc": 581,
+  "density": 6.88
+ },
+ "scannerOverview": {
+  "totalResults": 25,
+  "sastResults": {
+   "engine": "SAST",
+   "value": 4,
+   "percentage": 16
+  },
+  "iacResults": {
+   "engine": "IaC",
+   "value": 0,
+   "percentage": 0
+  },
+  "scaResults": {
+   "engine": "SCA",
+   "value": 1,
+   "percentage": 4
+  },
+  "containersResults": {
+   "engine": "Containers",
+   "value": 0,
+   "percentage": 0
+  },
+  "scsResults": {
+   "engine": "SCS",
+   "value": 20,
+   "percentage": 80
+  }
+ },
+ "statusOverview": {
+  "totalResults": 25,
+  "newResultsOverview": {
+   "numberOfResults": 0,
+   "percentage": 0
+  },
+  "recurrentResultsOverview": {
+   "numberOfResults": 25,
+   "percentage": 100
+  }
+ },
+ "stateOverview": {
+  "totalResults": 25,
+  "stateDistribution": [
+   {
+    "state": "To Verify",
+    "numberOfResults": 25,
+    "percentage": 100,
+    "density": {
+     "value": 6.88
+    }
+   },
+   {
+    "state": "Confirmed",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "state": "Urgent",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   }
+  ]
+ },
+ "languageOverview": [
+  {
+   "languageName": "python",
+   "totalResults": 4,
+   "density": {
+    "value": 18.52
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 3
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  }
+ ],
+ "technologyOverview": [],
+ "packageOverview": [
+  {
+   "packageName": "Python-Flask-2.0.1",
+   "totalResults": 1,
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 1
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  }
+ ],
+ "severityOverview": {
+  "totalResults": 25,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "level": "High",
+    "value": 11,
+    "percentage": 44,
+    "density": {
+     "value": 17.21
+    }
+   },
+   {
+    "level": "Medium",
+    "value": 14,
+    "percentage": 56,
+    "density": {
+     "value": 24.1
+    }
+   }
+  ]
+ },
+ "containersOverview": null,
+ "vulnerabilitiesTable": {
+  "totals": {
+   "detectedFiles": 1,
+   "resultsDistribution": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 3
+    },
+    {
+     "level": "Medium",
+     "value": 1
+    }
+   ]
+  },
+  "vulnerabilityTypes": [
+   {
+    "vulnerabilityType": "Reflected_XSS",
+    "severity": "High",
+    "detectedFiles": 1,
+    "resultsDistribution": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 2
+     },
+     {
+      "level": "Medium",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "vulnerabilityType": "SSRF",
+    "severity": "High",
+    "detectedFiles": 1,
+    "resultsDistribution": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 1
+     },
+     {
+      "level": "Medium",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "vulnerabilityType": "Missing_HSTS_Header",
+    "severity": "Medium",
+    "detectedFiles": 1,
+    "resultsDistribution": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 0
+     },
+     {
+      "level": "Medium",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "topTenVulnerabilities": {
+  "vulnerableFiles": 1,
+  "totalVulnerabilities": 4,
+  "vulnerabilitiesList": [
+   {
+    "vulnerabilityType": "Reflected_XSS",
+    "total": 2,
+    "vulnerabilitySeverities": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 2
+     },
+     {
+      "level": "Medium",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "vulnerabilityType": "SSRF",
+    "total": 1,
+    "vulnerabilitySeverities": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 1
+     },
+     {
+      "level": "Medium",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "vulnerabilityType": "Missing_HSTS_Header",
+    "total": 1,
+    "vulnerabilitySeverities": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 0
+     },
+     {
+      "level": "Medium",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "topTenVulnerableFiles": {
+  "vulnerableFiles": 1,
+  "totalFiles": 15,
+  "vulnerableFilesList": [
+   {
+    "fileName": "/nginix/commandInjection/app.py",
+    "total": 4,
+    "fileSeverities": [
+     {
+      "level": "Critical",
+      "value": 0
+     },
+     {
+      "level": "High",
+      "value": 3
+     },
+     {
+      "level": "Medium",
+      "value": 1
+     }
+    ]
+   }
+  ]
+ },
+ "topFiveOldestBySeverity": [
+  {
+   "level": "Critical",
+   "vulnerabilitiesDistribution": []
+  },
+  {
+   "level": "High",
+   "vulnerabilitiesDistribution": [
+    {
+     "vulnerabilityType": "Reflected_XSS",
+     "age": 7
+    },
+    {
+     "vulnerabilityType": "SSRF",
+     "age": 7
+    }
+   ]
+  },
+  {
+   "level": "Medium",
+   "vulnerabilitiesDistribution": [
+    {
+     "vulnerabilityType": "Missing_HSTS_Header",
+     "age": 7
+    }
+   ]
+  }
+ ],
+ "scanResults": {
+  "totalResults": 4,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 3
+   },
+   {
+    "level": "Medium",
+    "value": 1
+   }
+  ],
+  "resultsList": [
+   {
+    "queryName": "Reflected_XSS",
+    "queryDescriptionLink": "https://ast-master-components.dev.cxast.net/results/bc53443b-9a26-4feb-b536-c0c4596aaf9c/a245a032-c5a3-4bda-bed6-8385aab2c369/sast/description/79/11301225196674651062",
+    "queryId": 11301225196674651062,
+    "description": "The method @DestinationMethod embeds untrusted data in generated output with @DestinationElement, at line @DestinationLine of @DestinationFile. This untrusted data is embedded into the output without proper sanitization or encoding, enabling an attacker to inject malicious code into the generated web-page.\n\nThe attacker would be able to alter the returned web page by simply providing modified data in the user input @SourceElement, which is read by the @SourceMethod method at line @SourceLine of @SourceFile. This input then flows through the code straight to the output web page, without sanitization. \r\n\r\nThis can enable a Reflected Cross-Site Scripting (XSS) attack.\n\n",
+    "vulnerabilitiesTotal": 2,
+    "queryPath": "Python/Python_High_Risk/Reflected_XSS",
+    "cweId": 79,
+    "categories": [
+     {
+      "name": "ASA Premium",
+      "subCategories": [
+       "ASA Premium"
+      ]
+     },
+     {
+      "name": "ASD STIG 6.1",
+      "subCategories": [
+       "APSC-DV-002490 - CAT I The application must protect from Cross-Site Scripting (XSS) vulnerabilities."
+      ]
+     },
+     {
+      "name": "CWE top 25",
+      "subCategories": [
+       "CWE top 25"
+      ]
+     },
+     {
+      "name": "FISMA 2014",
+      "subCategories": [
+       "System And Information Integrity"
+      ]
+     },
+     {
+      "name": "MOIS(KISA) Secure Coding 2021",
+      "subCategories": [
+       "MOIS(KISA) Verification and representation of input data"
+      ]
+     },
+     {
+      "name": "NIST SP 800-53",
+      "subCategories": [
+       "SI-15 Information Output Filtering (P0)"
+      ]
+     },
+     {
+      "name": "OWASP ASVS",
+      "subCategories": [
+       "V05 Validation, Sanitization and Encoding"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2013",
+      "subCategories": [
+       "A3-Cross-Site Scripting (XSS)"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2017",
+      "subCategories": [
+       "A7-Cross-Site Scripting (XSS)"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2021",
+      "subCategories": [
+       "A3-Injection"
+      ]
+     },
+     {
+      "name": "PCI DSS v3.2.1",
+      "subCategories": [
+       "PCI DSS (3.2.1) - 6.5.7 - Cross-site scripting (XSS)"
+      ]
+     },
+     {
+      "name": "PCI DSS v4.0",
+      "subCategories": [
+       "PCI DSS (4.0) - 6.2.4 Vulnerabilities in software development"
+      ]
+     },
+     {
+      "name": "SANS top 25",
+      "subCategories": [
+       "SANS top 25"
+      ]
+     },
+     {
+      "name": "Top Tier",
+      "subCategories": [
+       "Top Tier"
+      ]
+     }
+    ],
+    "vulnerabilities": [
+     {
+      "similarityId": -1671346119,
+      "status": "Recurrent",
+      "state": "To Verify",
+      "severity": "High",
+      "foundDate": "2025-05-08T13:08:06Z",
+      "firstFoundDate": "2025-05-08T11:30:01Z",
+      "sourceFileName": "/nginix/commandInjection/app.py",
+      "destinationFileName": "/nginix/commandInjection/app.py",
+      "sourceNode": "args",
+      "destinationNode": "ReturnStmt",
+      "sourceLine": 76,
+      "sourceCode": "ip_address = request.args.get('ip')",
+      "destinationLine": 87,
+      "destinationCode": "return f'Connecting to {ip_address}:{port}'",
+      "nodes": [
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "get",
+        "line": 76,
+        "code": "ip_address = request.args.get('ip')"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "ip_address",
+        "line": 76,
+        "code": "ip_address = request.args.get('ip')"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "ip_address",
+        "line": 87,
+        "code": "return f'Connecting to {ip_address}:{port}'"
+       }
+      ],
+      "resultViewerLink": "https://ast-master-components.dev.cxast.net/sast-results/a245a032-c5a3-4bda-bed6-8385aab2c369/bc53443b-9a26-4feb-b536-c0c4596aaf9c?resultId=47lqbS0%2Bfdhd4c3TS4Bot4KMccI%3D",
+      "firstScanID": "4820de2f-0f57-4eaa-a38d-a82ba03b3d18",
+      "notes": []
+     },
+     {
+      "similarityId": -988504316,
+      "status": "Recurrent",
+      "state": "To Verify",
+      "severity": "High",
+      "foundDate": "2025-05-08T13:08:06Z",
+      "firstFoundDate": "2025-05-08T11:30:01Z",
+      "sourceFileName": "/nginix/commandInjection/app.py",
+      "destinationFileName": "/nginix/commandInjection/app.py",
+      "sourceNode": "args",
+      "destinationNode": "ReturnStmt",
+      "sourceLine": 77,
+      "sourceCode": "port = request.args.get('port')",
+      "destinationLine": 87,
+      "destinationCode": "return f'Connecting to {ip_address}:{port}'",
+      "nodes": [
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "get",
+        "line": 77,
+        "code": "port = request.args.get('port')"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "port",
+        "line": 77,
+        "code": "port = request.args.get('port')"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "port",
+        "line": 87,
+        "code": "return f'Connecting to {ip_address}:{port}'"
+       }
+      ],
+      "resultViewerLink": "https://ast-master-components.dev.cxast.net/sast-results/a245a032-c5a3-4bda-bed6-8385aab2c369/bc53443b-9a26-4feb-b536-c0c4596aaf9c?resultId=NGneDkbWmaXj4lfw7QL61PtGUTM%3D",
+      "firstScanID": "4820de2f-0f57-4eaa-a38d-a82ba03b3d18",
+      "notes": []
+     }
+    ]
+   },
+   {
+    "queryName": "SSRF",
+    "queryDescriptionLink": "https://ast-master-components.dev.cxast.net/results/bc53443b-9a26-4feb-b536-c0c4596aaf9c/a245a032-c5a3-4bda-bed6-8385aab2c369/sast/description/918/5776908364364596990",
+    "queryId": 5776908364364596990,
+    "description": "The application sends a request to a remote server, for some resource, using @DestinationElement in @DestinationFile:@DestinationLine. However, an attacker can control the target of the request, by sending a URL or other data in @SourceElement at @SourceFile:@SourceLine.\n\n",
+    "vulnerabilitiesTotal": 1,
+    "queryPath": "Python/Python_High_Risk/SSRF",
+    "cweId": 918,
+    "categories": [
+     {
+      "name": "ASA Premium",
+      "subCategories": [
+       "ASA Premium"
+      ]
+     },
+     {
+      "name": "CWE top 25",
+      "subCategories": [
+       "CWE top 25"
+      ]
+     },
+     {
+      "name": "FISMA 2014",
+      "subCategories": [
+       "System And Information Integrity"
+      ]
+     },
+     {
+      "name": "MOIS(KISA) Secure Coding 2021",
+      "subCategories": [
+       "MOIS(KISA) Verification and representation of input data"
+      ]
+     },
+     {
+      "name": "NIST SP 800-53",
+      "subCategories": [
+       "SI-10 Information Input Validation (P1)"
+      ]
+     },
+     {
+      "name": "OWASP ASVS",
+      "subCategories": [
+       "V05 Validation, Sanitization and Encoding"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2017",
+      "subCategories": [
+       "A5-Broken Access Control"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2021",
+      "subCategories": [
+       "A10-Server-Side Request Forgery"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 API 2023",
+      "subCategories": [
+       "API7-Server Side Request Forgery"
+      ]
+     }
+    ],
+    "vulnerabilities": [
+     {
+      "similarityId": 1584726070,
+      "status": "Recurrent",
+      "state": "To Verify",
+      "severity": "High",
+      "foundDate": "2025-05-08T13:08:06Z",
+      "firstFoundDate": "2025-05-08T11:30:01Z",
+      "sourceFileName": "/nginix/commandInjection/app.py",
+      "destinationFileName": "/nginix/commandInjection/app.py",
+      "sourceNode": "get",
+      "destinationNode": "connect",
+      "sourceLine": 76,
+      "sourceCode": "ip_address = request.args.get('ip')",
+      "destinationLine": 81,
+      "destinationCode": "s.connect((ip_address, int(port)))",
+      "nodes": [
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "ip_address",
+        "line": 76,
+        "code": "ip_address = request.args.get('ip')"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "ip_address",
+        "line": 81,
+        "code": "s.connect((ip_address, int(port)))"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "TupleInitializer",
+        "line": 81,
+        "code": "s.connect((ip_address, int(port)))"
+       },
+       {
+        "fileName": "/nginix/commandInjection/app.py",
+        "method": "",
+        "node": "TupleCreateExpr",
+        "line": 81,
+        "code": "s.connect((ip_address, int(port)))"
+       }
+      ],
+      "resultViewerLink": "https://ast-master-components.dev.cxast.net/sast-results/a245a032-c5a3-4bda-bed6-8385aab2c369/bc53443b-9a26-4feb-b536-c0c4596aaf9c?resultId=uyNW0nkQkH09BHoKapge9w%2B2Lxg%3D",
+      "firstScanID": "4820de2f-0f57-4eaa-a38d-a82ba03b3d18",
+      "notes": []
+     }
+    ]
+   },
+   {
+    "queryName": "Missing_HSTS_Header",
+    "queryDescriptionLink": "https://ast-master-components.dev.cxast.net/results/bc53443b-9a26-4feb-b536-c0c4596aaf9c/a245a032-c5a3-4bda-bed6-8385aab2c369/sast/description/346/7929843929890808532",
+    "queryId": 7929843929890808532,
+    "description": "The web-application does not define an HSTS header, leaving it vulnerable to attack.\n\n",
+    "vulnerabilitiesTotal": 1,
+    "queryPath": "Python/Python_Medium_Threat/Missing_HSTS_Header",
+    "cweId": 346,
+    "categories": [
+     {
+      "name": "ASA Premium",
+      "subCategories": [
+       "ASA Premium"
+      ]
+     },
+     {
+      "name": "OWASP ASVS",
+      "subCategories": [
+       "V14 Configuration"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 2021",
+      "subCategories": [
+       "A7-Identification and Authentication Failures"
+      ]
+     },
+     {
+      "name": "OWASP Top 10 API 2023",
+      "subCategories": [
+       "API8-Security Misconfiguration"
+      ]
+     },
+     {
+      "name": "PCI DSS v4.0",
+      "subCategories": [
+       "PCI DSS (4.0) - 6.2.4 Vulnerabilities in software development"
+      ]
+     }
+    ],
+    "vulnerabilities": [
+     {
+      "similarityId": 1851619605,
+      "status": "Recurrent",
+      "state": "To Verify",
+      "severity": "Medium",
+      "foundDate": "2025-05-08T13:08:06Z",
+      "firstFoundDate": "2025-05-08T11:30:01Z",
+      "sourceFileName": "/nginix/commandInjection/app.py",
+      "destinationFileName": "/nginix/commandInjection/app.py",
+      "sourceNode": "app",
+      "destinationNode": "app",
+      "sourceLine": 17,
+      "sourceCode": "app = Flask(__name__)",
+      "destinationLine": 17,
+      "destinationCode": "app = Flask(__name__)",
+      "nodes": [],
+      "resultViewerLink": "https://ast-master-components.dev.cxast.net/sast-results/a245a032-c5a3-4bda-bed6-8385aab2c369/bc53443b-9a26-4feb-b536-c0c4596aaf9c?resultId=syhCrJaNRZ3rd%2FMrtMs8GuARDkY%3D",
+      "firstScanID": "4820de2f-0f57-4eaa-a38d-a82ba03b3d18",
+      "notes": []
+     }
+    ]
+   }
+  ]
+ },
+ "iacScanResults": {
+  "totalResults": 0,
+  "severitiesBreakdown": [],
+  "technology": []
+ },
+ "scaScanResults": {
+  "totalResults": 1,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 1
+   },
+   {
+    "level": "Medium",
+    "value": 0
+   }
+  ],
+  "packages": [
+   {
+    "packageName": "Flask",
+    "packageId": "Python-Flask-2.0.1",
+    "packageVersion": "2.0.1",
+    "totalResults": 1,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-539",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "APsIXWGZlXjusFSM6b5OFoHP1/qonnZJ2lOUsR8/nl4=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:07:23Z",
+        "lastDetectionDate": "2025-05-08T13:07:23Z",
+        "firstScanId": "bc53443b-9a26-4feb-b536-c0c4596aaf9c",
+        "outdated": true,
+        "cve": "CVE-2023-30861",
+        "description": "Flask is a lightweight WSGI web application framework. When all of the following conditions are met, a response containing data intended for one client may be cached and subsequently sent by the proxy to other clients. If the proxy also caches `Set-Cookie` headers, it may send one client's `session` cookie to other clients. The severity depends on the application's use of the session and the proxy's behavior regarding cookies. The risk depends on all these conditions being met. The application must be hosted behind a caching proxy that does not strip cookies or ignore responses with cookies. The application sets `session.permanent = True`. The application does not access or modify the session at any point during a request. `SESSION_REFRESH_EACH_REQUEST` enabled (the default). The application does not set a `Cache-Control` header to indicate that a page is private or should not be cached. This happens because vulnerable versions of Flask only set the `Vary: Cookie` header when the session is accessed or modified, not when it is refreshed (re-sent to update the expiration) without being accessed or modified. This issue affects flask versions prior to 2.2.5, and 2.3.x prior to 2.3.2.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-m2qf-hxjv-5gpq",
+          "type": "Advisory"
+         },
+         {
+          "url": "https://github.com/pallets/flask/releases/tag/2.3.2",
+          "type": "Release Note"
+         },
+         {
+          "url": "https://github.com/pallets/flask/commit/70f906c51ce49c485f1d355703e9cc3386b1cc2b",
+          "type": "Commit"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "containerScanResults": null,
+ "categories": [
+  {
+   "name": "ASA Premium",
+   "subCategories": [
+    {
+     "name": "ASA_Premium_2",
+     "vulnerabilitiesBox": {
+      "name": "ASA Premium",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 3
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "ASD STIG 6.1",
+   "subCategories": [
+    {
+     "name": "APSC_DV_002490___CAT_I_The_application_must_protect_from_Cross_Site_Scripting__XSS__vulnerabilities__165",
+     "vulnerabilitiesBox": {
+      "name": "APSC-DV-002490 - CAT I The application must protect from Cross-Site Scripting (XSS) vulnerabilities.",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "CWE top 25",
+   "subCategories": [
+    {
+     "name": "CWE_top_25_292",
+     "vulnerabilitiesBox": {
+      "name": "CWE top 25",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 3
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "FISMA 2014",
+   "subCategories": [
+    {
+     "name": "System_And_Information_Integrity_302",
+     "vulnerabilitiesBox": {
+      "name": "System And Information Integrity",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 3
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "MOIS(KISA) Secure Coding 2021",
+   "subCategories": [
+    {
+     "name": "MOIS_KISA__Verification_and_representation_of_input_data_309",
+     "vulnerabilitiesBox": {
+      "name": "MOIS(KISA) Verification and representation of input data",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 3
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "NIST SP 800-53",
+   "subCategories": [
+    {
+     "name": "SI_15_Information_Output_Filtering__P0__330",
+     "vulnerabilitiesBox": {
+      "name": "SI-15 Information Output Filtering (P0)",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "SI_10_Information_Input_Validation__P1__328",
+     "vulnerabilitiesBox": {
+      "name": "SI-10 Information Input Validation (P1)",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 1
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP ASVS",
+   "subCategories": [
+    {
+     "name": "V05_Validation__Sanitization_and_Encoding_336",
+     "vulnerabilitiesBox": {
+      "name": "V05 Validation, Sanitization and Encoding",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 3
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "V14_Configuration_345",
+     "vulnerabilitiesBox": {
+      "name": "V14 Configuration",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP Top 10 2013",
+   "subCategories": [
+    {
+     "name": "A3_Cross_Site_Scripting__XSS__377",
+     "vulnerabilitiesBox": {
+      "name": "A3-Cross-Site Scripting (XSS)",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP Top 10 2017",
+   "subCategories": [
+    {
+     "name": "A7_Cross_Site_Scripting__XSS__387",
+     "vulnerabilitiesBox": {
+      "name": "A7-Cross-Site Scripting (XSS)",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "A5_Broken_Access_Control_386",
+     "vulnerabilitiesBox": {
+      "name": "A5-Broken Access Control",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 1
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP Top 10 2021",
+   "subCategories": [
+    {
+     "name": "A3_Injection_392",
+     "vulnerabilitiesBox": {
+      "name": "A3-Injection",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "A10_Server_Side_Request_Forgery_398",
+     "vulnerabilitiesBox": {
+      "name": "A10-Server-Side Request Forgery",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 1
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "A7_Identification_and_Authentication_Failures_395",
+     "vulnerabilitiesBox": {
+      "name": "A7-Identification and Authentication Failures",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "OWASP Top 10 API 2023",
+   "subCategories": [
+    {
+     "name": "API7_Server_Side_Request_Forgery_405",
+     "vulnerabilitiesBox": {
+      "name": "API7-Server Side Request Forgery",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 1
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "API8_Security_Misconfiguration_406",
+     "vulnerabilitiesBox": {
+      "name": "API8-Security Misconfiguration",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 0
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PCI DSS v3.2.1",
+   "subCategories": [
+    {
+     "name": "PCI_DSS__3_2_1____6_5_7___Cross_site_scripting__XSS__421",
+     "vulnerabilitiesBox": {
+      "name": "PCI DSS (3.2.1) - 6.5.7 - Cross-site scripting (XSS)",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PCI DSS v4.0",
+   "subCategories": [
+    {
+     "name": "PCI_DSS__4_0____6_2_4_Vulnerabilities_in_software_development_425",
+     "vulnerabilitiesBox": {
+      "name": "PCI DSS (4.0) - 6.2.4 Vulnerabilities in software development",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "SANS top 25",
+   "subCategories": [
+    {
+     "name": "SANS_top_25_426",
+     "vulnerabilitiesBox": {
+      "name": "SANS top 25",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "Top Tier",
+   "subCategories": [
+    {
+     "name": "Top_Tier_427",
+     "vulnerabilitiesBox": {
+      "name": "Top Tier",
+      "severityDistribution": [
+       {
+        "level": "Critical",
+        "value": 0
+       },
+       {
+        "level": "High",
+        "value": 2
+       },
+       {
+        "level": "Medium",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "resolvedVulnerabilities": {
+  "resolvedTotal": 0,
+  "resolvedVulnerabilities": []
+ },
+ "vulnerabilityDetails": [
+  {
+   "vulnerabilityName": "Reflected_XSS",
+   "risk": "A successful XSS exploit would allow an attacker to rewrite web pages and insert malicious scripts which would alter the intended output. This could include HTML fragments, CSS styling rules, arbitrary JavaScript, or references to third party code. An attacker could use this to steal users' passwords, collect personal data such as credit card details, provide false information, or run malware. From the victim’s point of view, this is performed by the genuine website, and the victim would blame the site for incurred damage.\n\nThe attacker could use social engineering to cause the user to send the website modified input, which will be returned in the requested web page.\n\n",
+   "cause": "The application creates web pages that include untrusted data, whether from user input, the application’s database, or from other external sources. The untrusted data is embedded directly in the page's HTML, causing the browser to display it as part of the web page. If the input includes HTML fragments or JavaScript, these are displayed too, and the user cannot tell that this is not the intended page. The vulnerability is the result of directly embedding arbitrary data without first encoding it in a format that would prevent the browser from treating it like HTML or code instead of plain text.\n\nNote that an attacker can exploit this vulnerability either by modifying the URL, or by submitting malicious data in the user input or other request fields.\n\n",
+   "generalRecommendations": "*   Fully encode all dynamic data, regardless of source, before embedding it in output.\r\n*   Encoding should be context-sensitive. For example:\r\n    *   HTML encoding for HTML content\r\n    *   HTML Attribute encoding for data output to attribute values\r\n    *   JavaScript encoding for server-generated JavaScript\r\n*   It is recommended to use the platform-provided encoding functionality, or known security libraries for encoding output.\r\n*   Implement a Content Security Policy (CSP) with explicit whitelists for the application's resources only. \r\n*   As an extra layer of protection, validate all untrusted data, regardless of source (note this is not a replacement for encoding). Validation should be based on a whitelist: accept only data fitting a specified structure, rather than reject bad patterns. Check for:\r\n    *   Data type\r\n    *   Size\r\n    *   Range\r\n    *   Format\r\n    *   Expected values\r\n*   In the `Content-Type` HTTP response header, explicitly define character encoding (charset) for the entire page. \r\n*   Set the `HTTPOnly` flag on the session cookie for \"Defense in Depth\", to prevent any successful XSS exploits from stealing the cookie.\n\n",
+   "cweId": 79
+  },
+  {
+   "vulnerabilityName": "SSRF",
+   "risk": "An attacker can abuse this flaw to make arbitrary requests, originating from the application server. This can be exploited to scan internal services; proxy attacks into a protected network; bypass network controls; download unauthorized files; access internal services and management interfaces; and possibly control the contents of requests and even steal server credentials.\n\n",
+   "cause": "The application accepts a URL (or other data) from the user, and uses this to make a request to another remote server.\r\n\r\nHowever, the attacker can inject an arbitrary URL into the request, causing the application to connect to any server the attacker wants. Thus, the attacker can abuse the application to gain access to services that would not otherwise be accessable, and cause the request to ostensibly originate from the application server.\n\n",
+   "generalRecommendations": "*   Do not connect to arbitrary services based on user input.\r\n*   If possible, the application should have the user's browser retrieve the desired information directly. \r\n*   If it is necessary for the application to proxy the request on the server, explicitly whitelist the allowed target URLs, and do not include any sensitive server information.\n\n",
+   "cweId": 918
+  },
+  {
+   "vulnerabilityName": "Missing_HSTS_Header",
+   "risk": "Failure to set an HSTS header and provide it with a reasonable \"max-age\" value of at least one year may leave users vulnerable to Man-in-the-Middle attacks.\n\n",
+   "cause": "Many users browse to websites by simply typing the domain name into the address bar, without the protocol prefix. The browser will automatically assume that the user's intended protocol is HTTP, instead of the encrypted HTTPS protocol.\r\n\r\nWhen this initial request is made, an attacker can perform a Man-in-the-Middle attack and manipulate it to redirect users to a malicious web-site of the attacker's choosing. To protect the user from such an occurence, the HTTP Strict Transport Security (HSTS) header instructs the user's browser to disallow use of an unsecure HTTP connection to the the domain associated with the HSTS header.\r\n\r\nOnce a browser that supports the HSTS feature has visited a web-site and the header was set, it will no longer allow communicating with the domain over an HTTP connection.\r\n\r\nOnce an HSTS header was issued for a specific website, the browser is also instructed to prevent users from manually overriding and accepting an untrusted SSL certificate for as long as the \"max-age\" value still applies. The recommended \"max-age\" value is for at least one year in seconds, or 31536000.\n\n",
+   "generalRecommendations": "*   Before setting the HSTS header - consider the implications it may have:\n    *   Forcing HTTPS will prevent any future use of HTTP, which could hinder some testing\n    *   Disabling HSTS is not trivial, as once it is disabled on the site, it must also be disabled on the browser\n*   Set the HSTS header either explicitly within application code, or using web-server configurations.\n*   Ensure the \"max-age\" value for HSTS headers is set to 31536000 to ensure HSTS is strictly enforced for at least one year.\n*   Include the \"includeSubDomains\" to maximize HSTS coverage, and ensure HSTS is enforced on all sub-domains under the current domain\n    *   Note that this may prevent secure browser access to any sub-domains that utilize HTTP; however, use of HTTP is very severe and highly discouraged, even for websites that do not contain any sensitive information, as their contents can still be tampered via Man-in-the-Middle attacks to phish users under the HTTP domain.\n*   Once HSTS has been enforced, submit the web-application's address to an HSTS preload list - this will ensure that, even if a client is accessing the web-application for the first time (implying HSTS has not yet been set by the web-application), a browser that respects the HSTS preload list would still treat the web-application as if it had already issued an HSTS header. Note that this requires the server to have a trusted SSL certificate, and issue an HSTS header with a maxAge of 1 year (31536000)\n*   Note that this query is designed to return one result per application. This means that if more than one vulnerable response without an HSTS header is identified, only the first identified instance of this issue will be highlighted as a result. If a misconfigured instance of HSTS is identified (has a short lifespan, or is missing the \"includeSubDomains\" flag), that result will be flagged. Since HSTS is required to be enforced across the entire application to be considered a secure deployment of HSTS functionality, fixing this issue only where the query highlights this result is likely to produce subsequent results in other sections of the application; therefore, when adding this header via code, ensure it is uniformly deployed across the entire application. If this header is added via configuration, ensure that this configuration applies to the entire application.\n*   Note that misconfigured HSTS headers that do not contain the recommended max-age value of at least one year or the \"includeSubDomains\" flag will still return a result for a missing HSTS header.\n\n",
+   "cweId": 346
+  }
+ ],
+ "scsSummaryResults": [
+  {
+   "totalResults": 1,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 1
+    }
+   ],
+   "engineName": "2ms"
+  },
+  {
+   "totalResults": 19,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 6
+    },
+    {
+     "level": "Medium",
+     "value": 13
+    }
+   ],
+   "engineName": "Scorecard"
+  }
+ ]
+}

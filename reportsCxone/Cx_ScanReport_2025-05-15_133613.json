@@ -1,0 +1,3186 @@
+{
+ "reportCreationDate": "2025-05-15T13:36:12.23496669Z",
+ "reportType": "Vulnerability Type",
+ "reportHeader": {
+  "projectName": "MAD-Goat-Project/mad-deployment-service",
+  "projectCreationDate": "2025-05-08T11:29:09.420062Z",
+  "tenantId": "9466949b-ac30-4616-bf0c-14711bb5bf90",
+  "scanDate": "2025-05-08T13:07:54.409465Z",
+  "severityDistribution": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 37
+   },
+   {
+    "level": "Medium",
+    "value": 175
+   }
+  ],
+  "scannedBranchName": "main",
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "mainBranch": "N/A"
+ },
+ "reportFilters": {
+  "filters": [
+   {
+    "filterName": "Severity",
+    "included": [
+     "Critical",
+     "High",
+     "Medium"
+    ],
+    "excluded": [
+     "Low",
+     "Information"
+    ]
+   },
+   {
+    "filterName": "Result State",
+    "included": [
+     "To Verify",
+     "Confirmed",
+     "Urgent"
+    ],
+    "excluded": [
+     "Not Exploitable",
+     "Proposed Not Exploitable"
+    ]
+   },
+   {
+    "filterName": "Status",
+    "included": [
+     "New",
+     "Recurrent"
+    ],
+    "excluded": []
+   },
+   {
+    "filterName": "Scanners",
+    "included": [
+     "SAST",
+     "IaC",
+     "Containers",
+     "SCA",
+     "SCS"
+    ],
+    "excluded": []
+   }
+  ],
+  "resultsLimit": "10000"
+ },
+ "scanInformation": {
+  "scanId": "51b2f554-c4be-47cb-8335-772c772bce34",
+  "scanInitiator": "org_admin",
+  "scanDuration": 1842225345000,
+  "preset": "ASA Premium",
+  "totalScannedLoc": 7790,
+  "scannedLoc": 3966,
+  "iacScannedLoc": 3824,
+  "totalScannedFiles": 5517,
+  "scannedFiles": 5455,
+  "iacScannedFiles": 62,
+  "viewerLink": "https://ast-master-components.dev.cxast.net/sast-results/08e5a734-240e-4b86-8a35-7fc44ffcfb17/51b2f554-c4be-47cb-8335-772c772bce34",
+  "sourceOrigin": "github",
+  "scanType": "Full Scan",
+  "branch": "main",
+  "totalDensity": 25.67,
+  "density": 0,
+  "iacDensity": 52.3,
+  "groups": null,
+  "scanners": [
+   "SAST",
+   "IaC",
+   "Containers",
+   "SCA",
+   "SCS"
+  ],
+  "scannerStatus": [
+   {
+    "name": "SCA",
+    "status": "Completed"
+   },
+   {
+    "name": "Containers",
+    "status": "Failed"
+   },
+   {
+    "name": "IaC",
+    "status": "Completed"
+   },
+   {
+    "name": "SCS",
+    "status": "Completed"
+   },
+   {
+    "name": "SAST",
+    "status": "Completed"
+   }
+  ]
+ },
+ "projectAndScanTags": {
+  "scanTags": null,
+  "projectTags": {
+   "mad": "",
+   "madGoat": ""
+  }
+ },
+ "densityGrade": {
+  "totalResults": 200,
+  "loc": 7790,
+  "density": 25.67
+ },
+ "scannerOverview": {
+  "totalResults": 212,
+  "sastResults": {
+   "engine": "SAST",
+   "value": 0,
+   "percentage": 0
+  },
+  "iacResults": {
+   "engine": "IaC",
+   "value": 200,
+   "percentage": 94.34
+  },
+  "scaResults": {
+   "engine": "SCA",
+   "value": 0,
+   "percentage": 0
+  },
+  "containersResults": {
+   "engine": "Containers",
+   "value": 0,
+   "percentage": 0
+  },
+  "scsResults": {
+   "engine": "SCS",
+   "value": 12,
+   "percentage": 5.66
+  }
+ },
+ "statusOverview": {
+  "totalResults": 212,
+  "newResultsOverview": {
+   "numberOfResults": 12,
+   "percentage": 5.66
+  },
+  "recurrentResultsOverview": {
+   "numberOfResults": 200,
+   "percentage": 94.34
+  }
+ },
+ "stateOverview": {
+  "totalResults": 212,
+  "stateDistribution": [
+   {
+    "state": "To Verify",
+    "numberOfResults": 212,
+    "percentage": 100,
+    "density": {
+     "value": 25.67
+    }
+   },
+   {
+    "state": "Confirmed",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "state": "Urgent",
+    "numberOfResults": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   }
+  ]
+ },
+ "languageOverview": [],
+ "technologyOverview": [
+  {
+   "technologyName": "Kubernetes",
+   "totalResults": 125,
+   "density": {
+    "value": 32.69
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 15
+    },
+    {
+     "level": "Medium",
+     "value": 110
+    }
+   ]
+  },
+  {
+   "technologyName": "DockerCompose",
+   "totalResults": 65,
+   "density": {
+    "value": 17
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 2
+    },
+    {
+     "level": "Medium",
+     "value": 63
+    }
+   ]
+  },
+  {
+   "technologyName": "Common",
+   "totalResults": 10,
+   "density": {
+    "value": 2.62
+   },
+   "severityBreakdown": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 10
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  }
+ ],
+ "packageOverview": [],
+ "severityOverview": {
+  "totalResults": 212,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0,
+    "percentage": 0,
+    "density": {
+     "value": 0
+    }
+   },
+   {
+    "level": "High",
+    "value": 37,
+    "percentage": 17.45,
+    "density": {
+     "value": 4.75
+    }
+   },
+   {
+    "level": "Medium",
+    "value": 175,
+    "percentage": 82.55,
+    "density": {
+     "value": 22.46
+    }
+   }
+  ]
+ },
+ "containersOverview": null,
+ "vulnerabilitiesTable": {
+  "totals": {
+   "detectedFiles": 0,
+   "resultsDistribution": [
+    {
+     "level": "Critical",
+     "value": 0
+    },
+    {
+     "level": "High",
+     "value": 0
+    },
+    {
+     "level": "Medium",
+     "value": 0
+    }
+   ]
+  },
+  "vulnerabilityTypes": []
+ },
+ "topTenVulnerabilities": {
+  "vulnerableFiles": 0,
+  "totalVulnerabilities": 0,
+  "vulnerabilitiesList": []
+ },
+ "topTenVulnerableFiles": {
+  "vulnerableFiles": 0,
+  "totalFiles": 5455,
+  "vulnerableFilesList": []
+ },
+ "topFiveOldestBySeverity": [],
+ "scanResults": {
+  "totalResults": 0,
+  "severitiesBreakdown": [],
+  "resultsList": []
+ },
+ "iacScanResults": {
+  "totalResults": 200,
+  "severitiesBreakdown": [
+   {
+    "level": "Critical",
+    "value": 0
+   },
+   {
+    "level": "High",
+    "value": 27
+   },
+   {
+    "level": "Medium",
+    "value": 173
+   }
+  ],
+  "technology": [
+   {
+    "name": "Kubernetes",
+    "totalResults": 125,
+    "queries": [
+     {
+      "queryName": "Volume Mount With OS Directory Write Permissions",
+      "totalResults": 2,
+      "description": "Containers can mount sensitive folders from the hosts, giving them potentially dangerous access to critical host configurations and binaries.",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=MpM6%2FwJxLnwsj2DHn2qroheWYXk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.volumeMounts.name={{db-lesson-service-claim0}}.readOnly is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.volumeMounts.name={{db-lesson-service-claim0}}.readOnly should be defined and set to true"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=v0z8JbN%2BSwW0eEB%2BDYiry7A15tA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.volumeMounts.name={{db-keycloak-service-claim0}}.readOnly is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.volumeMounts.name={{db-keycloak-service-claim0}}.readOnly should be defined and set to true"
+       }
+      ]
+     },
+     {
+      "queryName": "Privilege Escalation Allowed",
+      "totalResults": 13,
+      "description": "Containers should not run with allowPrivilegeEscalation in order to prevent them from gaining more privileges than their parent process",
+      "category": "Insecure Configurations",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=wgTIVoSh%2FQchj4Yk3s3nSorAzQ0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Fhcm%2B89zWLYFHG5MiwIw8Hp28HM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=OQHmgCggpsCbSSbEjbo8NcxilDE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=U0ZOvS9X8OF3UoyUhVWghkl4UVk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=TftPPG3IohxznKpbVZLm6tm%2Bv1Y%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=6%2FyyLh7OLBwvNnhW2kya4xe7dUg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=5KksgbXoSlWRybBAuznWZ1aALBI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=hB0qMwUQ8qayfWDqeCQB2G9RzII%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8DMi%2BOp1Szj6I4VnUmD2o45cNrY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=GcaJTcQOpAWCBmEDmQ4vH6CZxA0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=oaw94VSku9768DLTa0LCQkqKygI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=YSdzNOjYidoneagkNxXDNz0K9Qc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=00v70huHYbbnD3DJP9SoJ%2B%2F%2FoFU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.allowPrivilegeEscalation is undefined",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.allowPrivilegeEscalation should be set and should be set to false"
+       }
+      ]
+     },
+     {
+      "queryName": "Using Unrecommended Namespace",
+      "totalResults": 28,
+      "description": "Namespaces like 'default', 'kube-system' or 'kube-public' should not be used",
+      "category": "Insecure Configurations",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=OmITy%2F0mpWun6DyodvHFamuzjk4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=AhLpMioIAJHTz2AguX4%2FOW5Uowg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zSDhe2QQ%2FSZXdrc65t7w%2FhLJQU4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=RBPBFgpgHGQtoYHO9cxmtcWeTzw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ChitaUhCiUA5AZDk8Hy%2FRO7VZKs%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ZlrnpDErZGCQoqYsIfPEGB2tubk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8hfGqEFBn15CG%2BWjzHFWRwZgCVs%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-keycloak-configmap.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=gsTa%2BYi7yZVrwWXzUBOmkRDci8Q%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-webapp-configmap.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=KXjotCe4utf0vH96GrXtJZCivC4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=YJEId5Mf6XBOysCKRoCQF5eBMEU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=pCcypFUfZHuz2%2FxFcjyvYqdKG18%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=g3PaZvmAIXLm3%2BU%2BxhXuEZHrqVw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=%2B1pMn%2B6pbe6uG%2FyifNPrAHj0Mto%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=2X504yeQomlQqH8Is%2FVRAZI36gQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=u0jdOetPRsHRvnxW9zjXkvq3pgM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-lesson-configmap.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=fXhKzrOvd4mVwv76XdNz6Wu8AVA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=HvGz9mSk%2Bdr4llqWPHUzkRNfIvY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=lW018WX9l9x9a%2B5e1SesGLCMXZY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=wNxeHTJqq2jzLO6hmKWSIBs4H38%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=kvPuSlYuXuLBHgicRnO99Uqj988%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Mw%2FOhMLAYtrcJ7D2i6hBSF8HWhQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zfa6Zx8v0CnUnbHG51MDkWW3ZtY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Pfhj7KNp4P5T18UvRW08HmkXz2U%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=l3iWAmJDE%2BGgm2Ieebqz8XjwBDQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-scoreboard-configmap.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=X2wSxhwh5ji29V%2BPQRqTFtjdS68%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-keycloak-secrets-configmap.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ale8zRli3NATlsgNPIYVasYVfi4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=qk%2BuR0H5hnp5GAVwGXJ%2BkOr5TA4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=geCWioALTOh7a9yKzbaJX%2BfFLxE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.namespace is undefined or null",
+        "expectedValue": "metadata.namespace should be defined and not null"
+       }
+      ]
+     },
+     {
+      "queryName": "Service Account Token Automount Not Disabled",
+      "totalResults": 13,
+      "description": "Service Account Tokens are automatically mounted even if not necessary",
+      "category": "Insecure Defaults",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=EvBuQ0Pz2VO%2FrFT57gt0k7YINBc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=PVyB0JRoF6AMhiiRGCT49tCk6yQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=M0FvRsRmvq57pHh78clZZhZjH9A%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=rbgt2FJKhzaCCb1wFwVqOl%2F4eLE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=N%2FZKYzNQ4ggW8ubLCZEa0sbhyBg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=PgscGJP6xECYgkGVTE6fcW6yr3w%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zCiirDo4XTIRxZOAdSKW6gYoDco%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=%2B5TATJfEoPy0sYZ74Zufc5H8xS0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=OmLUAw7yIzLo%2BTN3vKpkPQCONtk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=k9hwDmdRjkHmukGySGZSs9hn058%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=HKHk%2Fx4q3HSV45pSHHyZ5O0AXEM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Dmgb9vMT0s7VL1yOMDTxOIUfxGU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=jzpT%2BiyDanU76CF53VPspGMZHYw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.automountServiceAccountToken is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.automountServiceAccountToken should be defined and set to false"
+       }
+      ]
+     },
+     {
+      "queryName": "Seccomp Profile Is Not Configured",
+      "totalResults": 13,
+      "description": "Containers should be configured with a secure Seccomp profile to restrict potentially dangerous syscalls",
+      "category": "Insecure Configurations",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=MacBdiniuPKqLhDTZcylUPazKfM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=PvN6uqxmPTN8pNio6W8XgJ%2FlsrI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Rz5TPw7NlUZ77fuZyCPlaa4VhrE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=33w3V%2BBVCGiuEeQyC4MI9FU86yc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=heJ0Emx3egUyiMy4zHPcWaXs4%2BM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=mo601WzGOKqB86Vk8P3G%2FQT4ZyU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=7alx5OuezkNr02HsM7FVap%2FeoCo%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Fm%2FPk3dGlWb304SZKTLfkjpGWYw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Yt%2FM1gfn28cOYxMiTQ%2BJmfLcMjI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=IjZjTqbYIppYRMgHuS9VGYGBdyY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zH4ZJp%2BHa0BLMJilrt0R2zUkOTM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=CDwXF3p2NSRb9yN2rBlkqU5mluI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.seccompProfile.type should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=GN9OTWooNiLHn4fNrUOFeTjxs2Y%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.seccompProfile.type is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.seccompProfile.type should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "Readiness Probe Is Not Configured",
+      "totalResults": 13,
+      "description": "Check if Readiness Probe is not configured.",
+      "category": "Availability",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=NwZibwkYwFSRxFuu2NZxL5X%2F6Wg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=obzJ1FTmXsXIEjelv9QB469HhHY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=E%2BUcNPb0%2BF%2Bpdz7thasIwKP02GU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=2dk%2BOnE42xnhKH02m873yOJ346Q%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=eaCGO0IXFi4eWiDT7wBPN%2B9WHDE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=WrCyy9Ot9Hn3kxlmjc7PASTaTBc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=3jhtW0as9PIiWAAtM59c44RRB8w%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=NIOTnIMG%2FqAwvUpBfHCbBmxthXE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ucoEN2rv6fgjjOllaE0cQS12scw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=WWop8k4gAiGTHwMXG89F5RsFfHM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=nyMx0lM9PV0K%2BSoo1FpmWLPq9ec%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=j1zijua1rFJJDHXYQCtS4Rx%2BSSw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.readinessProbe should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=C8176cnK%2F%2FgVEebmzka45ANhXs4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.readinessProbe is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.readinessProbe should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "NET_RAW Capabilities Not Being Dropped",
+      "totalResults": 13,
+      "description": "Containers should drop 'ALL' or at least 'NET_RAW' capabilities",
+      "category": "Insecure Configurations",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=a5oa5P0G6yJUAjBzpVaPhM08Q%2BM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=0R3fixvveSXxVEm53pZxheknbpk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=PkOFu16UW9rcOZtmiDghTPG0dDc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=hppY%2FP1n7BVuL2CGZz2aYuXN4XU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8sZvf4ZhGCzwdGZrfUZHscwrYFM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=uMprqKPmJaSBusqvkV9wzDuC4cY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=RAjFKvFfs%2FW%2BeT3WxxdYP1tzHPI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zlRiVQ3qF58NtWFX%2BYFXDPcV6AM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8svShFPFVtQDQAloiS3WA4EdZYc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Xc6MJxCQMWz9xlyotP9hSV4C6EE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=pQvzrrggpQY0GfWKeCbY6D3Ozp4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ronhgwW0vmJIvJk%2BrLft%2FhmQynI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.capabilities.drop should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=LKtlSn9RByWUwU9JKk7q12i2sA0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.capabilities.drop is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.capabilities.drop should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "Memory Requests Not Defined",
+      "totalResults": 2,
+      "description": "Memory requests should be defined for each container. This allows the kubelet to reserve the requested amount of system resources and prevents over-provisioning on individual nodes",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=lhfP0NG30rPeMEWi6ndm56zpxaI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.resources.requests.memory is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.resources.requests.memory should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=R5mDzDT47N5%2BeRl9rR4JJp361bA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.resources.requests.memory is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.resources.requests.memory should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "Memory Limits Not Defined",
+      "totalResults": 2,
+      "description": "Memory limits should be defined for each container. This prevents potential resource exhaustion by ensuring that containers consume not more than the designated amount of memory",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=pL5ap9z%2F19B6IQoCB09lA58ffIc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.resources.limits.memory is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.resources.limits.memory should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=yY4ex2BidpLV0B20JhbJ%2FxXtUsU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.resources.limits.memory is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.resources.limits.memory should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "Container Running With Low UID",
+      "totalResults": 13,
+      "description": "Check if containers are running with low UID, which might cause conflicts with the host's user table.",
+      "category": "Best Practices",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=XYz4cl4ZtxrrpnXxULymP107EmE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=NS8dJcd2Y%2FKm0xtMQqyA8JP4VRk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=CGYXKR4vqarvHZ%2B0YWj%2FbMXIfUw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=dbqcZTEVyUCzW4SAOCaLPWiBXVI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=w60yGZLbH1AleDMRWgeLT4zeGYg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=07j6hqD975LUuo3qfyN3duMMkDw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=hBdPrnbCXWDNzFKgKaU7IlWguOI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=yhjIx%2FYaXdvnAY%2B%2F2K1GlEQ59jc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=3bXbH5z%2FY4CLhKwCDu5zdyLlwyI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=YxamFsUwr0RH6iq2sPDsLLS7rg8%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=BvMWVIhsCDxvMtDCF29tBJ%2Bha2I%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=IROeTVHErH3MRig7vtWNUZ0xsds%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.runAsUser should be defined"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=yVfTjJwETRmehRUrfNBbkD9c1oA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.runAsUser is undefined",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.runAsUser should be defined"
+       }
+      ]
+     },
+     {
+      "queryName": "Container Running As Root",
+      "totalResults": 13,
+      "description": "Containers should only run as non-root user. This limits the exploitability of security misconfigurations and restricts an attacker's possibilities in case of compromise",
+      "category": "Best Practices",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=GXDumB62RyOV84AmHUAAIvrg0tk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-safe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{mad4shell-service-safe}}.spec.template.spec.containers.name={{mad4shell-service-safe}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=JzaF6WFLi6klcSZymB55JwrdA%2FA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=0zBrqjgsW6KtBQUFEQNzszNa46M%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{db-scoreboard-service}}.spec.template.spec.containers.name={{db-scoreboard-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=MqzwBaeTJKtkjEAd7tWhXhQulas%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/webapp/webapp-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{webapp}}.spec.template.spec.containers.name={{mad-web-app}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=nTr0ExCoZ4sndAvVv44wWRik%2FeY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/traefik-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{traefik-proxy}}.spec.template.spec.containers.name={{mad-traefik-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=TtR1llyLXee%2BHN%2FR%2FXy7g%2Fye280%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{keycloak-service}}.spec.template.spec.containers.name={{mad-keycloak-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=YqTZWYGFOh2UsFLD7Me0fi8H4EE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/jekyll/jekyll-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{jekyll-service}}.spec.template.spec.containers.name={{jekyll-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=QTpQW4wG1G%2F82eHCPOR0Z34IBUo%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/scoreboard/scoreboard-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{scoreboard-service}}.spec.template.spec.containers.name={{mad-scoreboard-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=qbIVeBbixOdWo3%2B24jevBKIiMbQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/db/db-lesson-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{db-lesson-service}}.spec.template.spec.containers.name={{db-lesson-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=P8NPzaxYLUi6PidbldjDas3Zhic%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/services/lesson/lesson-service-service.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{lesson-service}}.spec.template.spec.containers.name={{mad-lesson-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ViWc45wnBloP6b8drSrLBTxguX8%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/helm/infra-chart/templates/rabbitmq-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{rabbitmq}}.spec.template.spec.containers.name={{rabbitmq}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=5q3Hp4gOlQ4QuS2GC5TtfUlJR54%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/keycloak/db-keycloak-service-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{db-keycloak-service}}.spec.template.spec.containers.name={{db-keycloak-service}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=jF93J54TcgtLiGwi9cTvh8kpe00%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/mad/mad4shell-service-unsafe-deployment.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.runAsUser is 0 and 'runAsNonRoot' is false",
+        "expectedValue": "metadata.name={{mad4shell-service-unsafe}}.spec.template.spec.containers.name={{mad4shell-service-unsafe}}.securityContext.runAsUser is higher than 0 and/or 'runAsNonRoot' is true"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "DockerCompose",
+    "totalResults": 65,
+    "queries": [
+     {
+      "queryName": "Volume Has Sensitive Host Directory",
+      "totalResults": 1,
+      "description": "Container has sensitive host directory mounted as a volume",
+      "category": "Build Process",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=QTNJcj%2BvY17b8iQhsFM8km6lilI%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "There is a sensitive directory (/var/run/docker.sock) mounted as a volume",
+        "expectedValue": "There shouldn't be sensitive directory mounted as a volume"
+       }
+      ]
+     },
+     {
+      "queryName": "Docker Socket Mounted In Container",
+      "totalResults": 1,
+      "description": "Docker socket docker.sock should not be mounted on host. If the docker socket is mounted, it can allow its processes to execute docker commands.",
+      "category": "Build Process",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=RnGWUxXr26gN4VemGs817py5XSk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "There is a docker socket named 'docker.sock' mounted in a volume",
+        "expectedValue": "To not have docker socket named 'docker.sock' mounted in a volume"
+       }
+      ]
+     },
+     {
+      "queryName": "Security Opt Not Set",
+      "totalResults": 15,
+      "description": "Attribute 'security_opt' should be defined.",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ytkyGRk8wsWWx%2FZR%2B8GbeYlTsKk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=wBZpa4Ek78HM9wM4zVlJdOsCvrM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ZqF7U8uNV%2F6FPsvO7xv25wz3SpM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=aygUoxn7WGZF6lfzj2c3YJe6rGM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=U2iq8KiF58SltcIyToCaryqWHs0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=BMQbsoaNhPeP%2BBJkHO1w1KRBUVg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=YyausCqVOI8Rpls9ruk1kNh9hQw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/traefik/values.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=EiVMjD7NQdpzqkT0EyHim4Yy02Y%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=7mYHPua%2FNkuVNyhcvZ0lAQocuHo%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=D1ct2CPiit492iQRV%2BtEmoACaB0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=%2FtxzS1i69kuCfJkF%2FhcXFAS3dRA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=dh6mMMxExmHQlRWWISsovQPrU08%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=iCXCTOVsHUiw0KHFR9YjJgNDcL8%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=w0B3lSEXbh3x0PpXC9R%2BTn5vp64%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=2Hoxjum6iRyH75FCo3Ef113UTrA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file does not have 'security_opt' attribute",
+        "expectedValue": "Docker compose file to have 'security_opt' attribute"
+       }
+      ]
+     },
+     {
+      "queryName": "Privileged Ports Mapped In Container",
+      "totalResults": 3,
+      "description": "Privileged ports (1 to 1023) should not be mapped. Also you should drop net_bind_service linux capability from the container unless you absolutely need to use priviledged ports.",
+      "category": "Networking and Firewall",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=oVANLOLtcDcXeZmF72ZGKtl0KM4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file has 'ports' attribute set to privileged ports (\u003c1024).",
+        "expectedValue": "Docker compose file to have 'ports' attribute not set to privileged ports (\u003c1024)."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8TrJAOq6hKzlS9YwZ7wp6tCSmzE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file has 'ports' attribute set to privileged ports (\u003c1024).",
+        "expectedValue": "Docker compose file to have 'ports' attribute not set to privileged ports (\u003c1024)."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=ibY1TQXkxHCRWx0vRC7C99fvDW4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file has 'ports' attribute set to privileged ports (\u003c1024).",
+        "expectedValue": "Docker compose file to have 'ports' attribute not set to privileged ports (\u003c1024)."
+       }
+      ]
+     },
+     {
+      "queryName": "Healthcheck Not Set",
+      "totalResults": 15,
+      "description": "Check containers periodically to see if they are running properly.",
+      "category": "Availability",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=xs14eYIoLU5XRWNwnup8XyignH8%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=6LC6Odimn8FyBlczEHCgWBSSe5k%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=LzcmdhdVptq6F7kyy6mecCFAPjY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/traefik/values.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=y2YLUVB%2Fr2s%2BjB9aF4ZEQT5lMiY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=%2FZfL3OWGO1v%2FI2lhepCVfWlNpRs%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=tbvx49xN1oB19nbZvNL2z9tuzUA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=eUA1gu%2F9dF5PKaXH8cpQ2Qpgg6M%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=XCPOItH%2Fpi%2FgJvfLiaKtlbZfdP4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zMiFbidSHSPuitNr78b2VTkGZOA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=E13NxXNt250TJXJ0sDi0%2FkZO9vw%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=WsoKq4krAZj9Y6Dl9hORxRkD6Cc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=nNorkWI47FR8Z91l4F6u%2FPxsvhY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=vy0qRKIs8aeklLUqtgQ1kk3XBIY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=QGiCmSeoXXH4f%2BI77hQ6rl4AolQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=jGK1FYnlNtq7FE9N2MS7lfYb2%2Fc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Healthcheck is not defined.",
+        "expectedValue": "Healthcheck should be defined."
+       }
+      ]
+     },
+     {
+      "queryName": "Container Traffic Not Bound To Host Interface",
+      "totalResults": 15,
+      "description": "Incoming container traffic should be bound to a specific host interface",
+      "category": "Networking and Firewall",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8%2F9lb08nQ0Qfvo3VUDU4Q8JZBMM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=cKPrfoIUg7SkBuAbM1JykuCADJk%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=J0fjTNfZ%2BksBHJqUrK6yP6cPUo8%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=jVpClHClkRB4vFsBBnXovgcdNKs%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=%2F2xBa0Q2snhwyHegs7KCBOGm6lM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=PaWuRsj73x4ZSTErDoEP7bkpsI8%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=CyO8r%2B7bRniL2IjdJ5iR0EmCOfc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/traefik/values.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=imk2%2BWMyM0e1O5fjsSeqvKa2Yt0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=6DVz5r9wrtuzzH3yZ9kl%2FmLTBtE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=NyNYgaxJbGSs2MNmHpwQmQd9oF0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=cC%2BJpOm%2FUYtYN6fk9DnH0LXmesg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=L2qoHWN3xoJqRm6cOwdwiK4qXys%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=vPrvrrs2sXk%2FvY6Z9qmoMeOb4s0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=kBfWIc9AO8eTy5oerV%2B6bUo2hNA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=w0skYx0ieHwFktquVf5f%2BMXkVZ4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "IncorrectValue",
+        "actualValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface",
+        "expectedValue": "Docker compose file to have 'ports' attribute bound to a specific host interface."
+       }
+      ]
+     },
+     {
+      "queryName": "Container Capabilities Unrestricted",
+      "totalResults": 15,
+      "description": "Some capabilities are not needed in certain (or any) containers. Make sure that you only add capabilities that your container needs. Drop unnecessary capabilities as well.",
+      "category": "Resource Management",
+      "resultsList": [
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=DVlJFaLNftHIxgFmHMX2h7zHs8o%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=zQ%2FzFTAcvaro2CrhPlqCQYA9UqE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=QDOhoUXBGwX3K%2BWPQzZoVzWiZf4%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=jDEtKRprGnu08fzyvI1rm4Ee1CQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=8GkIwPTnUaDYBWQ4BnS6QLkLTVc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=CPG3Jjjecl9JKlywsPHENH%2BJeZc%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=GK2ucNFF0inkI7I87liAoLsB73Y%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Cuqg8LYkX2USv8m97UcSImve94U%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=r4l%2FC5WN0oj%2F8xyva%2FOY6Qz2raQ%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=NFGh8QcktIB9P7NpWf%2FpJy%2F7eao%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=17XCuD3J5AXIBUFFITKqAXPB1Mg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=hZ8T8%2FMV2Bofj3yOWwfILSgNnFU%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/infrastructure.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=Lr3VLd5B1M9EcTb0kJYU8X600H0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/infra/traefik/values.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=nvyJ0ZWJSsWOxgEDwERpN%2FkySbM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       },
+       {
+        "severity": "Medium",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=voFmTQx75qC9hwagTu%2BgewQt8HE%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/compose/services.yaml",
+        "issueType": "MissingAttribute",
+        "actualValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities.",
+        "expectedValue": "Docker compose file to have 'cap_drop' attribute"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Common",
+    "totalResults": 10,
+    "queries": [
+     {
+      "queryName": "Passwords And Secrets - Password in URL",
+      "totalResults": 3,
+      "description": "Query to find passwords and secrets in infrastructure code.",
+      "category": "Secret Management",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=4o3deuIcWk%2Bino4VHAv4lN3ZNPY%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-scoreboard-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=bGxVhrb0%2BzuWocaS8OVDLA64cCo%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-lesson-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=EgWkJJNhv%2BMjrkgGgsZuE2CEoRM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-scoreboard-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       }
+      ]
+     },
+     {
+      "queryName": "Passwords And Secrets - Generic Secret",
+      "totalResults": 1,
+      "description": "Query to find passwords and secrets in infrastructure code.",
+      "category": "Secret Management",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=OoDnTP8kXNGbxCQadaAJgZrHgw0%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-keycloak-secrets-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       }
+      ]
+     },
+     {
+      "queryName": "Passwords And Secrets - Generic Password",
+      "totalResults": 6,
+      "description": "Query to find passwords and secrets in infrastructure code.",
+      "category": "Secret Management",
+      "resultsList": [
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=lpcgGlr%2BFV1S%2BzbOwx8WulA1JVg%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-lesson-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=569EbxZlxkP8THsFYVcztgjUpbo%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-keycloak-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=0ZXO19FWw6wXEGCuj5iNkErpelM%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-keycloak-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=n2TfViurmh3risPvut346B09%2Fks%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-scoreboard-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=jMT3b%2FBQx0yvN63n3%2BlSTY2U%2FSA%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-lesson-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       },
+       {
+        "severity": "High",
+        "resultViewerLink": "https://ast-master-components.dev.cxast.net/results/51b2f554-c4be-47cb-8335-772c772bce34/08e5a734-240e-4b86-8a35-7fc44ffcfb17/kics?result-id=RN3%2FvnbkhtjJ8oYuzl13jhPJKas%3D",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstScanID": "d74c3f15-9f9a-4f8c-935d-f519d45038de",
+        "firstDetectionDate": "2025-05-08T11:30:08Z",
+        "lastDetectionDate": "2025-05-08T13:09:02Z",
+        "fileName": "/k8s/envs/env-keycloak-configmap.yaml",
+        "issueType": "RedundantAttribute",
+        "actualValue": "Hardcoded secret key appears in source",
+        "expectedValue": "Hardcoded secret key should not appear in source"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "scaScanResults": {
+  "totalResults": 0,
+  "severitiesBreakdown": [],
+  "packages": []
+ },
+ "containerScanResults": null,
+ "categories": [],
+ "resolvedVulnerabilities": {
+  "resolvedTotal": 0,
+  "resolvedVulnerabilities": []
+ },
+ "vulnerabilityDetails": [],
+ "scsSummaryResults": [
+  {
+   "totalResults": 5,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 5
+    }
+   ],
+   "engineName": "2ms"
+  },
+  {
+   "totalResults": 7,
+   "severitiesBreakdown": [
+    {
+     "level": "High",
+     "value": 5
+    },
+    {
+     "level": "Medium",
+     "value": 2
+    }
+   ],
+   "engineName": "Scorecard"
+  }
+ ]
+}

@@ -8,13 +8,12 @@ import (
 )
 
 func ExpectedReportToJson(results map[string][]handler.EngineResult) ([]byte, error) {
-	// Definindo a estrutura para o JSON
+
 	type Report struct {
 		ProjectName string                 `json:"projectName"`
-		Results     []handler.EngineResult `json:"results"` // Agora é []handler.EngineResult
+		Results     []handler.EngineResult `json:"results"`
 	}
 
-	// Criando o slice de relatórios
 	var reports []Report
 	for projectName, engineResults := range results {
 		reports = append(reports, Report{
@@ -23,7 +22,6 @@ func ExpectedReportToJson(results map[string][]handler.EngineResult) ([]byte, er
 		})
 	}
 
-	// Convertendo os relatórios para JSON
 	jsonData, err := json.MarshalIndent(reports, "", "  ")
 	if err != nil {
 		return nil, fmt.Errorf("failed to marshal report to JSON: %w", err)

@@ -8,7 +8,6 @@ type VulnerabilityDetail struct {
 }
 
 type EngineResult struct {
-	PluginType string                `json:"plugin"`
 	EngineType string                `json:"engineType"`
 	Details    []VulnerabilityDetail `json:"details"`
 }

@@ -54,11 +54,21 @@ func ParseReport(item plugins.ISourceItem) (map[string][]handler.EngineResult, e
 	}
 
 	if scs, ok := raw["scsScanResults"]; ok {
-		if arr, ok := scs.(map[string]interface{})["packages"].([]interface{}); ok && len(arr) > 0 {
+		if arr, ok := scs.(map[string]interface{})["resultsList"].([]interface{}); ok && len(arr) > 0 {
 			if result, err := parseScs(scs); err == nil {
 				resultMap[projectName] = append(resultMap[projectName], result)
 			} else {
 				log.Warn().Err(err).Msg("Error processing SCS results")
+			}
+		}
+	}
+
+	if sast, ok := raw["scanResults"]; ok {
+		if resultsList, ok := sast.(map[string]interface{})["resultsList"].([]interface{}); ok && len(resultsList) > 0 {
+			if result, err := parseSast(sast); err == nil {
+				resultMap[projectName] = append(resultMap[projectName], result)
+			} else {
+				log.Warn().Err(err).Msg("Error processing SAST results")
 			}
 		}
 	}
