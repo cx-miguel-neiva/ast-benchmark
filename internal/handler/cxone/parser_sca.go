@@ -39,8 +39,12 @@ func parseSca(scaData interface{}) (handler.EngineResult, error) {
 				vulnValue = parts[1]
 			}
 
+			resourceType := "Package"
+			resultID := handler.GenerateResultID(resourceType, packageName, vulnCategory, vulnValue)
+
 			details = append(details, handler.VulnerabilityDetail{
-				ResourceType:          "Package",
+				ResultID:              resultID,
+				ResourceType:          resourceType,
 				Resource:              packageName,
 				VulnerabilityCategory: vulnCategory,
 				VulnerabilityValue:    vulnValue,

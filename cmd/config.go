@@ -29,14 +29,12 @@ func initialize() {
 }
 
 func GetResults(path string, plugin string) (map[string][]handler.EngineResult, error) {
-	// Ler o conteúdo do ficheiro
 	content, err := os.ReadFile(path)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read report file: %w", err)
 	}
 	contentStr := string(content)
 
-	// Criar o item a ser processado
 	item := &plugins.Item{
 		Content: &contentStr,
 		ID:      "unique-id",

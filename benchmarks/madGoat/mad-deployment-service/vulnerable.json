@@ -1,0 +1,73 @@
+[
+  {
+    "projectName": "MAD-Goat-Project/mad-deployment-service",
+    "results": [
+      {
+        "engineType": "IAC",
+        "details": [
+          {
+            "ResultId": "328a149648250c84434360e0bd9b013e",
+            "ResourceType": "Filename",
+            "Resource": "/Dockerfile",
+            "VulnerabilityCategory": "Missing User Instruction",
+            "VulnerabilityValue": "The 'Dockerfile' does not contain any 'USER' instruction"
+          }
+        ]
+      },
+      {
+        "engineType": "SCA",
+        "details": [
+          {
+            "ResultId": "8ec311ea1d3b90f98ece6d9d8708cfd0",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "502"
+          },
+          {
+            "ResultId": "b1d49eb66b250abb3c7b6b526e77f646",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "74"
+          },
+          {
+            "ResultId": "37c1ecbd4af799dca432c019c4d3dbe9",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "20"
+          },
+          {
+            "ResultId": "df4c1c50ae70bd9c150beee32e3b52aa",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "674"
+          },
+          {
+            "ResultId": "b4598746cbe0439cbc0c93e0f6eef6f2",
+            "ResourceType": "Package",
+            "Resource": "org.springframework.boot:spring-boot-autoconfigure",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "400"
+          },
+          {
+            "ResultId": "cbee27c98918610881a7efa0a0b37cf8",
+            "ResourceType": "Package",
+            "Resource": "com.fasterxml.jackson.core:jackson-databind",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "400"
+          },
+          {
+            "ResultId": "5f180ee5ce674311d82af52826f72a49",
+            "ResourceType": "Package",
+            "Resource": "com.fasterxml.jackson.core:jackson-databind",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "502"
+          }
+        ]
+      }
+    ]
+  }
+]

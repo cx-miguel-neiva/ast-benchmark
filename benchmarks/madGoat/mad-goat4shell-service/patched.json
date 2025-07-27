@@ -1,0 +1,54 @@
+[
+  {
+    "projectName": "MAD-Goat-Project/mad-goat4shell-service",
+    "results": [
+      {
+        "engineType": "SCA",
+        "details": [
+          {
+            "ResultId": "8ec311ea1d3b90f98ece6d9d8708cfd0",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "502"
+          },
+          {
+            "ResultId": "b1d49eb66b250abb3c7b6b526e77f646",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "74"
+          },
+          {
+            "ResultId": "37c1ecbd4af799dca432c019c4d3dbe9",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "20"
+          },
+          {
+            "ResultId": "df4c1c50ae70bd9c150beee32e3b52aa",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "674"
+          },
+          {
+            "ResultId": "df4c1c50ae70bd98150beee32e3b52aa",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "634"
+          },
+          {
+            "ResultId": "df4c1c50ae703d9c150beee32e3b52aa",
+            "ResourceType": "Package",
+            "Resource": "org.apache.logging.log4j:log4j-core",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "676"
+          }
+        ]
+      }
+    ]
+  }
+]

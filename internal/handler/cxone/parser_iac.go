@@ -26,11 +26,17 @@ func parseIac(iacData interface{}) (handler.EngineResult, error) {
 			resultsList, _ := query["resultsList"].([]interface{})
 			for _, res := range resultsList {
 				r, _ := res.(map[string]interface{})
+				resourceType := "Filename"
+				resource := handler.ToStr(r["fileName"])
+				actualValue := handler.ToStr(r["actualValue"])
+				resultID := handler.GenerateResultID(resourceType, resource, queryName, actualValue)
+
 				details = append(details, handler.VulnerabilityDetail{
-					ResourceType:          "Filename",
-					Resource:              handler.ToStr(r["fileName"]),
+					ResultID:              resultID,
+					ResourceType:          resourceType,
+					Resource:              resource,
 					VulnerabilityCategory: queryName,
-					VulnerabilityValue:    handler.ToStr(r["actualValue"]),
+					VulnerabilityValue:    actualValue,
 				})
 			}
 		}

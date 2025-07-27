@@ -1,0 +1,187 @@
+{
+ "reportCreationDate": "2025-05-13T16:04:30.845619293Z",
+ "reportType": "Vulnerability Type",
+ "reportHeader": {
+  "projectName": "MAD-Goat-Project/mad-goat4shell-service",
+  "projectCreationDate": "2025-05-08T11:29:09.511236Z",
+  "tenantId": "9466949b-ac30-4616-bf0c-14711bb5bf90",
+  "scanDate": "2025-05-08T13:10:46.281676Z",
+  "severityDistribution": [
+   {
+    "level": "High",
+    "value": 2
+   },
+   {
+    "level": "Medium",
+    "value": 2
+   }
+  ],
+  "scannedBranchName": "unsafe",
+  "scanners": [
+   "SCA"
+  ],
+  "mainBranch": "N/A"
+ },
+ "reportFilters": {
+  "filters": [],
+  "resultsLimit": "10000"
+ },
+ "scanInformation": {
+  "scanId": "2ebe6e65-36fa-4a0c-8b51-6b5a14d7b7ca",
+  "scanInitiator": "org_admin",
+  "scanDuration": 1810840133000,
+  "preset": "ASA Premium",
+  "totalScannedLoc": 172,
+  "scannedLoc": 115,
+  "iacScannedLoc": 57,
+  "totalScannedFiles": 24,
+  "scannedFiles": 20,
+  "iacScannedFiles": 4,
+  "viewerLink": "https://ast-master-components.dev.cxast.net/sast-results/d21eaeda-b815-4b47-9312-d794b49883f0/2ebe6e65-36fa-4a0c-8b51-6b5a14d7b7ca",
+  "sourceOrigin": "github",
+  "scanType": "Full Scan",
+  "branch": "unsafe",
+  "groups": null,
+  "scanners": [
+   "SCA"
+  ]
+ },
+ "projectAndScanTags": {
+  "scanTags": null,
+  "projectTags": {
+   "mad": "",
+   "madGoat": ""
+  }
+ },
+ "scaScanResults": {
+  "totalResults": 4,
+  "severitiesBreakdown": [
+   {
+    "level": "High",
+    "value": 2
+   },
+   {
+    "level": "Medium",
+    "value": 2
+   }
+  ],
+  "packages": [
+   {
+    "packageName": "org.apache.logging.log4j:log4j-core",
+    "packageId": "Maven-org.apache.logging.log4j:log4j-core-2.8.2",
+    "packageVersion": "2.8.2",
+    "totalResults": 4,
+    "packageCategory": [
+     {
+      "categoryName": "CWE-502",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "lp77cpA42saxjvgvRCkVK1YWazz8lOzAUP7CSBiG6o4=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:49Z",
+        "lastDetectionDate": "2025-05-08T13:10:49Z",
+        "firstScanId": "2ebe6e65-36fa-4a0c-8b51-6b5a14d7b7ca",
+        "outdated": true,
+        "cve": "CVE-2021-45046",
+        "description": "It was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allow attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in a denial of service (DOS) attack, an information leak and remote code execution in some environments and local code execution in all environments. Log4j 2.15.0 restricts JNDI LDAP lookups to localhost by default. Note that previous mitigations involving configuration such as to set the system property `log4j2.noFormatMsgLookup` to `true` do NOT mitigate this specific vulnerability. Log4j 2.16.0 (for users requiring Java 8 or later), 2.12.2  (for Java 7 users), and 2.3.1 (for java 6 users) fixes this issue by removing support for message lookup patterns and disabling JNDI functionality by default. This issue can be mitigated in prior releases (<2.16.0) by removing the JndiLookup class from the classpath (example: zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class).\nOnly the log4j-core package is directly affected by this vulnerability. ",
+        "references": [
+         {
+          "url": "https://logging.apache.org/log4j/2.x/security.html",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-74",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "CK3x+y9a5Kr1FG/yEQPruHw1z//i1py93aNLCycG0WI=",
+        "severity": "High",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:49Z",
+        "lastDetectionDate": "2025-05-08T13:10:49Z",
+        "firstScanId": "2ebe6e65-36fa-4a0c-8b51-6b5a14d7b7ca",
+        "outdated": true,
+        "cve": "CVE-2021-44228",
+        "description": "Apache Log4j2 2.0-beta9 through 2.12.1 (excluding 2.3.1) and 2.13.0 through 2.14.1 JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (for users requiring Java 8 or later), 2.12.2 (for Java 7 users), and 2.3.1 (for Java 6 users) this functionality has been completely removed. \nNote that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-jfh8-c2jp-5v3q",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-20",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "spKDip9RpV7KVLSYbaKXzmf80BwyVWJOj3r2XHNPhy8=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:49Z",
+        "lastDetectionDate": "2025-05-08T13:10:49Z",
+        "firstScanId": "2ebe6e65-36fa-4a0c-8b51-6b5a14d7b7ca",
+        "outdated": true,
+        "cve": "CVE-2021-44832",
+        "description": "Apache Log4j2 versions 2.0-beta7 through 2.17.0 (excluding security fix releases 2.3.2 and 2.12.4) are vulnerable to an arbitrary code execution where an attacker with permission to modify the logging configuration file can construct a malicious configuration using JDBC Appender with a data source referencing a JNDI URI which can execute remote code. This issue is fixed by limiting JNDI data source names to the java protocol in Log4j2 versions 2.17.1, 2.12.4, and 2.3.2.",
+        "references": [
+         {
+          "url": "https://github.com/advisories/GHSA-8489-44mv-ggj8",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "categoryName": "CWE-674",
+      "totalResults": 1,
+      "categoryResults": [
+       {
+        "resultId": "vcl1t+XD/l23sPWxUanY071lhpYUf5Hdm1GnHPbf7OY=",
+        "severity": "Medium",
+        "status": "Recurrent",
+        "state": "To Verify",
+        "firstDetectionDate": "2025-05-08T13:10:49Z",
+        "lastDetectionDate": "2025-05-08T13:10:49Z",
+        "firstScanId": "2ebe6e65-36fa-4a0c-8b51-6b5a14d7b7ca",
+        "outdated": true,
+        "cve": "CVE-2021-45105",
+        "description": "Apache Log4j2 versions 2.0-alpha1 through 2.16.0 (excluding 2.12.3- for users requiring Java 7 and 2.3.1 for users requiring Java 6) did not protect from uncontrolled recursion from self-referential lookups. This allows an attacker with control over Thread Context Map data to cause a denial of service when a crafted string is interpreted. This issue was fixed in Log4j 2.17.0 and 2.12.3.\n\nOnly the log4j-core package is directly affected by this vulnerability. ",
+        "references": [
+         {
+          "url": "https://logging.apache.org/log4j/2.x/security.html",
+          "type": "Advisory"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "scanResults": {
+  "totalResults": 0,
+  "severitiesBreakdown": [],
+  "resultsList": []
+ },
+ "iacScanResults": {
+  "totalResults": 0,
+  "severitiesBreakdown": [],
+  "technology": []
+ },
+ "containerScanResults": null,
+ "scsSummaryResults": []
+}

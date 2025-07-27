@@ -1,0 +1,54 @@
+.landing-container {
+  background-color: #f0f2f5; /* Um fundo claro como o da imagem */
+  background-image: url('/cxOne.png'); /* Se quiser usar a sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  
+  height: 100vh;
+  width: 100vw;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.content-box {
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente opcional */
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+.content-box h2 {
+  color: #333; /* Cor escura para o texto principal */
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.content-box .app-name {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* ESTE É O ESTILO DO BOTÃO */
+.explore-button {
+  display: inline-block;
+  background-color: #4a69e2; /* Cor azul do botão na imagem */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Remove o sublinhado do link */
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px; /* Cantos arredondados */
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.explore-button:hover {
+  background-color: #3b54b5; /* Cor um pouco mais escura ao passar o rato */
+  transform: translateY(-2px); /* Efeito de elevação */
+}

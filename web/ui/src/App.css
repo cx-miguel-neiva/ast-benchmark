@@ -1,0 +1,111 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-filters {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-group label {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.filter-group select {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #3a3f78;
+  background-color: #1c1e3b;
+  color: white;
+  font-size: 1rem;
+}
+
+
+.calculate-button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #36a2eb; /* Um azul vibrante para a ação primária */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.calculate-button:hover {
+  background-color: #2b8cd6; /* Um pouco mais escuro no hover */
+}
+
+.calculate-button:active {
+  transform: scale(0.98); /* Efeito de clique */
+}
+
+.calculate-button:disabled {
+  background-color: #555;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.chart-container {
+  position: relative;
+  height: 65vh; /* Mais altura para o gráfico */
+  width: 100%;
+  background-color: #1c1e3b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #3a3f78;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.landing-page-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* Centra verticalmente */
+  height: 80vh;           /* Ocupa a maior parte da altura do ecrã */
+  position: relative;     /* Necessário para o posicionamento absoluto do filho */
+}
+
+/* Estilos específicos para o botão na landing page */
+.explore-button {
+  padding: 35px 70px; /* Aumenta o tamanho do botão */
+  font-size: 2rem;  /* Aumenta o tamanho do texto */
+  /* Posicionamento relativo ao contentor */
+  position: absolute;
+  left: 30%;          /* Move para a esquerda (ajuste este valor se necessário) */
+  top: 51%;           /* Move para cima (ajuste este valor se necessário) */
+  /* Mantém os estilos do botão original */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+}

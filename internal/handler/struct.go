@@ -1,6 +1,7 @@
 package handler
 
 type VulnerabilityDetail struct {
+	ResultID              string `json:"ResultId"`
 	ResourceType          string `json:"ResourceType"`
 	Resource              string `json:"Resource"`
 	VulnerabilityCategory string `json:"VulnerabilityCategory"`

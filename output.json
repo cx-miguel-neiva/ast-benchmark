@@ -1,0 +1,94 @@
+[
+  {
+    "projectName": "MAD-Goat-Project/mad-profile-service",
+    "results": [
+      {
+        "engineType": "IAC",
+        "details": [
+          {
+            "ResourceType": "Filename",
+            "Resource": "/Dockerfile",
+            "VulnerabilityCategory": "Missing User Instruction",
+            "VulnerabilityValue": "The 'Dockerfile' does not contain any 'USER' instruction"
+          },
+          {
+            "ResourceType": "Filename",
+            "Resource": "/Dockerfile",
+            "VulnerabilityCategory": "Image Version Using 'latest'",
+            "VulnerabilityValue": "FROM alpine:latest'"
+          }
+        ]
+      },
+      {
+        "engineType": "SCA",
+        "details": [
+          {
+            "ResourceType": "Package",
+            "Resource": "google.golang.org/protobuf",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "835"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "golang.org/x/net",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "770"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "golang.org/x/net",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "400"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "golang.org/x/net",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "github.com/gin-contrib/cors",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "829"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "github.com/golang-jwt/jwt/v4",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "405"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "github.com/golang-jwt/jwt/v5",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "405"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "golang.org/x/crypto",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "770"
+          },
+          {
+            "ResourceType": "Package",
+            "Resource": "golang.org/x/crypto",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "345"
+          }
+        ]
+      },
+      {
+        "engineType": "SAST",
+        "details": [
+          {
+            "ResourceType": "FileName",
+            "Resource": "Go/Go_Medium_Threat/Missing_HSTS_Header",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "346"
+          }
+        ]
+      }
+    ]
+  }
+]

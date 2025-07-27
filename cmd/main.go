@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 
 	"github.com/cx-miguel-neiva/ast-benchmark/internal/model"
 	"github.com/rs/zerolog/log"
@@ -39,6 +40,7 @@ func Execute() error {
 	rootCmd.PersistentFlags().StringVar(&filePath, "path", "", "Path to the report file")
 
 	rootCmd.AddCommand(cxoneCmd())
+	rootCmd.AddCommand(dbSeedCmd())
 
 	if err := rootCmd.Execute(); err != nil {
 		log.Error().Err(err).Msg("Error executing root command")
@@ -67,6 +69,10 @@ func cxoneCmd() *cobra.Command {
 			if err != nil {
 				return fmt.Errorf("failed to convert report to JSON: %w", err)
 			}
+			if err := os.MkdirAll(filepath.Dir(reportPath), 0755); err != nil {
+				return fmt.Errorf("failed to create directory for report: %w", err)
+			}
+
 			if reportPath == "" {
 				return fmt.Errorf("report path is required (use --report-path)")
 			}
@@ -75,7 +81,7 @@ func cxoneCmd() *cobra.Command {
 			if err != nil {
 				return fmt.Errorf("failed to write JSON to file: %w", err)
 			}
-
+			log.Info().Str("output", reportPath).Msg("Normalized report saved successfully.")
 			return nil
 		},
 	}

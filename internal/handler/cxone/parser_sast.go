@@ -31,10 +31,15 @@ func parseSast(data interface{}) (handler.EngineResult, error) {
 			continue
 		}
 
+		resourceType := "FileName"
+		category := "CWE"
+		vulnID := handler.GenerateResultID(resourceType, queryPath, category, cweId)
+
 		details = append(details, handler.VulnerabilityDetail{
-			ResourceType:          "FileName",
+			ResultID:              vulnID,
+			ResourceType:          resourceType,
 			Resource:              queryPath,
-			VulnerabilityCategory: "CWE",
+			VulnerabilityCategory: category,
 			VulnerabilityValue:    cweId,
 		})
 	}

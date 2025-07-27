@@ -6,38 +6,37 @@ import (
 	"github.com/cx-miguel-neiva/ast-benchmark/internal/handler"
 )
 
-func parseScs(scaData interface{}) (handler.EngineResult, error) {
-	data, ok := scaData.(map[string]interface{})
+func parseScs(scsData interface{}) (handler.EngineResult, error) {
+	data, ok := scsData.(map[string]interface{})
 	if !ok {
-		return handler.EngineResult{}, fmt.Errorf("estrutura de SCA inválida")
+		return handler.EngineResult{}, fmt.Errorf("estrutura de SCS inválida")
 	}
 
-	packages, ok := data["packages"].([]interface{})
+	resultsList, ok := data["resultsList"].([]interface{})
 	if !ok {
-		return handler.EngineResult{}, fmt.Errorf("lista de pacotes ausente ou inválida")
+		return handler.EngineResult{EngineType: "SCS", Details: []handler.VulnerabilityDetail{}}, nil
 	}
 
 	var details []handler.VulnerabilityDetail
-	for _, pkgRaw := range packages {
-		pkg, _ := pkgRaw.(map[string]interface{})
+	for _, resRaw := range resultsList {
+		res, _ := resRaw.(map[string]interface{})
 
-		name := handler.ToStr(pkg["name"])
-		version := handler.ToStr(pkg["version"])
-		vulns, _ := pkg["vulnerabilities"].([]interface{})
+		resourceType := "SupplyChain"
+		category := handler.ToStr(res["type"])
+		value := handler.ToStr(res["details"])
 
-		for _, vulnRaw := range vulns {
-			vuln, _ := vulnRaw.(map[string]interface{})
-			severity := handler.ToStr(vuln["severity"])
-			cve := handler.ToStr(vuln["cve"])
+		resource := category
 
-			details = append(details, handler.VulnerabilityDetail{
-				ResourceType:          "Package",
-				Resource:              fmt.Sprintf("%s@%s", name, version),
-				VulnerabilityCategory: severity,
-				VulnerabilityValue:    cve,
-			})
-		}
+		resultID := handler.GenerateResultID(resourceType, resource, category, value)
+
+		details = append(details, handler.VulnerabilityDetail{
+			ResultID:              resultID,
+			ResourceType:          resourceType,
+			Resource:              resource,
+			VulnerabilityCategory: category,
+			VulnerabilityValue:    value,
+		})
 	}
 
-	return handler.EngineResult{EngineType: "sca", Details: details}, nil
+	return handler.EngineResult{EngineType: "SCS", Details: details}, nil
 }
