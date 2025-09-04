@@ -1,0 +1,156 @@
+{
+  "overallScore": {
+    "tpPercentage": 33.63095238095237,
+    "totalRepositories": 7
+  },
+  "enginesScore": {
+    "IAC": {
+      "tpPercentage": 7.142857142857143
+    },
+    "SCA": {
+      "tpPercentage": 60.119047619047606
+    }
+  },
+  "repositories": [
+    {
+      "repositoryName": "MAD-Goat-Project/mad-deployment-service",
+      "all": {
+        "tpPercentage": 68.75,
+        "detectedVulnerabilities": 6,
+        "vulnerabilityCount": 8
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 50,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 87.5,
+          "detectedVulnerabilities": 6,
+          "vulnerabilityCount": 7
+        }
+      }
+    },
+    {
+      "repositoryName": "MAD-Goat-Project/mad-goat4shell-service",
+      "all": {
+        "tpPercentage": 33.33333333333333,
+        "detectedVulnerabilities": 27,
+        "vulnerabilityCount": 42
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 66.66666666666666,
+          "detectedVulnerabilities": 27,
+          "vulnerabilityCount": 41
+        }
+      }
+    },
+    {
+      "repositoryName": "MAD-Goat-Project/mad-keycloack-service",
+      "all": {
+        "tpPercentage": 33.33333333333333,
+        "detectedVulnerabilities": 27,
+        "vulnerabilityCount": 42
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 66.66666666666666,
+          "detectedVulnerabilities": 27,
+          "vulnerabilityCount": 41
+        }
+      }
+    },
+    {
+      "repositoryName": "MAD-Goat-Project/mad-lessons-service",
+      "all": {
+        "tpPercentage": 33.33333333333333,
+        "detectedVulnerabilities": 27,
+        "vulnerabilityCount": 42
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 66.66666666666666,
+          "detectedVulnerabilities": 27,
+          "vulnerabilityCount": 41
+        }
+      }
+    },
+    {
+      "repositoryName": "MAD-Goat-Project/mad-profile-service",
+      "all": {
+        "tpPercentage": 33.33333333333333,
+        "detectedVulnerabilities": 27,
+        "vulnerabilityCount": 42
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 66.66666666666666,
+          "detectedVulnerabilities": 27,
+          "vulnerabilityCount": 41
+        }
+      }
+    },
+    {
+      "repositoryName": "MAD-Goat-Project/mad-scoreboard-service",
+      "all": {
+        "tpPercentage": 0,
+        "detectedVulnerabilities": 0,
+        "vulnerabilityCount": 42
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 41
+        }
+      }
+    },
+    {
+      "repositoryName": "MAD-Goat-Project/mad-web-app",
+      "all": {
+        "tpPercentage": 33.33333333333333,
+        "detectedVulnerabilities": 27,
+        "vulnerabilityCount": 42
+      },
+      "engines": {
+        "IAC": {
+          "tpPercentage": 0,
+          "detectedVulnerabilities": 0,
+          "vulnerabilityCount": 1
+        },
+        "SCA": {
+          "tpPercentage": 66.66666666666666,
+          "detectedVulnerabilities": 27,
+          "vulnerabilityCount": 41
+        }
+      }
+    }
+  ]
+}

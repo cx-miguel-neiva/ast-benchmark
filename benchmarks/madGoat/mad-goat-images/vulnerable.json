@@ -1,0 +1,45 @@
+[
+  {
+    "projectName": "MAD-Goat-Project/mad-goat-images",
+    "results": [
+      {
+        "engineType": "SCA",
+        "details": [
+          {
+            "ResultId": "3da5f022551f4b0313fa6a2ea81810b2",
+            "ResourceType": "Package",
+            "Resource": "Flask",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "539"
+          }
+        ]
+      },
+      {
+        "engineType": "SAST",
+        "details": [
+          {
+            "ResultId": "cc886e5cf98d390b7196ae54ae8c6805",
+            "ResourceType": "FileName",
+            "Resource": "Python/Python_High_Risk/Reflected_XSS",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "328b7de814401f7245d50d1e4af2c52c",
+            "ResourceType": "FileName",
+            "Resource": "Python/Python_High_Risk/SSRF",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "918"
+          },
+          {
+            "ResultId": "a7ae7fcda053ef8025dc3523fa9a0140",
+            "ResourceType": "FileName",
+            "Resource": "Python/Python_Medium_Threat/Missing_HSTS_Header",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "346"
+          }
+        ]
+      }
+    ]
+  }
+]

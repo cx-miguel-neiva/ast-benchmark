@@ -2,13 +2,12 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"net/url"
 	"os"
+	"os/exec"
 	"path/filepath"
-	"strconv"
 
 	"github.com/cx-miguel-neiva/ast-benchmark/internal/db"
 	"github.com/go-chi/chi/v5"
@@ -53,26 +52,6 @@ func main() {
 		json.NewEncoder(w).Encode(summaries)
 	})
 
-	// Scores
-	r.Get("/api/scores", func(w http.ResponseWriter, r *http.Request) {
-		groupBy := r.URL.Query().Get("groupBy")
-		if groupBy == "" {
-			groupBy = "project"
-		}
-		application := r.URL.Query().Get("application")
-		tool := r.URL.Query().Get("tool")
-		engine := r.URL.Query().Get("engine")
-
-		scores, err := conn.GetScores(groupBy, application, tool, engine)
-		w.Header().Set("Content-Type", "application/json")
-		if err != nil {
-			w.WriteHeader(http.StatusInternalServerError)
-			json.NewEncoder(w).Encode(map[string]string{"error": fmt.Sprintf("Failed to fetch scores: %v", err)})
-			return
-		}
-		json.NewEncoder(w).Encode(scores)
-	})
-
 	// Tools
 	r.Get("/api/tools", func(w http.ResponseWriter, r *http.Request) {
 		tools, err := conn.GetDistinctTools()
@@ -97,51 +76,6 @@ func main() {
 		json.NewEncoder(w).Encode(engines)
 	})
 
-	// TP percentage by tool
-	r.Get("/api/tp-percentage/tool/{tool}", func(w http.ResponseWriter, r *http.Request) {
-		tool := chi.URLParam(r, "tool")
-		percentage, err := conn.GetTruePositivePercentageByTool(tool)
-		w.Header().Set("Content-Type", "application/json")
-		if err != nil {
-			w.WriteHeader(http.StatusInternalServerError)
-			json.NewEncoder(w).Encode(map[string]string{"error": "Failed to fetch TP percentage for tool"})
-			return
-		}
-		json.NewEncoder(w).Encode(map[string]float64{"tpPercentage": percentage})
-	})
-
-	// TP percentage by engine
-	r.Get("/api/tp-percentage/engine/{engine}", func(w http.ResponseWriter, r *http.Request) {
-		engine := chi.URLParam(r, "engine")
-		percentage, err := conn.GetTruePositivePercentageByEngine(engine)
-		w.Header().Set("Content-Type", "application/json")
-		if err != nil {
-			w.WriteHeader(http.StatusInternalServerError)
-			json.NewEncoder(w).Encode(map[string]string{"error": "Failed to fetch TP percentage for engine"})
-			return
-		}
-		json.NewEncoder(w).Encode(map[string]float64{"tpPercentage": percentage})
-	})
-
-	// TP percentage by project
-	r.Get("/api/tp-percentage/{projectID}", func(w http.ResponseWriter, r *http.Request) {
-		projectIDStr := chi.URLParam(r, "projectID")
-		projectID, err := strconv.Atoi(projectIDStr)
-		w.Header().Set("Content-Type", "application/json")
-		if err != nil {
-			w.WriteHeader(http.StatusBadRequest)
-			json.NewEncoder(w).Encode(map[string]string{"error": "Invalid projectID"})
-			return
-		}
-		percentage, err := conn.GetTruePositivePercentage(projectID)
-		if err != nil {
-			w.WriteHeader(http.StatusInternalServerError)
-			json.NewEncoder(w).Encode(map[string]string{"error": "Failed to fetch TP percentage"})
-			return
-		}
-		json.NewEncoder(w).Encode(map[string]float64{"tpPercentage": percentage})
-	})
-
 	r.Get("/api/engines/{repo}", func(w http.ResponseWriter, r *http.Request) {
 		repo := chi.URLParam(r, "repo")
 		repoDecoded, _ := url.PathUnescape(repo)
@@ -149,7 +83,7 @@ func main() {
 		w.Header().Set("Content-Type", "application/json")
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
-			json.NewEncoder(w).Encode([]string{}) // devolve array vazio em caso de erro
+			json.NewEncoder(w).Encode([]string{})
 			return
 		}
 		if engines == nil {
@@ -238,6 +172,25 @@ func main() {
 			"tpPercentage":       tpPercentage,
 			"vulnerabilityCount": vulnCount,
 		})
+	})
+
+	// Benchmark data endpoint
+	r.Get("/api/benchmark", func(w http.ResponseWriter, r *http.Request) {
+		// Execute the benchmark command
+		cmd := exec.Command("go", "run", ".", "benchmark")
+		cmd.Dir = projectRoot
+
+		output, err := cmd.Output()
+		if err != nil {
+			w.Header().Set("Content-Type", "application/json")
+			w.WriteHeader(http.StatusInternalServerError)
+			json.NewEncoder(w).Encode(map[string]string{"error": "Failed to run benchmark command"})
+			return
+		}
+
+		// Return the JSON output directly
+		w.Header().Set("Content-Type", "application/json")
+		w.Write(output)
 	})
 
 	log.Println("INFO: Server is running and listening on port 3000")

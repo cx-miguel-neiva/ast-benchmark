@@ -1,0 +1,178 @@
+[
+  {
+    "projectName": "MAD-Goat-Project/mad-web-app",
+    "results": [
+      {
+        "engineType": "IAC",
+        "details": [
+          {
+            "ResultId": "328a149648250c84434360e0bd9b013e",
+            "ResourceType": "Filename",
+            "Resource": "/Dockerfile",
+            "VulnerabilityCategory": "Missing User Instruction",
+            "VulnerabilityValue": "The 'Dockerfile' does not contain any 'USER' instruction"
+          },
+          {
+            "ResultId": "b833cbb633fe5976db4aa58f81ee3d48",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Security Opt Not Set",
+            "VulnerabilityValue": "Docker compose file does not have 'security_opt' attribute"
+          },
+          {
+            "ResultId": "2003aa37928f08a37251a9c1352ca55c",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Privileged Ports Mapped In Container",
+            "VulnerabilityValue": "Docker compose file has 'ports' attribute set to privileged ports (\u003c1024)."
+          },
+          {
+            "ResultId": "33f5f1e46577cd233f889a2014dce4a1",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Memory Not Limited",
+            "VulnerabilityValue": "'deploy' is not defined"
+          },
+          {
+            "ResultId": "a4f7d5daf2e0eaf46d90175d8b388c01",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Healthcheck Not Set",
+            "VulnerabilityValue": "Healthcheck is not defined."
+          },
+          {
+            "ResultId": "3e011a71ae64ba03f8cf83bf04bc3ad0",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Container Traffic Not Bound To Host Interface",
+            "VulnerabilityValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface"
+          },
+          {
+            "ResultId": "1f8be6df0ac3f4fc06fbb4269d544de3",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Container Capabilities Unrestricted",
+            "VulnerabilityValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities."
+          }
+        ]
+      },
+      {
+        "engineType": "SCA",
+        "details": [
+          {
+            "ResultId": "c84b65572a2f73e0bb340804a40cb66e",
+            "ResourceType": "Package",
+            "Resource": "dompurify",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "e4188d8222c9ca3b0bbc7f3056ee194a",
+            "ResourceType": "Package",
+            "Resource": "dompurify",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "861d4d50dded6dcf53836243e5523fdd",
+            "ResourceType": "Package",
+            "Resource": "axios",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "918"
+          },
+          {
+            "ResultId": "85ffd9799113da9be8657779a821f09b",
+            "ResourceType": "Package",
+            "Resource": "braces",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1050"
+          },
+          {
+            "ResultId": "dfd09dd11c80f5c729ca20d2605bc632",
+            "ResourceType": "Package",
+            "Resource": "cross-spawn",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "57a1bc07891d1964a4032169fe6bc9a2",
+            "ResourceType": "Package",
+            "Resource": "inflight",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "772"
+          },
+          {
+            "ResultId": "0f242213ef4855df4fe3f690457feb84",
+            "ResourceType": "Package",
+            "Resource": "vite",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "22"
+          },
+          {
+            "ResultId": "6e4e295afc864dc86476505892d10305",
+            "ResourceType": "Package",
+            "Resource": "vite",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "200"
+          },
+          {
+            "ResultId": "17f65dcdbe795b4cd13f434b45be5141",
+            "ResourceType": "Package",
+            "Resource": "vite",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "b127be9fb64b07f531a0f22b29bd452d",
+            "ResourceType": "Package",
+            "Resource": "vite",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1385"
+          },
+          {
+            "ResultId": "0d6e442daac69fb725623a6b276a11f1",
+            "ResourceType": "Package",
+            "Resource": "vite",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "284"
+          },
+          {
+            "ResultId": "3e0a37bcc75fe1ab89780fd1cbe43ca9",
+            "ResourceType": "Package",
+            "Resource": "@babel/helpers",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "fb613c007a2586a8e25b2aa882ed9968",
+            "ResourceType": "Package",
+            "Resource": "esbuild",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "346"
+          },
+          {
+            "ResultId": "bed1d1aaaf99ee62a4164edf207199ca",
+            "ResourceType": "Package",
+            "Resource": "micromatch",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "7af8e8c8d87df154345e832bbf780f27",
+            "ResourceType": "Package",
+            "Resource": "nanoid",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "835"
+          },
+          {
+            "ResultId": "0ca28751f2bb6ade9ab11e3d76d1fc5a",
+            "ResourceType": "Package",
+            "Resource": "rollup",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          }
+        ]
+      }
+    ]
+  }
+]

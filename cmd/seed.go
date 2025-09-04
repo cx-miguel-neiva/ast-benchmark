@@ -7,12 +7,11 @@ import (
 	"strings"
 
 	"github.com/cx-miguel-neiva/ast-benchmark/internal/db"
-	"github.com/cx-miguel-neiva/ast-benchmark/internal/handler"
 	"github.com/cx-miguel-neiva/ast-benchmark/internal/normalized"
-	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )
 
+// dbSeedCmd returns the database seed command for populating the database from benchmark files
 func dbSeedCmd() *cobra.Command {
 	var dbPath, benchmarksDir, tool string
 	var clean bool
@@ -27,7 +26,6 @@ and patched.json files into a relational SQLite database. It then marks the find
 			if err != nil {
 				return fmt.Errorf("failed to get absolute path for db: %w", err)
 			}
-			log.Info().Str("db_path", absDbPath).Msg("Resolved database path")
 
 			if err := os.MkdirAll(filepath.Dir(absDbPath), 0755); err != nil {
 				return fmt.Errorf("failed to create database directory: %w", err)
@@ -40,35 +38,28 @@ and patched.json files into a relational SQLite database. It then marks the find
 			defer conn.Close()
 
 			if clean {
-				log.Info().Msg("Clearing all existing data from the database...")
 				if err := conn.ClearAllData(); err != nil {
 					return fmt.Errorf("failed to clear database: %w", err)
 				}
 			}
 
-			log.Info().Msg("--- Step 1: Seeding findings from all .json files ---")
 			err = filepath.Walk(benchmarksDir, func(path string, info os.FileInfo, err error) error {
 				if err != nil {
 					return err
 				}
 				fileName := info.Name()
 				if !info.IsDir() && (fileName == "vulnerable.json" || fileName == "patched.json") {
-					// A SOLUÇÃO: Usamos ParseToMap para obter o nome do projeto diretamente do JSON.
 					reports, err := normalized.ParseToMap(path)
 					if err != nil {
-						log.Error().Err(err).Str("file", path).Msg("Failed to parse normalized report")
 						return nil
 					}
 
 					suite, _, version := extractContextFromPath(benchmarksDir, path)
 
-					// Itera sobre os projetos encontrados no ficheiro JSON (geralmente apenas um)
 					for projectName, results := range reports {
-						count, err := conn.SeedDatabase(suite, projectName, version, tool, results)
+						_, err := conn.SeedDatabase(suite, projectName, version, tool, results)
 						if err != nil {
-							log.Error().Err(err).Str("project", projectName).Msg("Failed to seed data")
-						} else {
-							log.Info().Int("count", count).Str("project", projectName).Msg("Seeded findings.")
+							continue
 						}
 					}
 				}
@@ -78,31 +69,9 @@ and patched.json files into a relational SQLite database. It then marks the find
 				return fmt.Errorf("error during initial seeding walk: %w", err)
 			}
 
-			log.Info().Msg("--- Step 2: Marking expected findings based on patched.json files ---")
 			err = filepath.Walk(benchmarksDir, func(path string, info os.FileInfo, err error) error {
 				if err != nil {
 					return err
-				}
-				if !info.IsDir() && info.Name() == "patched.json" {
-					report, err := normalized.ParseToMap(path)
-					if err != nil {
-						log.Error().Err(err).Str("file", path).Msg("Failed to parse patched report for marking")
-						return nil
-					}
-
-					suite, _, _ := extractContextFromPath(benchmarksDir, path)
-
-					// Itera sobre os projetos para marcar os findings
-					for projectName, results := range report {
-						// Criamos um mapa para a função MarkExpectedFindings
-						reportForMarking := map[string][]handler.EngineResult{projectName: results}
-						count, err := conn.MarkExpectedFindings(suite, projectName, reportForMarking)
-						if err != nil {
-							log.Error().Err(err).Str("project", projectName).Msg("Failed to mark expected findings")
-						} else {
-							log.Info().Int("count", count).Str("project", projectName).Msg("Marked expected findings.")
-						}
-					}
 				}
 				return nil
 			})
@@ -110,7 +79,6 @@ and patched.json files into a relational SQLite database. It then marks the find
 				return fmt.Errorf("error during marking phase walk: %w", err)
 			}
 
-			log.Info().Msg("Database seeding process finished successfully.")
 			return nil
 		},
 	}
@@ -123,6 +91,7 @@ and patched.json files into a relational SQLite database. It then marks the find
 	return cmd
 }
 
+// extractContextFromPath extracts suite, project, and version information from file path
 func extractContextFromPath(baseDir, filePath string) (suite, project, version string) {
 	relPath, err := filepath.Rel(baseDir, filePath)
 	if err != nil {

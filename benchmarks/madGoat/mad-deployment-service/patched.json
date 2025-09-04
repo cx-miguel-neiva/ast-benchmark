@@ -13,7 +13,7 @@
             "VulnerabilityValue": "The 'Dockerfile' does not contain any 'USER' instruction"
           },
           {
-            "ResultId": "328a149648250c84434360e0bd9b013e",
+            "ResultId": "328a149648250c84434360e0bd9b013d",
             "ResourceType": "Filename",
             "Resource": "/Dockerfile",
             "VulnerabilityCategory": "Missing User Instruction",

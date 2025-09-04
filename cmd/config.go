@@ -50,7 +50,7 @@ func GetResults(path string, plugin string) (map[string][]handler.EngineResult, 
 			return nil, err // Retorna o erro se ocorrer um problema
 		}
 
-	// outros plugins conforme necessário
+	// other plugins if needed
 	// case "semgrep":
 	// 	result, err = handler.ProcessSemgrepReport(item)
 

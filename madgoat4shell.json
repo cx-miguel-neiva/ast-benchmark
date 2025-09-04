@@ -6,6 +6,7 @@
         "engineType": "IAC",
         "details": [
           {
+            "ResultId": "328a149648250c84434360e0bd9b013e",
             "ResourceType": "Filename",
             "Resource": "/Dockerfile",
             "VulnerabilityCategory": "Missing User Instruction",
@@ -17,246 +18,287 @@
         "engineType": "SCA",
         "details": [
           {
+            "ResultId": "8ec311ea1d3b90f98ece6d9d8708cfd0",
             "ResourceType": "Package",
             "Resource": "org.apache.logging.log4j:log4j-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "502"
           },
           {
+            "ResultId": "b1d49eb66b250abb3c7b6b526e77f646",
             "ResourceType": "Package",
             "Resource": "org.apache.logging.log4j:log4j-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "74"
           },
           {
+            "ResultId": "37c1ecbd4af799dca432c019c4d3dbe9",
             "ResourceType": "Package",
             "Resource": "org.apache.logging.log4j:log4j-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "20"
           },
           {
+            "ResultId": "df4c1c50ae70bd9c150beee32e3b52aa",
             "ResourceType": "Package",
             "Resource": "org.apache.logging.log4j:log4j-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "674"
           },
           {
+            "ResultId": "b4598746cbe0439cbc0c93e0f6eef6f2",
             "ResourceType": "Package",
             "Resource": "org.springframework.boot:spring-boot-autoconfigure",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "400"
           },
           {
+            "ResultId": "cbee27c98918610881a7efa0a0b37cf8",
             "ResourceType": "Package",
             "Resource": "com.fasterxml.jackson.core:jackson-databind",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "400"
           },
           {
+            "ResultId": "5f180ee5ce674311d82af52826f72a49",
             "ResourceType": "Package",
             "Resource": "com.fasterxml.jackson.core:jackson-databind",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "502"
           },
           {
+            "ResultId": "a4fefa62150ab019cbb7226f8031194e",
             "ResourceType": "Package",
             "Resource": "com.fasterxml.jackson.core:jackson-databind",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "787"
           },
           {
+            "ResultId": "ced254a7c718b4e37c59964591773960",
             "ResourceType": "Package",
             "Resource": "org.yaml:snakeyaml",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "400"
           },
           {
+            "ResultId": "44fe6cd218b032acc0e3f93349cb32ff",
             "ResourceType": "Package",
             "Resource": "org.yaml:snakeyaml",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "502"
           },
           {
+            "ResultId": "8da771318a9db48c8a36865ee3ab7d98",
             "ResourceType": "Package",
             "Resource": "org.yaml:snakeyaml",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "787"
           },
           {
+            "ResultId": "7f085d21ed8747e970c391d9c0659650",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-webmvc",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "22"
           },
           {
+            "ResultId": "991998e041cef6a95829a1c0567d0cf9",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-webmvc",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "155"
           },
           {
+            "ResultId": "ea07f6965231eb78b92ca423530391a5",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-webmvc",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "94"
           },
           {
+            "ResultId": "01cdcd0379fee8fa4d916474f492f520",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-webmvc",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "502"
           },
           {
+            "ResultId": "5d31941d16d32c48310c853cd688634a",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-webmvc",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "400"
           },
           {
+            "ResultId": "7cf842f1ee6610582a3b79aebf74bc35",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "367"
           },
           {
+            "ResultId": "62e3d48afde1654ecb55bc885a1324b5",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "444"
           },
           {
+            "ResultId": "6da66e5d253b1474561077cce31b43f6",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "74"
           },
           {
+            "ResultId": "8f37d475cd54e760df50da3c119c689b",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "770"
           },
           {
+            "ResultId": "c879e46e4d2c55a0a9c964c4427368fe",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "400"
           },
           {
+            "ResultId": "a5319018b29625cfeea986393ff27320",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "459"
           },
           {
+            "ResultId": "6d2cd6b3b9678fb68485c7fcf591f9cc",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "20"
           },
           {
+            "ResultId": "c03cdbf86ecb2c7d344a57a2afbef5b1",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "391"
           },
           {
+            "ResultId": "8a0127e9a4a372382c8ca40c04244610",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "502"
           },
           {
+            "ResultId": "7344933d89649fc356cafd605c5a8e70",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "523"
           },
           {
+            "ResultId": "b7784e584831b0024e3eccf8c2a54331",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "601"
           },
           {
+            "ResultId": "6caa8fcf4ab0d397a283c9e1b97f7506",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-web",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "502"
           },
           {
+            "ResultId": "2a886d8f5389e44347e0ee3166d2c30d",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-web",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "601"
           },
           {
+            "ResultId": "2b747cfebafd3398af7f69457fe1b6d3",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-web",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "400"
           },
           {
+            "ResultId": "7aec8c8caed343cc3724bd42d8ad80b0",
             "ResourceType": "Package",
             "Resource": "net.minidev:json-smart",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "674"
           },
           {
+            "ResultId": "851f71ce1e7054129af253211a67e307",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-websocket",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "772"
           },
           {
+            "ResultId": "aac7c98e13d08a02c05809877028dfde",
             "ResourceType": "Package",
             "Resource": "org.apache.tomcat.embed:tomcat-embed-websocket",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "459"
           },
           {
+            "ResultId": "0fdd503928f9282dfd7cba05f70e03a6",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-beans",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "94"
           },
           {
+            "ResultId": "1adde87304fad947cbd6a38ce47471d5",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-beans",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "770"
           },
           {
+            "ResultId": "6240905ee625b868191fd8751ec74729",
             "ResourceType": "Package",
             "Resource": "org.xmlunit:xmlunit-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "91"
           },
           {
+            "ResultId": "3ac1485da8b03f543d46a5ccd550f4d2",
             "ResourceType": "Package",
             "Resource": "com.jayway.jsonpath:json-path",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "787"
           },
           {
+            "ResultId": "2aa4d3ab3a4ad07440113ceab3717798",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-context",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "178"
           },
           {
+            "ResultId": "25315b6f6f3c9ee6205dced2b80289ae",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-core",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "117"
           },
           {
+            "ResultId": "619c4316448559cd901313052fed0f1d",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-expression",
             "VulnerabilityCategory": "CWE",
             "VulnerabilityValue": "770"
           },
           {
+            "ResultId": "4b9b3f630914b253737af4c163c00409",
             "ResourceType": "Package",
             "Resource": "org.springframework:spring-expression",
             "VulnerabilityCategory": "CWE",

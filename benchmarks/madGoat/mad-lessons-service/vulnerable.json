@@ -1,0 +1,360 @@
+[
+  {
+    "projectName": "MAD-Goat-Project/mad-lessons-service",
+    "results": [
+      {
+        "engineType": "IAC",
+        "details": [
+          {
+            "ResultId": "553134cd2cca777fb440d48b9a5b95c6",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Passwords And Secrets - Generic Password",
+            "VulnerabilityValue": "Hardcoded secret key appears in source"
+          },
+          {
+            "ResultId": "553134cd2cca777fb440d48b9a5b95c6",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Passwords And Secrets - Generic Password",
+            "VulnerabilityValue": "Hardcoded secret key appears in source"
+          },
+          {
+            "ResultId": "328a149648250c84434360e0bd9b013e",
+            "ResourceType": "Filename",
+            "Resource": "/Dockerfile",
+            "VulnerabilityCategory": "Missing User Instruction",
+            "VulnerabilityValue": "The 'Dockerfile' does not contain any 'USER' instruction"
+          },
+          {
+            "ResultId": "b833cbb633fe5976db4aa58f81ee3d48",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Security Opt Not Set",
+            "VulnerabilityValue": "Docker compose file does not have 'security_opt' attribute"
+          },
+          {
+            "ResultId": "b833cbb633fe5976db4aa58f81ee3d48",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Security Opt Not Set",
+            "VulnerabilityValue": "Docker compose file does not have 'security_opt' attribute"
+          },
+          {
+            "ResultId": "33f5f1e46577cd233f889a2014dce4a1",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Memory Not Limited",
+            "VulnerabilityValue": "'deploy' is not defined"
+          },
+          {
+            "ResultId": "33f5f1e46577cd233f889a2014dce4a1",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Memory Not Limited",
+            "VulnerabilityValue": "'deploy' is not defined"
+          },
+          {
+            "ResultId": "a4f7d5daf2e0eaf46d90175d8b388c01",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Healthcheck Not Set",
+            "VulnerabilityValue": "Healthcheck is not defined."
+          },
+          {
+            "ResultId": "a4f7d5daf2e0eaf46d90175d8b388c01",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Healthcheck Not Set",
+            "VulnerabilityValue": "Healthcheck is not defined."
+          },
+          {
+            "ResultId": "3e011a71ae64ba03f8cf83bf04bc3ad0",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Container Traffic Not Bound To Host Interface",
+            "VulnerabilityValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface"
+          },
+          {
+            "ResultId": "3e011a71ae64ba03f8cf83bf04bc3ad0",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Container Traffic Not Bound To Host Interface",
+            "VulnerabilityValue": "Docker compose file doesn't have 'ports' attribute bound to a specific host interface"
+          },
+          {
+            "ResultId": "1f8be6df0ac3f4fc06fbb4269d544de3",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Container Capabilities Unrestricted",
+            "VulnerabilityValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities."
+          },
+          {
+            "ResultId": "1f8be6df0ac3f4fc06fbb4269d544de3",
+            "ResourceType": "Filename",
+            "Resource": "/docker-compose.yml",
+            "VulnerabilityCategory": "Container Capabilities Unrestricted",
+            "VulnerabilityValue": "Docker compose file doesn't have 'cap_drop' attribute. Make sure your container only has necessary capabilities."
+          }
+        ]
+      },
+      {
+        "engineType": "SCA",
+        "details": [
+          {
+            "ResultId": "b9c3648b252cd83d444bf5c98effb8a2",
+            "ResourceType": "Package",
+            "Resource": "pdfjs-dist",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "754"
+          },
+          {
+            "ResultId": "041e95cebf8e1ee734c4e0f8d77e5382",
+            "ResourceType": "Package",
+            "Resource": "elliptic",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "347"
+          },
+          {
+            "ResultId": "205353cbe12652fd2782a19feedfad46",
+            "ResourceType": "Package",
+            "Resource": "elliptic",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "200"
+          },
+          {
+            "ResultId": "96964a772894e2ae319f2516cb4e6083",
+            "ResourceType": "Package",
+            "Resource": "elliptic",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "130"
+          },
+          {
+            "ResultId": "f396d26dd2b09f96ef6a027b5dbf2a91",
+            "ResourceType": "Package",
+            "Resource": "body-parser",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "405"
+          },
+          {
+            "ResultId": "f396d26dd2b09f96ef6a027b5dbf2a91",
+            "ResourceType": "Package",
+            "Resource": "body-parser",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "405"
+          },
+          {
+            "ResultId": "85ffd9799113da9be8657779a821f09b",
+            "ResourceType": "Package",
+            "Resource": "braces",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1050"
+          },
+          {
+            "ResultId": "c1cad7caad1743d31dc2068597768ba6",
+            "ResourceType": "Package",
+            "Resource": "chromedriver",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "78"
+          },
+          {
+            "ResultId": "b08917ab80c4e0a3de248d01bcfaee63",
+            "ResourceType": "Package",
+            "Resource": "@babel/traverse",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "697"
+          },
+          {
+            "ResultId": "dfd09dd11c80f5c729ca20d2605bc632",
+            "ResourceType": "Package",
+            "Resource": "cross-spawn",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "57a1bc07891d1964a4032169fe6bc9a2",
+            "ResourceType": "Package",
+            "Resource": "inflight",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "772"
+          },
+          {
+            "ResultId": "f3a328e07c36f098128c070fea28729d",
+            "ResourceType": "Package",
+            "Resource": "crypto-js",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "327"
+          },
+          {
+            "ResultId": "394eb3500f827e9ef59b42f94d3b758c",
+            "ResourceType": "Package",
+            "Resource": "path-to-regexp",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "394eb3500f827e9ef59b42f94d3b758c",
+            "ResourceType": "Package",
+            "Resource": "path-to-regexp",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "1f0f85f02346bf774729e71fa0596cf2",
+            "ResourceType": "Package",
+            "Resource": "word-wrap",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "5e6bfe6eec9739a87ad5684747068044",
+            "ResourceType": "Package",
+            "Resource": "semver",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "5e6bfe6eec9739a87ad5684747068044",
+            "ResourceType": "Package",
+            "Resource": "semver",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "861d4d50dded6dcf53836243e5523fdd",
+            "ResourceType": "Package",
+            "Resource": "axios",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "918"
+          },
+          {
+            "ResultId": "eb93a640404e63c3886a5561dff1ee6d",
+            "ResourceType": "Package",
+            "Resource": "axios",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "352"
+          },
+          {
+            "ResultId": "6c0081fd223e46c5bbc4adee06696b36",
+            "ResourceType": "Package",
+            "Resource": "es5-ext",
+            "VulnerabilityCategory": "Cx2",
+            "VulnerabilityValue": "d5de"
+          },
+          {
+            "ResultId": "87cccb3323b22aed5d63da4e2b0ed317",
+            "ResourceType": "Package",
+            "Resource": "es5-ext",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "9e2d8cd98bc3b50bc8fd6f9b423e9770",
+            "ResourceType": "Package",
+            "Resource": "@nestjs/common",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "94"
+          },
+          {
+            "ResultId": "9e2d8cd98bc3b50bc8fd6f9b423e9770",
+            "ResourceType": "Package",
+            "Resource": "@nestjs/common",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "94"
+          },
+          {
+            "ResultId": "f150ba7dcbbd3901aaa0b8820aece94d",
+            "ResourceType": "Package",
+            "Resource": "cookie",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "74"
+          },
+          {
+            "ResultId": "bd367025418cea506b6dc75b2ac10871",
+            "ResourceType": "Package",
+            "Resource": "express",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1286"
+          },
+          {
+            "ResultId": "45bc74679fa5e731c3d7f6c8249f48c0",
+            "ResourceType": "Package",
+            "Resource": "express",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "f98d5eba63e8cb86d6806328b3e38372",
+            "ResourceType": "Package",
+            "Resource": "follow-redirects",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "601"
+          },
+          {
+            "ResultId": "20f45af2c0e62a1510b19d5443ed2933",
+            "ResourceType": "Package",
+            "Resource": "follow-redirects",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "200"
+          },
+          {
+            "ResultId": "1e90ee9d51fd210ff4fdb68be29a5c79",
+            "ResourceType": "Package",
+            "Resource": "formidable",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "434"
+          },
+          {
+            "ResultId": "bed1d1aaaf99ee62a4164edf207199ca",
+            "ResourceType": "Package",
+            "Resource": "micromatch",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "a207ad14281731bfdc1e8eb95e9ae7c3",
+            "ResourceType": "Package",
+            "Resource": "serve-static",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "ed85e7fadd52b2b16a9bdaedc82e5ff7",
+            "ResourceType": "Package",
+            "Resource": "webpack",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "548fce279c0bd98e390061c896df1317",
+            "ResourceType": "Package",
+            "Resource": "xml2js",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1321"
+          },
+          {
+            "ResultId": "3e0a37bcc75fe1ab89780fd1cbe43ca9",
+            "ResourceType": "Package",
+            "Resource": "@babel/helpers",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "1333"
+          },
+          {
+            "ResultId": "4c12cb5c525330cbf48334cf4bb35d06",
+            "ResourceType": "Package",
+            "Resource": "send",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          },
+          {
+            "ResultId": "5c2ed34b6b0250ea5872f45cb2166833",
+            "ResourceType": "Package",
+            "Resource": "serialize-javascript",
+            "VulnerabilityCategory": "CWE",
+            "VulnerabilityValue": "79"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -6,7 +6,6 @@ import (
 	"strings"
 
 	"github.com/cx-miguel-neiva/ast-benchmark/internal/handler"
-	"github.com/rs/zerolog/log"
 	_ "modernc.org/sqlite"
 )
 
@@ -14,6 +13,7 @@ type Connection struct {
 	*sql.DB
 }
 
+// NewConnection creates and initializes a new database connection with schema
 func NewConnection(dbPath string) (*Connection, error) {
 	db, err := sql.Open("sqlite", dbPath+"?_foreign_keys=on")
 	if err != nil {
@@ -60,11 +60,13 @@ func NewConnection(dbPath string) (*Connection, error) {
 	return &Connection{db}, nil
 }
 
+// ClearAllData removes all data from the database tables
 func (c *Connection) ClearAllData() error {
 	_, err := c.Exec("DELETE FROM findings; DELETE FROM scans; DELETE FROM projects; DELETE FROM applications;")
 	return err
 }
 
+// SeedDatabase inserts findings data into the database
 func (c *Connection) SeedDatabase(applicationName, projectName, version, tool string, results []handler.EngineResult) (int, error) {
 	tx, err := c.Begin()
 	if err != nil {
@@ -110,59 +112,6 @@ func (c *Connection) SeedDatabase(applicationName, projectName, version, tool st
 	return insertedCount, tx.Commit()
 }
 
-func (c *Connection) MarkExpectedFindings(suite, project string, report map[string][]handler.EngineResult) (int, error) {
-	tx, err := c.Begin()
-	if err != nil {
-		return 0, err
-	}
-	defer tx.Rollback()
-
-	stmt, err := tx.Prepare(`
-        UPDATE findings 
-        SET is_expected = 1 
-        WHERE vulnerability_id = ? 
-          AND scan_id IN (SELECT id FROM scans WHERE project_id = ?)
-    `)
-	if err != nil {
-		return 0, err
-	}
-	defer stmt.Close()
-
-	totalMarked := 0
-	if _, ok := report[project]; ok {
-		projectID, err := c.getProjectID(project, suite)
-		if err != nil {
-			log.Warn().Str("project", project).Msg("Project not found in DB, cannot mark expected findings.")
-			return 0, nil
-		}
-
-		for _, result := range report[project] {
-			for _, detail := range result.Details {
-				res, err := stmt.Exec(detail.ResultID, projectID)
-				if err != nil {
-					log.Warn().Err(err).Str("vulnerability_id", detail.ResultID).Msg("Could not execute mark finding statement")
-					continue
-				}
-				rowsAffected, _ := res.RowsAffected()
-				totalMarked += int(rowsAffected)
-			}
-		}
-	}
-
-	return totalMarked, tx.Commit()
-}
-
-// getProjectID returns the project ID for a given project name and suite (application name).
-func (c *Connection) getProjectID(projectName, suite string) (int64, error) {
-	var projectID int64
-	query := `SELECT p.id FROM projects p JOIN applications a ON p.application_id = a.id WHERE p.name = ? AND a.name = ?`
-	err := c.QueryRow(query, projectName, suite).Scan(&projectID)
-	if err != nil {
-		return 0, fmt.Errorf("could not find project ID for project '%s' and suite '%s': %w", projectName, suite, err)
-	}
-	return projectID, nil
-}
-
 type ProjectSummary struct {
 	Name               string `json:"name"`
 	VulnerabilityCount int    `json:"vulnerabilityCount"`
@@ -198,106 +147,7 @@ func (c *Connection) GetProjectSummaries() ([]ProjectSummary, error) {
 	return summaries, nil
 }
 
-// ScoreMetrics contém os dados para o cálculo do score de benchmark.
-type ScoreMetrics struct {
-	ProjectName       string  `json:"projectName"`
-	TruePositives     int     `json:"truePositives"`
-	FalsePositives    int     `json:"falsePositives"`
-	FalseNegatives    int     `json:"falseNegatives"`
-	TotalExpected     int     `json:"totalExpected"`
-	Sensitivity       float64 `json:"sensitivity"`       // TPR
-	Specificity       float64 `json:"specificity"`       // 1 - FPR
-	YoudenIndex       float64 `json:"youdenIndex"`       // (Sens + Spec) - 1
-	BenchmarkAccuracy float64 `json:"benchmarkAccuracy"` // Youden * 100
-}
-
-// GetScores calcula uma lista de scores, agrupados por um determinado campo (project, tool, engine).
-func (c *Connection) GetScores(groupBy, applicationName, tool, engine string) ([]ScoreMetrics, error) {
-	var groupByField string
-	switch groupBy {
-	case "tool":
-		groupByField = "s.tool"
-	case "engine":
-		groupByField = "f.engine"
-	default: // "project" é o default
-		groupByField = "p.name"
-	}
-
-	query := fmt.Sprintf(`
-        WITH grouped_metrics AS (
-            SELECT
-                %s AS group_key,
-                COUNT(DISTINCT CASE WHEN s.version = 'vulnerable' AND f.is_expected = 1 THEN f.vulnerability_id END) as tp,
-                COUNT(DISTINCT CASE WHEN s.version = 'vulnerable' AND f.is_expected = 0 THEN f.vulnerability_id END) as fp,
-                COUNT(DISTINCT CASE WHEN f.is_expected = 1 THEN f.vulnerability_id END) as total_expected
-            FROM findings f
-            JOIN scans s ON f.scan_id = s.id
-            JOIN projects p ON s.project_id = p.id
-            JOIN applications a ON p.application_id = a.id
-            WHERE 1=1
-    `, groupByField)
-
-	var args []interface{}
-	if applicationName != "" && applicationName != "all" {
-		query += " AND a.name = ?"
-		args = append(args, applicationName)
-	}
-	if tool != "" && tool != "all" {
-		query += " AND s.tool = ?"
-		args = append(args, tool)
-	}
-	if engine != "" && engine != "all" {
-		query += " AND f.engine = ?"
-		args = append(args, engine)
-	}
-
-	query += fmt.Sprintf(" GROUP BY %s", groupByField)
-
-	rows, err := c.Query(query, args...)
-	if err != nil {
-		return nil, fmt.Errorf("failed to query scores: %w", err)
-	}
-	defer rows.Close()
-
-	scores := make([]ScoreMetrics, 0)
-	for rows.Next() {
-		var metrics ScoreMetrics
-		var groupKey string
-		var totalExpected int
-		if err := rows.Scan(&groupKey, &metrics.TruePositives, &metrics.FalsePositives, &totalExpected); err != nil {
-			return nil, fmt.Errorf("failed to scan score row: %w", err)
-		}
-		metrics.ProjectName = groupKey
-
-		metrics.FalseNegatives = totalExpected - metrics.TruePositives
-		if metrics.FalseNegatives < 0 {
-			metrics.FalseNegatives = 0
-		}
-
-		metrics.TotalExpected = totalExpected
-		if metrics.TotalExpected > 0 {
-			metrics.Sensitivity = float64(metrics.TruePositives) / float64(metrics.TotalExpected)
-		}
-
-		var fpr float64
-		totalFindingsInVulnerable := metrics.TruePositives + metrics.FalsePositives
-		if totalFindingsInVulnerable > 0 {
-			fpr = float64(metrics.FalsePositives) / float64(totalFindingsInVulnerable)
-		}
-		metrics.Specificity = 1.0 - fpr
-
-		metrics.YoudenIndex = (metrics.Sensitivity + metrics.Specificity) - 1
-		if metrics.YoudenIndex < 0 {
-			metrics.YoudenIndex = 0
-		}
-		metrics.BenchmarkAccuracy = metrics.YoudenIndex * 100
-		scores = append(scores, metrics)
-	}
-
-	return scores, nil
-}
-
-// GetDistinctTools retorna uma lista de todas as ferramentas únicas na base de dados.
+// GetDistinctTools returns a list of all unique tools in the database
 func (c *Connection) GetDistinctTools() ([]string, error) {
 	rows, err := c.Query("SELECT DISTINCT tool FROM scans ORDER BY tool")
 	if err != nil {
@@ -316,7 +166,6 @@ func (c *Connection) GetDistinctTools() ([]string, error) {
 	return tools, nil
 }
 
-// GetDistinctEngines retorna uma lista de todos os motores únicos na base de dados.
 func (c *Connection) GetDistinctEngines() ([]string, error) {
 	rows, err := c.Query("SELECT DISTINCT engine FROM findings ORDER BY engine")
 	if err != nil {
@@ -335,95 +184,6 @@ func (c *Connection) GetDistinctEngines() ([]string, error) {
 	return engines, nil
 }
 
-// Percentagem de TP por Projeto
-func (c *Connection) GetTruePositivePercentage(projectID int) (float64, error) {
-	var tp, totalExpected int
-	err := c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        WHERE s.project_id = ? AND f.is_expected = 1
-    `, projectID).Scan(&tp)
-	if err != nil {
-		return 0, err
-	}
-	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        WHERE s.project_id = ? AND s.version = 'patched'
-    `, projectID).Scan(&totalExpected)
-	if err != nil {
-		return 0, err
-	}
-	if totalExpected == 0 {
-		return 0, nil
-	}
-	return float64(tp) / float64(totalExpected), nil
-}
-
-// Percentagem de TP por Tool
-func (c *Connection) GetTruePositivePercentageByTool(tool string) (float64, error) {
-	var tp, totalExpected int
-	err := c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        WHERE s.tool = ? AND f.is_expected = 1
-    `, tool).Scan(&tp)
-	if err != nil {
-		return 0, err
-	}
-	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        WHERE s.tool = ? AND s.version = 'patched'
-    `, tool).Scan(&totalExpected)
-	if err != nil {
-		return 0, err
-	}
-	if totalExpected == 0 {
-		return 0, nil
-	}
-	return float64(tp) / float64(totalExpected), nil
-}
-
-// Percentagem de TP por Engine
-func (c *Connection) GetTruePositivePercentageByEngineWithCount(engine, repo string) (float64, int, error) {
-	var tp, totalExpected, vulnCount int
-	// Numerador: findings esperados encontrados em vulnerável
-	err := c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        JOIN projects p ON s.project_id = p.id
-        WHERE f.engine = ? AND p.name = ? AND s.version = 'vulnerable' AND f.is_expected = 1
-    `, engine, repo).Scan(&tp)
-	if err != nil {
-		return 0, 0, err
-	}
-	// Denominador: findings esperados em patched
-	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        JOIN projects p ON s.project_id = p.id
-        WHERE f.engine = ? AND p.name = ? AND s.version = 'patched' AND f.is_expected = 1
-    `, engine, repo).Scan(&totalExpected)
-	if err != nil {
-		return 0, 0, err
-	}
-	// Número de vulnerabilidades em vulnerável
-	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        JOIN projects p ON s.project_id = p.id
-        WHERE f.engine = ? AND p.name = ? AND s.version = 'vulnerable'
-    `, engine, repo).Scan(&vulnCount)
-	if err != nil {
-		return 0, 0, err
-	}
-	if totalExpected == 0 {
-		return 0, vulnCount, nil
-	}
-	return float64(tp) / float64(totalExpected), vulnCount, nil
-}
-
 func (c *Connection) GetReposByProject(project string) ([]string, error) {
 	rows, err := c.Query(`
 			SELECT DISTINCT name FROM projects
@@ -440,7 +200,6 @@ func (c *Connection) GetReposByProject(project string) ([]string, error) {
 		if err := rows.Scan(&fullName); err != nil {
 			return nil, err
 		}
-		// Extrai só o nome do repositório (depois da '/')
 		parts := strings.SplitN(fullName, "/", 2)
 		if len(parts) == 2 {
 			repos = append(repos, parts[1])
@@ -482,93 +241,100 @@ func (c *Connection) GetProjectIDByName(repo string) (int64, error) {
 	return id, nil
 }
 
+// GetTruePositivePercentageWithCount calculates the true positive percentage for a project
 func (c *Connection) GetTruePositivePercentageWithCount(projectID int) (float64, int, error) {
-	var tp, totalExpected, vulnCount int
-	// Numerador: findings esperados encontrados em vulnerável
+	var tp int
 	err := c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        WHERE s.project_id = ? AND s.version = 'vulnerable' AND f.is_expected = 1
-    `, projectID).Scan(&tp)
+        SELECT COUNT(DISTINCT f_patch.vulnerability_id) 
+        FROM findings f_patch
+        JOIN scans s_patch ON f_patch.scan_id = s_patch.id
+        WHERE s_patch.project_id = ? AND s_patch.version = 'patched'
+        AND EXISTS (
+            SELECT 1 FROM findings f_vuln
+            JOIN scans s_vuln ON f_vuln.scan_id = s_vuln.id
+            WHERE s_vuln.project_id = ? AND s_vuln.version = 'vulnerable'
+            AND f_vuln.vulnerability_id = f_patch.vulnerability_id
+        )
+    `, projectID, projectID).Scan(&tp)
 	if err != nil {
 		return 0, 0, err
 	}
-	// Denominador: findings esperados em patched
+
+	var totalExpected int
 	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
+        SELECT COUNT(DISTINCT f.vulnerability_id) 
+        FROM findings f
         JOIN scans s ON f.scan_id = s.id
-        WHERE s.project_id = ? AND s.version = 'patched' AND f.is_expected = 1
+        WHERE s.project_id = ? AND s.version = 'patched'
     `, projectID).Scan(&totalExpected)
 	if err != nil {
 		return 0, 0, err
 	}
-	// Número de vulnerabilidades em vulnerável
+
+	var vulnCount int
 	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
+        SELECT COUNT(DISTINCT f.vulnerability_id) 
+        FROM findings f
         JOIN scans s ON f.scan_id = s.id
         WHERE s.project_id = ? AND s.version = 'vulnerable'
     `, projectID).Scan(&vulnCount)
 	if err != nil {
 		return 0, 0, err
 	}
+
 	if totalExpected == 0 {
 		return 0, vulnCount, nil
 	}
 	return float64(tp) / float64(totalExpected), vulnCount, nil
 }
 
-// Percentagem de TP por Tool + número de vulnerabilidades
-func (c *Connection) GetTruePositivePercentageByToolWithCount(tool string) (float64, int, error) {
-	var tp, totalExpected, vulnCount int
-	// Numerador: findings esperados encontrados em vulnerável
+// GetTruePositivePercentageByEngineWithCount calculates the true positive percentage for a specific engine and repository
+func (c *Connection) GetTruePositivePercentageByEngineWithCount(engine, repo string) (float64, int, error) {
+	var tp int
 	err := c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
-        JOIN scans s ON f.scan_id = s.id
-        WHERE s.tool = ? AND s.version = 'vulnerable' AND f.is_expected = 1
-    `, tool).Scan(&tp)
+        SELECT COUNT(DISTINCT f_patch.vulnerability_id)
+        FROM findings f_patch
+        JOIN scans s_patch ON f_patch.scan_id = s_patch.id
+        JOIN projects p ON s_patch.project_id = p.id
+        WHERE f_patch.engine = ? AND p.name = ? AND s_patch.version = 'patched'
+        AND EXISTS (
+            SELECT 1 FROM findings f_vuln
+            JOIN scans s_vuln ON f_vuln.scan_id = s_vuln.id
+            JOIN projects p2 ON s_vuln.project_id = p2.id
+            WHERE f_vuln.engine = ? AND p2.name = ? AND s_vuln.version = 'vulnerable'
+            AND f_vuln.vulnerability_id = f_patch.vulnerability_id
+        )
+    `, engine, repo, engine, repo).Scan(&tp)
 	if err != nil {
 		return 0, 0, err
 	}
-	// Denominador: findings esperados em patched
+
+	var totalExpected int
 	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
+        SELECT COUNT(DISTINCT f.vulnerability_id)
+        FROM findings f
         JOIN scans s ON f.scan_id = s.id
-        WHERE s.tool = ? AND s.version = 'patched' AND f.is_expected = 1
-    `, tool).Scan(&totalExpected)
+        JOIN projects p ON s.project_id = p.id
+        WHERE f.engine = ? AND p.name = ? AND s.version = 'patched'
+    `, engine, repo).Scan(&totalExpected)
 	if err != nil {
 		return 0, 0, err
 	}
-	// Número de vulnerabilidades em vulnerável
+
+	var vulnCount int
 	err = c.QueryRow(`
-        SELECT COUNT(*) FROM findings f
+        SELECT COUNT(DISTINCT f.vulnerability_id)
+        FROM findings f
         JOIN scans s ON f.scan_id = s.id
-        WHERE s.tool = ? AND s.version = 'vulnerable'
-    `, tool).Scan(&vulnCount)
+        JOIN projects p ON s.project_id = p.id
+        WHERE f.engine = ? AND p.name = ? AND s.version = 'vulnerable'
+    `, engine, repo).Scan(&vulnCount)
 	if err != nil {
 		return 0, 0, err
 	}
+
 	if totalExpected == 0 {
 		return 0, vulnCount, nil
 	}
 	return float64(tp) / float64(totalExpected), vulnCount, nil
-}
-
-// GetTruePositivePercentageByEngine returns the true positive percentage for a given engine.
-func (c *Connection) GetTruePositivePercentageByEngine(engine string) (float64, error) {
-	var tpCount, totalCount int
-	query := `
-        SELECT 
-            SUM(CASE WHEN is_true_positive = 1 THEN 1 ELSE 0 END) as tp_count,
-            COUNT(*) as total_count
-        FROM vulnerabilities
-        WHERE engine = ?
-    `
-	err := c.QueryRow(query, engine).Scan(&tpCount, &totalCount)
-	if err != nil {
-		return 0, err
-	}
-	if totalCount == 0 {
-		return 0, nil
-	}
-	return float64(tpCount) / float64(totalCount) * 100, nil
 }
